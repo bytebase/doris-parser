@@ -2572,6 +2572,7 @@ valueExpression
 primaryExpression
     : userVariable                                                                        #userVariableExpression
     | systemVariable                                                                      #systemVariableExpression
+    | ARRAY '(' expressionList ')'                                                        #arrayExpr
     | DICTIONARY_GET '(' expressionList ')'                                               #dictionaryGetExpr
     | functionCall                                                                        #functionCallExpression
     | '{' FN functionCall '}'                                                             #odbcFunctionCallExpression

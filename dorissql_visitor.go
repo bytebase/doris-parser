@@ -1483,6 +1483,9 @@ type DorisSQLVisitor interface {
 	// Visit a parse tree produced by DorisSQLParser#arrowExpression.
 	VisitArrowExpression(ctx *ArrowExpressionContext) interface{}
 
+	// Visit a parse tree produced by DorisSQLParser#arrayExpr.
+	VisitArrayExpr(ctx *ArrayExprContext) interface{}
+
 	// Visit a parse tree produced by DorisSQLParser#systemVariableExpression.
 	VisitSystemVariableExpression(ctx *SystemVariableExpressionContext) interface{}
 

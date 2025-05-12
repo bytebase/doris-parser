@@ -1483,6 +1483,9 @@ type DorisSQLListener interface {
 	// EnterArrowExpression is called when entering the arrowExpression production.
 	EnterArrowExpression(c *ArrowExpressionContext)
 
+	// EnterArrayExpr is called when entering the arrayExpr production.
+	EnterArrayExpr(c *ArrayExprContext)
+
 	// EnterSystemVariableExpression is called when entering the systemVariableExpression production.
 	EnterSystemVariableExpression(c *SystemVariableExpressionContext)
 
@@ -3327,6 +3330,9 @@ type DorisSQLListener interface {
 
 	// ExitArrowExpression is called when exiting the arrowExpression production.
 	ExitArrowExpression(c *ArrowExpressionContext)
+
+	// ExitArrayExpr is called when exiting the arrayExpr production.
+	ExitArrayExpr(c *ArrayExprContext)
 
 	// ExitSystemVariableExpression is called when exiting the systemVariableExpression production.
 	ExitSystemVariableExpression(c *SystemVariableExpressionContext)

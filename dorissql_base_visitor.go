@@ -1975,6 +1975,10 @@ func (v *BaseDorisSQLVisitor) VisitArrowExpression(ctx *ArrowExpressionContext) 
 	return v.VisitChildren(ctx)
 }
 
+func (v *BaseDorisSQLVisitor) VisitArrayExpr(ctx *ArrayExprContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
 func (v *BaseDorisSQLVisitor) VisitSystemVariableExpression(ctx *SystemVariableExpressionContext) interface{} {
 	return v.VisitChildren(ctx)
 }

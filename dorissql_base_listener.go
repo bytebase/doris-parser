@@ -3137,6 +3137,12 @@ func (s *BaseDorisSQLListener) EnterArrowExpression(ctx *ArrowExpressionContext)
 // ExitArrowExpression is called when production arrowExpression is exited.
 func (s *BaseDorisSQLListener) ExitArrowExpression(ctx *ArrowExpressionContext) {}
 
+// EnterArrayExpr is called when production arrayExpr is entered.
+func (s *BaseDorisSQLListener) EnterArrayExpr(ctx *ArrayExprContext) {}
+
+// ExitArrayExpr is called when production arrayExpr is exited.
+func (s *BaseDorisSQLListener) ExitArrayExpr(ctx *ArrayExprContext) {}
+
 // EnterSystemVariableExpression is called when production systemVariableExpression is entered.
 func (s *BaseDorisSQLListener) EnterSystemVariableExpression(ctx *SystemVariableExpressionContext) {}
 
