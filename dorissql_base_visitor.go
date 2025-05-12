@@ -1,4 +1,4 @@
-// Code generated from DorisSQL.g4 by ANTLR 4.13.2. DO NOT EDIT.
+// Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
 import "github.com/antlr4-go/antlr/v4"
@@ -12,10 +12,6 @@ func (v *BaseDorisSQLVisitor) VisitSqlStatements(ctx *SqlStatementsContext) inte
 }
 
 func (v *BaseDorisSQLVisitor) VisitSingleStatement(ctx *SingleStatementContext) interface{} {
-	return v.VisitChildren(ctx)
-}
-
-func (v *BaseDorisSQLVisitor) VisitEmptyStatement(ctx *EmptyStatementContext) interface{} {
 	return v.VisitChildren(ctx)
 }
 
@@ -1707,6 +1703,18 @@ func (v *BaseDorisSQLVisitor) VisitRelations(ctx *RelationsContext) interface{} 
 	return v.VisitChildren(ctx)
 }
 
+func (v *BaseDorisSQLVisitor) VisitRelationLateralView(ctx *RelationLateralViewContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitLateralView(ctx *LateralViewContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitGeneratorFunction(ctx *GeneratorFunctionContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
 func (v *BaseDorisSQLVisitor) VisitRelation(ctx *RelationContext) interface{} {
 	return v.VisitChildren(ctx)
 }
@@ -1792,6 +1800,10 @@ func (v *BaseDorisSQLVisitor) VisitJoinCriteria(ctx *JoinCriteriaContext) interf
 }
 
 func (v *BaseDorisSQLVisitor) VisitColumnAliases(ctx *ColumnAliasesContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitColumnAliasesWithoutParentheses(ctx *ColumnAliasesWithoutParenthesesContext) interface{} {
 	return v.VisitChildren(ctx)
 }
 

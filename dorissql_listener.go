@@ -1,4 +1,4 @@
-// Code generated from DorisSQL.g4 by ANTLR 4.13.2. DO NOT EDIT.
+// Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
 import "github.com/antlr4-go/antlr/v4"
@@ -12,9 +12,6 @@ type DorisSQLListener interface {
 
 	// EnterSingleStatement is called when entering the singleStatement production.
 	EnterSingleStatement(c *SingleStatementContext)
-
-	// EnterEmptyStatement is called when entering the emptyStatement production.
-	EnterEmptyStatement(c *EmptyStatementContext)
 
 	// EnterStatement is called when entering the statement production.
 	EnterStatement(c *StatementContext)
@@ -1282,6 +1279,15 @@ type DorisSQLListener interface {
 	// EnterRelations is called when entering the relations production.
 	EnterRelations(c *RelationsContext)
 
+	// EnterRelationLateralView is called when entering the relationLateralView production.
+	EnterRelationLateralView(c *RelationLateralViewContext)
+
+	// EnterLateralView is called when entering the lateralView production.
+	EnterLateralView(c *LateralViewContext)
+
+	// EnterGeneratorFunction is called when entering the generatorFunction production.
+	EnterGeneratorFunction(c *GeneratorFunctionContext)
+
 	// EnterRelation is called when entering the relation production.
 	EnterRelation(c *RelationContext)
 
@@ -1347,6 +1353,9 @@ type DorisSQLListener interface {
 
 	// EnterColumnAliases is called when entering the columnAliases production.
 	EnterColumnAliases(c *ColumnAliasesContext)
+
+	// EnterColumnAliasesWithoutParentheses is called when entering the columnAliasesWithoutParentheses production.
+	EnterColumnAliasesWithoutParentheses(c *ColumnAliasesWithoutParenthesesContext)
 
 	// EnterPartitionNames is called when entering the partitionNames production.
 	EnterPartitionNames(c *PartitionNamesContext)
@@ -1848,9 +1857,6 @@ type DorisSQLListener interface {
 
 	// ExitSingleStatement is called when exiting the singleStatement production.
 	ExitSingleStatement(c *SingleStatementContext)
-
-	// ExitEmptyStatement is called when exiting the emptyStatement production.
-	ExitEmptyStatement(c *EmptyStatementContext)
 
 	// ExitStatement is called when exiting the statement production.
 	ExitStatement(c *StatementContext)
@@ -3118,6 +3124,15 @@ type DorisSQLListener interface {
 	// ExitRelations is called when exiting the relations production.
 	ExitRelations(c *RelationsContext)
 
+	// ExitRelationLateralView is called when exiting the relationLateralView production.
+	ExitRelationLateralView(c *RelationLateralViewContext)
+
+	// ExitLateralView is called when exiting the lateralView production.
+	ExitLateralView(c *LateralViewContext)
+
+	// ExitGeneratorFunction is called when exiting the generatorFunction production.
+	ExitGeneratorFunction(c *GeneratorFunctionContext)
+
 	// ExitRelation is called when exiting the relation production.
 	ExitRelation(c *RelationContext)
 
@@ -3183,6 +3198,9 @@ type DorisSQLListener interface {
 
 	// ExitColumnAliases is called when exiting the columnAliases production.
 	ExitColumnAliases(c *ColumnAliasesContext)
+
+	// ExitColumnAliasesWithoutParentheses is called when exiting the columnAliasesWithoutParentheses production.
+	ExitColumnAliasesWithoutParentheses(c *ColumnAliasesWithoutParenthesesContext)
 
 	// ExitPartitionNames is called when exiting the partitionNames production.
 	ExitPartitionNames(c *PartitionNamesContext)

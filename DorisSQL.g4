@@ -20,10 +20,7 @@ sqlStatements
     ;
 
 singleStatement
-    : (statement (SEMICOLON | EOF)) | emptyStatement
-    ;
-emptyStatement
-    : SEMICOLON
+    : (statement (SEMICOLON | EOF)) | SEMICOLON
     ;
 
 statement
@@ -2334,7 +2331,19 @@ excludeClause
     ;
 
 relations
-    : relation (',' LATERAL? relation)*
+    : relationLateralView (',' LATERAL? relationLateralView)*
+    ;
+    
+relationLateralView
+    : relation lateralView?
+    ;
+    
+lateralView
+    : LATERAL VIEW generatorFunction ( expression (',' expression)* ) alias=identifier AS columnAliasesWithoutParentheses
+    ;
+
+generatorFunction
+    : EXPLODE | EXPLODE_SPLIT
     ;
 
 relation
@@ -2424,6 +2433,10 @@ joinCriteria
 
 columnAliases
     : '(' identifier (',' identifier)* ')'
+    ;
+    
+columnAliasesWithoutParentheses
+    : identifier (',' identifier)*
     ;
 
 // partitionNames should not support string, it should be identifier here only for compatibility with historical bugs
@@ -2530,7 +2543,7 @@ tupleInSubquery
     : '(' expression (',' expression)+ ')' NOT? IN '(' queryRelation ')'
     ;
 
-predicateOperations [ParserRuleContext value]
+predicateOperations [antlr.ParserRuleContext value]
     : NOT? IN '(' queryRelation ')'                                                       #inSubquery
     | NOT? IN '(' expressionList ')'                                                      #inList
     | NOT? BETWEEN lower = valueExpression AND upper = predicate                          #between

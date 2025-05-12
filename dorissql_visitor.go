@@ -1,4 +1,4 @@
-// Code generated from DorisSQL.g4 by ANTLR 4.13.2. DO NOT EDIT.
+// Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
 import "github.com/antlr4-go/antlr/v4"
@@ -12,9 +12,6 @@ type DorisSQLVisitor interface {
 
 	// Visit a parse tree produced by DorisSQLParser#singleStatement.
 	VisitSingleStatement(ctx *SingleStatementContext) interface{}
-
-	// Visit a parse tree produced by DorisSQLParser#emptyStatement.
-	VisitEmptyStatement(ctx *EmptyStatementContext) interface{}
 
 	// Visit a parse tree produced by DorisSQLParser#statement.
 	VisitStatement(ctx *StatementContext) interface{}
@@ -1282,6 +1279,15 @@ type DorisSQLVisitor interface {
 	// Visit a parse tree produced by DorisSQLParser#relations.
 	VisitRelations(ctx *RelationsContext) interface{}
 
+	// Visit a parse tree produced by DorisSQLParser#relationLateralView.
+	VisitRelationLateralView(ctx *RelationLateralViewContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#lateralView.
+	VisitLateralView(ctx *LateralViewContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#generatorFunction.
+	VisitGeneratorFunction(ctx *GeneratorFunctionContext) interface{}
+
 	// Visit a parse tree produced by DorisSQLParser#relation.
 	VisitRelation(ctx *RelationContext) interface{}
 
@@ -1347,6 +1353,9 @@ type DorisSQLVisitor interface {
 
 	// Visit a parse tree produced by DorisSQLParser#columnAliases.
 	VisitColumnAliases(ctx *ColumnAliasesContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#columnAliasesWithoutParentheses.
+	VisitColumnAliasesWithoutParentheses(ctx *ColumnAliasesWithoutParenthesesContext) interface{}
 
 	// Visit a parse tree produced by DorisSQLParser#partitionNames.
 	VisitPartitionNames(ctx *PartitionNamesContext) interface{}

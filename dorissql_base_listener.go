@@ -1,4 +1,4 @@
-// Code generated from DorisSQL.g4 by ANTLR 4.13.2. DO NOT EDIT.
+// Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
 import "github.com/antlr4-go/antlr/v4"
@@ -31,12 +31,6 @@ func (s *BaseDorisSQLListener) EnterSingleStatement(ctx *SingleStatementContext)
 
 // ExitSingleStatement is called when production singleStatement is exited.
 func (s *BaseDorisSQLListener) ExitSingleStatement(ctx *SingleStatementContext) {}
-
-// EnterEmptyStatement is called when production emptyStatement is entered.
-func (s *BaseDorisSQLListener) EnterEmptyStatement(ctx *EmptyStatementContext) {}
-
-// ExitEmptyStatement is called when production emptyStatement is exited.
-func (s *BaseDorisSQLListener) ExitEmptyStatement(ctx *EmptyStatementContext) {}
 
 // EnterStatement is called when production statement is entered.
 func (s *BaseDorisSQLListener) EnterStatement(ctx *StatementContext) {}
@@ -2729,6 +2723,24 @@ func (s *BaseDorisSQLListener) EnterRelations(ctx *RelationsContext) {}
 // ExitRelations is called when production relations is exited.
 func (s *BaseDorisSQLListener) ExitRelations(ctx *RelationsContext) {}
 
+// EnterRelationLateralView is called when production relationLateralView is entered.
+func (s *BaseDorisSQLListener) EnterRelationLateralView(ctx *RelationLateralViewContext) {}
+
+// ExitRelationLateralView is called when production relationLateralView is exited.
+func (s *BaseDorisSQLListener) ExitRelationLateralView(ctx *RelationLateralViewContext) {}
+
+// EnterLateralView is called when production lateralView is entered.
+func (s *BaseDorisSQLListener) EnterLateralView(ctx *LateralViewContext) {}
+
+// ExitLateralView is called when production lateralView is exited.
+func (s *BaseDorisSQLListener) ExitLateralView(ctx *LateralViewContext) {}
+
+// EnterGeneratorFunction is called when production generatorFunction is entered.
+func (s *BaseDorisSQLListener) EnterGeneratorFunction(ctx *GeneratorFunctionContext) {}
+
+// ExitGeneratorFunction is called when production generatorFunction is exited.
+func (s *BaseDorisSQLListener) ExitGeneratorFunction(ctx *GeneratorFunctionContext) {}
+
 // EnterRelation is called when production relation is entered.
 func (s *BaseDorisSQLListener) EnterRelation(ctx *RelationContext) {}
 
@@ -2862,6 +2874,14 @@ func (s *BaseDorisSQLListener) EnterColumnAliases(ctx *ColumnAliasesContext) {}
 
 // ExitColumnAliases is called when production columnAliases is exited.
 func (s *BaseDorisSQLListener) ExitColumnAliases(ctx *ColumnAliasesContext) {}
+
+// EnterColumnAliasesWithoutParentheses is called when production columnAliasesWithoutParentheses is entered.
+func (s *BaseDorisSQLListener) EnterColumnAliasesWithoutParentheses(ctx *ColumnAliasesWithoutParenthesesContext) {
+}
+
+// ExitColumnAliasesWithoutParentheses is called when production columnAliasesWithoutParentheses is exited.
+func (s *BaseDorisSQLListener) ExitColumnAliasesWithoutParentheses(ctx *ColumnAliasesWithoutParenthesesContext) {
+}
 
 // EnterPartitionNames is called when production partitionNames is entered.
 func (s *BaseDorisSQLListener) EnterPartitionNames(ctx *PartitionNamesContext) {}
