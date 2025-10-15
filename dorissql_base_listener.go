@@ -1647,6 +1647,14 @@ func (s *BaseDorisSQLListener) EnterShowFrontendsStatement(ctx *ShowFrontendsSta
 // ExitShowFrontendsStatement is called when production showFrontendsStatement is exited.
 func (s *BaseDorisSQLListener) ExitShowFrontendsStatement(ctx *ShowFrontendsStatementContext) {}
 
+// EnterShowFrontendsDisksStatement is called when production showFrontendsDisksStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowFrontendsDisksStatement(ctx *ShowFrontendsDisksStatementContext) {
+}
+
+// ExitShowFrontendsDisksStatement is called when production showFrontendsDisksStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowFrontendsDisksStatement(ctx *ShowFrontendsDisksStatementContext) {
+}
+
 // EnterShowPluginsStatement is called when production showPluginsStatement is entered.
 func (s *BaseDorisSQLListener) EnterShowPluginsStatement(ctx *ShowPluginsStatementContext) {}
 
@@ -1752,6 +1760,154 @@ func (s *BaseDorisSQLListener) EnterHelpStatement(ctx *HelpStatementContext) {}
 
 // ExitHelpStatement is called when production helpStatement is exited.
 func (s *BaseDorisSQLListener) ExitHelpStatement(ctx *HelpStatementContext) {}
+
+// EnterShowQueryProfileStatement is called when production showQueryProfileStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowQueryProfileStatement(ctx *ShowQueryProfileStatementContext) {
+}
+
+// ExitShowQueryProfileStatement is called when production showQueryProfileStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowQueryProfileStatement(ctx *ShowQueryProfileStatementContext) {}
+
+// EnterShowQueryStatsStatement is called when production showQueryStatsStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowQueryStatsStatement(ctx *ShowQueryStatsStatementContext) {}
+
+// ExitShowQueryStatsStatement is called when production showQueryStatsStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowQueryStatsStatement(ctx *ShowQueryStatsStatementContext) {}
+
+// EnterShowLoadProfileStatement is called when production showLoadProfileStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowLoadProfileStatement(ctx *ShowLoadProfileStatementContext) {}
+
+// ExitShowLoadProfileStatement is called when production showLoadProfileStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowLoadProfileStatement(ctx *ShowLoadProfileStatementContext) {}
+
+// EnterShowDataSkewStatement is called when production showDataSkewStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowDataSkewStatement(ctx *ShowDataSkewStatementContext) {}
+
+// ExitShowDataSkewStatement is called when production showDataSkewStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowDataSkewStatement(ctx *ShowDataSkewStatementContext) {}
+
+// EnterShowDataTypesStatement is called when production showDataTypesStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowDataTypesStatement(ctx *ShowDataTypesStatementContext) {}
+
+// ExitShowDataTypesStatement is called when production showDataTypesStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowDataTypesStatement(ctx *ShowDataTypesStatementContext) {}
+
+// EnterShowSyncJobStatement is called when production showSyncJobStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowSyncJobStatement(ctx *ShowSyncJobStatementContext) {}
+
+// ExitShowSyncJobStatement is called when production showSyncJobStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowSyncJobStatement(ctx *ShowSyncJobStatementContext) {}
+
+// EnterShowPolicyStatement is called when production showPolicyStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowPolicyStatement(ctx *ShowPolicyStatementContext) {}
+
+// ExitShowPolicyStatement is called when production showPolicyStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowPolicyStatement(ctx *ShowPolicyStatementContext) {}
+
+// EnterShowSqlBlockRuleStatement is called when production showSqlBlockRuleStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowSqlBlockRuleStatement(ctx *ShowSqlBlockRuleStatementContext) {
+}
+
+// ExitShowSqlBlockRuleStatement is called when production showSqlBlockRuleStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowSqlBlockRuleStatement(ctx *ShowSqlBlockRuleStatementContext) {}
+
+// EnterShowEncryptKeysStatement is called when production showEncryptKeysStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowEncryptKeysStatement(ctx *ShowEncryptKeysStatementContext) {}
+
+// ExitShowEncryptKeysStatement is called when production showEncryptKeysStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowEncryptKeysStatement(ctx *ShowEncryptKeysStatementContext) {}
+
+// EnterShowCreateLoadStatement is called when production showCreateLoadStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowCreateLoadStatement(ctx *ShowCreateLoadStatementContext) {}
+
+// ExitShowCreateLoadStatement is called when production showCreateLoadStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowCreateLoadStatement(ctx *ShowCreateLoadStatementContext) {}
+
+// EnterShowCreateRepositoryStatement is called when production showCreateRepositoryStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowCreateRepositoryStatement(ctx *ShowCreateRepositoryStatementContext) {
+}
+
+// ExitShowCreateRepositoryStatement is called when production showCreateRepositoryStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowCreateRepositoryStatement(ctx *ShowCreateRepositoryStatementContext) {
+}
+
+// EnterShowLastInsertStatement is called when production showLastInsertStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowLastInsertStatement(ctx *ShowLastInsertStatementContext) {}
+
+// ExitShowLastInsertStatement is called when production showLastInsertStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowLastInsertStatement(ctx *ShowLastInsertStatementContext) {}
+
+// EnterShowTableIdStatement is called when production showTableIdStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowTableIdStatement(ctx *ShowTableIdStatementContext) {}
+
+// ExitShowTableIdStatement is called when production showTableIdStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowTableIdStatement(ctx *ShowTableIdStatementContext) {}
+
+// EnterShowDatabaseIdStatement is called when production showDatabaseIdStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowDatabaseIdStatement(ctx *ShowDatabaseIdStatementContext) {}
+
+// ExitShowDatabaseIdStatement is called when production showDatabaseIdStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowDatabaseIdStatement(ctx *ShowDatabaseIdStatementContext) {}
+
+// EnterShowPartitionIdStatement is called when production showPartitionIdStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowPartitionIdStatement(ctx *ShowPartitionIdStatementContext) {}
+
+// ExitShowPartitionIdStatement is called when production showPartitionIdStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowPartitionIdStatement(ctx *ShowPartitionIdStatementContext) {}
+
+// EnterShowTableStatsStatement is called when production showTableStatsStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowTableStatsStatement(ctx *ShowTableStatsStatementContext) {}
+
+// ExitShowTableStatsStatement is called when production showTableStatsStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowTableStatsStatement(ctx *ShowTableStatsStatementContext) {}
+
+// EnterShowColumnStatsStatement is called when production showColumnStatsStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowColumnStatsStatement(ctx *ShowColumnStatsStatementContext) {}
+
+// ExitShowColumnStatsStatement is called when production showColumnStatsStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowColumnStatsStatement(ctx *ShowColumnStatsStatementContext) {}
+
+// EnterShowConvertLightSchemaChangeStatement is called when production showConvertLightSchemaChangeStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowConvertLightSchemaChangeStatement(ctx *ShowConvertLightSchemaChangeStatementContext) {
+}
+
+// ExitShowConvertLightSchemaChangeStatement is called when production showConvertLightSchemaChangeStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowConvertLightSchemaChangeStatement(ctx *ShowConvertLightSchemaChangeStatementContext) {
+}
+
+// EnterShowCatalogRecycleBinStatement is called when production showCatalogRecycleBinStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowCatalogRecycleBinStatement(ctx *ShowCatalogRecycleBinStatementContext) {
+}
+
+// ExitShowCatalogRecycleBinStatement is called when production showCatalogRecycleBinStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowCatalogRecycleBinStatement(ctx *ShowCatalogRecycleBinStatementContext) {
+}
+
+// EnterShowTrashStatement is called when production showTrashStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowTrashStatement(ctx *ShowTrashStatementContext) {}
+
+// ExitShowTrashStatement is called when production showTrashStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowTrashStatement(ctx *ShowTrashStatementContext) {}
+
+// EnterShowMigrationsStatement is called when production showMigrationsStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowMigrationsStatement(ctx *ShowMigrationsStatementContext) {}
+
+// ExitShowMigrationsStatement is called when production showMigrationsStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowMigrationsStatement(ctx *ShowMigrationsStatementContext) {}
+
+// EnterShowWorkloadGroupsStatement is called when production showWorkloadGroupsStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowWorkloadGroupsStatement(ctx *ShowWorkloadGroupsStatementContext) {
+}
+
+// ExitShowWorkloadGroupsStatement is called when production showWorkloadGroupsStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowWorkloadGroupsStatement(ctx *ShowWorkloadGroupsStatementContext) {
+}
+
+// EnterShowJobTaskStatement is called when production showJobTaskStatement is entered.
+func (s *BaseDorisSQLListener) EnterShowJobTaskStatement(ctx *ShowJobTaskStatementContext) {}
+
+// ExitShowJobTaskStatement is called when production showJobTaskStatement is exited.
+func (s *BaseDorisSQLListener) ExitShowJobTaskStatement(ctx *ShowJobTaskStatementContext) {}
 
 // EnterCreateUserStatement is called when production createUserStatement is entered.
 func (s *BaseDorisSQLListener) EnterCreateUserStatement(ctx *CreateUserStatementContext) {}

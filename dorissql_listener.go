@@ -766,6 +766,9 @@ type DorisSQLListener interface {
 	// EnterShowFrontendsStatement is called when entering the showFrontendsStatement production.
 	EnterShowFrontendsStatement(c *ShowFrontendsStatementContext)
 
+	// EnterShowFrontendsDisksStatement is called when entering the showFrontendsDisksStatement production.
+	EnterShowFrontendsDisksStatement(c *ShowFrontendsDisksStatementContext)
+
 	// EnterShowPluginsStatement is called when entering the showPluginsStatement production.
 	EnterShowPluginsStatement(c *ShowPluginsStatementContext)
 
@@ -816,6 +819,75 @@ type DorisSQLListener interface {
 
 	// EnterHelpStatement is called when entering the helpStatement production.
 	EnterHelpStatement(c *HelpStatementContext)
+
+	// EnterShowQueryProfileStatement is called when entering the showQueryProfileStatement production.
+	EnterShowQueryProfileStatement(c *ShowQueryProfileStatementContext)
+
+	// EnterShowQueryStatsStatement is called when entering the showQueryStatsStatement production.
+	EnterShowQueryStatsStatement(c *ShowQueryStatsStatementContext)
+
+	// EnterShowLoadProfileStatement is called when entering the showLoadProfileStatement production.
+	EnterShowLoadProfileStatement(c *ShowLoadProfileStatementContext)
+
+	// EnterShowDataSkewStatement is called when entering the showDataSkewStatement production.
+	EnterShowDataSkewStatement(c *ShowDataSkewStatementContext)
+
+	// EnterShowDataTypesStatement is called when entering the showDataTypesStatement production.
+	EnterShowDataTypesStatement(c *ShowDataTypesStatementContext)
+
+	// EnterShowSyncJobStatement is called when entering the showSyncJobStatement production.
+	EnterShowSyncJobStatement(c *ShowSyncJobStatementContext)
+
+	// EnterShowPolicyStatement is called when entering the showPolicyStatement production.
+	EnterShowPolicyStatement(c *ShowPolicyStatementContext)
+
+	// EnterShowSqlBlockRuleStatement is called when entering the showSqlBlockRuleStatement production.
+	EnterShowSqlBlockRuleStatement(c *ShowSqlBlockRuleStatementContext)
+
+	// EnterShowEncryptKeysStatement is called when entering the showEncryptKeysStatement production.
+	EnterShowEncryptKeysStatement(c *ShowEncryptKeysStatementContext)
+
+	// EnterShowCreateLoadStatement is called when entering the showCreateLoadStatement production.
+	EnterShowCreateLoadStatement(c *ShowCreateLoadStatementContext)
+
+	// EnterShowCreateRepositoryStatement is called when entering the showCreateRepositoryStatement production.
+	EnterShowCreateRepositoryStatement(c *ShowCreateRepositoryStatementContext)
+
+	// EnterShowLastInsertStatement is called when entering the showLastInsertStatement production.
+	EnterShowLastInsertStatement(c *ShowLastInsertStatementContext)
+
+	// EnterShowTableIdStatement is called when entering the showTableIdStatement production.
+	EnterShowTableIdStatement(c *ShowTableIdStatementContext)
+
+	// EnterShowDatabaseIdStatement is called when entering the showDatabaseIdStatement production.
+	EnterShowDatabaseIdStatement(c *ShowDatabaseIdStatementContext)
+
+	// EnterShowPartitionIdStatement is called when entering the showPartitionIdStatement production.
+	EnterShowPartitionIdStatement(c *ShowPartitionIdStatementContext)
+
+	// EnterShowTableStatsStatement is called when entering the showTableStatsStatement production.
+	EnterShowTableStatsStatement(c *ShowTableStatsStatementContext)
+
+	// EnterShowColumnStatsStatement is called when entering the showColumnStatsStatement production.
+	EnterShowColumnStatsStatement(c *ShowColumnStatsStatementContext)
+
+	// EnterShowConvertLightSchemaChangeStatement is called when entering the showConvertLightSchemaChangeStatement production.
+	EnterShowConvertLightSchemaChangeStatement(c *ShowConvertLightSchemaChangeStatementContext)
+
+	// EnterShowCatalogRecycleBinStatement is called when entering the showCatalogRecycleBinStatement production.
+	EnterShowCatalogRecycleBinStatement(c *ShowCatalogRecycleBinStatementContext)
+
+	// EnterShowTrashStatement is called when entering the showTrashStatement production.
+	EnterShowTrashStatement(c *ShowTrashStatementContext)
+
+	// EnterShowMigrationsStatement is called when entering the showMigrationsStatement production.
+	EnterShowMigrationsStatement(c *ShowMigrationsStatementContext)
+
+	// EnterShowWorkloadGroupsStatement is called when entering the showWorkloadGroupsStatement production.
+	EnterShowWorkloadGroupsStatement(c *ShowWorkloadGroupsStatementContext)
+
+	// EnterShowJobTaskStatement is called when entering the showJobTaskStatement production.
+	EnterShowJobTaskStatement(c *ShowJobTaskStatementContext)
 
 	// EnterCreateUserStatement is called when entering the createUserStatement production.
 	EnterCreateUserStatement(c *CreateUserStatementContext)
@@ -2614,6 +2686,9 @@ type DorisSQLListener interface {
 	// ExitShowFrontendsStatement is called when exiting the showFrontendsStatement production.
 	ExitShowFrontendsStatement(c *ShowFrontendsStatementContext)
 
+	// ExitShowFrontendsDisksStatement is called when exiting the showFrontendsDisksStatement production.
+	ExitShowFrontendsDisksStatement(c *ShowFrontendsDisksStatementContext)
+
 	// ExitShowPluginsStatement is called when exiting the showPluginsStatement production.
 	ExitShowPluginsStatement(c *ShowPluginsStatementContext)
 
@@ -2664,6 +2739,75 @@ type DorisSQLListener interface {
 
 	// ExitHelpStatement is called when exiting the helpStatement production.
 	ExitHelpStatement(c *HelpStatementContext)
+
+	// ExitShowQueryProfileStatement is called when exiting the showQueryProfileStatement production.
+	ExitShowQueryProfileStatement(c *ShowQueryProfileStatementContext)
+
+	// ExitShowQueryStatsStatement is called when exiting the showQueryStatsStatement production.
+	ExitShowQueryStatsStatement(c *ShowQueryStatsStatementContext)
+
+	// ExitShowLoadProfileStatement is called when exiting the showLoadProfileStatement production.
+	ExitShowLoadProfileStatement(c *ShowLoadProfileStatementContext)
+
+	// ExitShowDataSkewStatement is called when exiting the showDataSkewStatement production.
+	ExitShowDataSkewStatement(c *ShowDataSkewStatementContext)
+
+	// ExitShowDataTypesStatement is called when exiting the showDataTypesStatement production.
+	ExitShowDataTypesStatement(c *ShowDataTypesStatementContext)
+
+	// ExitShowSyncJobStatement is called when exiting the showSyncJobStatement production.
+	ExitShowSyncJobStatement(c *ShowSyncJobStatementContext)
+
+	// ExitShowPolicyStatement is called when exiting the showPolicyStatement production.
+	ExitShowPolicyStatement(c *ShowPolicyStatementContext)
+
+	// ExitShowSqlBlockRuleStatement is called when exiting the showSqlBlockRuleStatement production.
+	ExitShowSqlBlockRuleStatement(c *ShowSqlBlockRuleStatementContext)
+
+	// ExitShowEncryptKeysStatement is called when exiting the showEncryptKeysStatement production.
+	ExitShowEncryptKeysStatement(c *ShowEncryptKeysStatementContext)
+
+	// ExitShowCreateLoadStatement is called when exiting the showCreateLoadStatement production.
+	ExitShowCreateLoadStatement(c *ShowCreateLoadStatementContext)
+
+	// ExitShowCreateRepositoryStatement is called when exiting the showCreateRepositoryStatement production.
+	ExitShowCreateRepositoryStatement(c *ShowCreateRepositoryStatementContext)
+
+	// ExitShowLastInsertStatement is called when exiting the showLastInsertStatement production.
+	ExitShowLastInsertStatement(c *ShowLastInsertStatementContext)
+
+	// ExitShowTableIdStatement is called when exiting the showTableIdStatement production.
+	ExitShowTableIdStatement(c *ShowTableIdStatementContext)
+
+	// ExitShowDatabaseIdStatement is called when exiting the showDatabaseIdStatement production.
+	ExitShowDatabaseIdStatement(c *ShowDatabaseIdStatementContext)
+
+	// ExitShowPartitionIdStatement is called when exiting the showPartitionIdStatement production.
+	ExitShowPartitionIdStatement(c *ShowPartitionIdStatementContext)
+
+	// ExitShowTableStatsStatement is called when exiting the showTableStatsStatement production.
+	ExitShowTableStatsStatement(c *ShowTableStatsStatementContext)
+
+	// ExitShowColumnStatsStatement is called when exiting the showColumnStatsStatement production.
+	ExitShowColumnStatsStatement(c *ShowColumnStatsStatementContext)
+
+	// ExitShowConvertLightSchemaChangeStatement is called when exiting the showConvertLightSchemaChangeStatement production.
+	ExitShowConvertLightSchemaChangeStatement(c *ShowConvertLightSchemaChangeStatementContext)
+
+	// ExitShowCatalogRecycleBinStatement is called when exiting the showCatalogRecycleBinStatement production.
+	ExitShowCatalogRecycleBinStatement(c *ShowCatalogRecycleBinStatementContext)
+
+	// ExitShowTrashStatement is called when exiting the showTrashStatement production.
+	ExitShowTrashStatement(c *ShowTrashStatementContext)
+
+	// ExitShowMigrationsStatement is called when exiting the showMigrationsStatement production.
+	ExitShowMigrationsStatement(c *ShowMigrationsStatementContext)
+
+	// ExitShowWorkloadGroupsStatement is called when exiting the showWorkloadGroupsStatement production.
+	ExitShowWorkloadGroupsStatement(c *ShowWorkloadGroupsStatementContext)
+
+	// ExitShowJobTaskStatement is called when exiting the showJobTaskStatement production.
+	ExitShowJobTaskStatement(c *ShowJobTaskStatementContext)
 
 	// ExitCreateUserStatement is called when exiting the createUserStatement production.
 	ExitCreateUserStatement(c *CreateUserStatementContext)
