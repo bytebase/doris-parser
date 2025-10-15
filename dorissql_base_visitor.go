@@ -1,6 +1,7 @@
 // Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
+
 import "github.com/antlr4-go/antlr/v4"
 
 type BaseDorisSQLVisitor struct {
@@ -1019,6 +1020,10 @@ func (v *BaseDorisSQLVisitor) VisitShowFrontendsStatement(ctx *ShowFrontendsStat
 	return v.VisitChildren(ctx)
 }
 
+func (v *BaseDorisSQLVisitor) VisitShowFrontendsDisksStatement(ctx *ShowFrontendsDisksStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
 func (v *BaseDorisSQLVisitor) VisitShowPluginsStatement(ctx *ShowPluginsStatementContext) interface{} {
 	return v.VisitChildren(ctx)
 }
@@ -1084,6 +1089,98 @@ func (v *BaseDorisSQLVisitor) VisitShowWarningStatement(ctx *ShowWarningStatemen
 }
 
 func (v *BaseDorisSQLVisitor) VisitHelpStatement(ctx *HelpStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowQueryProfileStatement(ctx *ShowQueryProfileStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowQueryStatsStatement(ctx *ShowQueryStatsStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowLoadProfileStatement(ctx *ShowLoadProfileStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowDataSkewStatement(ctx *ShowDataSkewStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowDataTypesStatement(ctx *ShowDataTypesStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowSyncJobStatement(ctx *ShowSyncJobStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowPolicyStatement(ctx *ShowPolicyStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowSqlBlockRuleStatement(ctx *ShowSqlBlockRuleStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowEncryptKeysStatement(ctx *ShowEncryptKeysStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowCreateLoadStatement(ctx *ShowCreateLoadStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowCreateRepositoryStatement(ctx *ShowCreateRepositoryStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowLastInsertStatement(ctx *ShowLastInsertStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowTableIdStatement(ctx *ShowTableIdStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowDatabaseIdStatement(ctx *ShowDatabaseIdStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowPartitionIdStatement(ctx *ShowPartitionIdStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowTableStatsStatement(ctx *ShowTableStatsStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowColumnStatsStatement(ctx *ShowColumnStatsStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowConvertLightSchemaChangeStatement(ctx *ShowConvertLightSchemaChangeStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowCatalogRecycleBinStatement(ctx *ShowCatalogRecycleBinStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowTrashStatement(ctx *ShowTrashStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowMigrationsStatement(ctx *ShowMigrationsStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowWorkloadGroupsStatement(ctx *ShowWorkloadGroupsStatementContext) interface{} {
+	return v.VisitChildren(ctx)
+}
+
+func (v *BaseDorisSQLVisitor) VisitShowJobTaskStatement(ctx *ShowJobTaskStatementContext) interface{} {
 	return v.VisitChildren(ctx)
 }
 

@@ -1,6 +1,7 @@
 // Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
+
 import "github.com/antlr4-go/antlr/v4"
 
 // A complete Visitor for a parse tree produced by DorisSQLParser.
@@ -766,6 +767,9 @@ type DorisSQLVisitor interface {
 	// Visit a parse tree produced by DorisSQLParser#showFrontendsStatement.
 	VisitShowFrontendsStatement(ctx *ShowFrontendsStatementContext) interface{}
 
+	// Visit a parse tree produced by DorisSQLParser#showFrontendsDisksStatement.
+	VisitShowFrontendsDisksStatement(ctx *ShowFrontendsDisksStatementContext) interface{}
+
 	// Visit a parse tree produced by DorisSQLParser#showPluginsStatement.
 	VisitShowPluginsStatement(ctx *ShowPluginsStatementContext) interface{}
 
@@ -816,6 +820,75 @@ type DorisSQLVisitor interface {
 
 	// Visit a parse tree produced by DorisSQLParser#helpStatement.
 	VisitHelpStatement(ctx *HelpStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showQueryProfileStatement.
+	VisitShowQueryProfileStatement(ctx *ShowQueryProfileStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showQueryStatsStatement.
+	VisitShowQueryStatsStatement(ctx *ShowQueryStatsStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showLoadProfileStatement.
+	VisitShowLoadProfileStatement(ctx *ShowLoadProfileStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showDataSkewStatement.
+	VisitShowDataSkewStatement(ctx *ShowDataSkewStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showDataTypesStatement.
+	VisitShowDataTypesStatement(ctx *ShowDataTypesStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showSyncJobStatement.
+	VisitShowSyncJobStatement(ctx *ShowSyncJobStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showPolicyStatement.
+	VisitShowPolicyStatement(ctx *ShowPolicyStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showSqlBlockRuleStatement.
+	VisitShowSqlBlockRuleStatement(ctx *ShowSqlBlockRuleStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showEncryptKeysStatement.
+	VisitShowEncryptKeysStatement(ctx *ShowEncryptKeysStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showCreateLoadStatement.
+	VisitShowCreateLoadStatement(ctx *ShowCreateLoadStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showCreateRepositoryStatement.
+	VisitShowCreateRepositoryStatement(ctx *ShowCreateRepositoryStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showLastInsertStatement.
+	VisitShowLastInsertStatement(ctx *ShowLastInsertStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showTableIdStatement.
+	VisitShowTableIdStatement(ctx *ShowTableIdStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showDatabaseIdStatement.
+	VisitShowDatabaseIdStatement(ctx *ShowDatabaseIdStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showPartitionIdStatement.
+	VisitShowPartitionIdStatement(ctx *ShowPartitionIdStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showTableStatsStatement.
+	VisitShowTableStatsStatement(ctx *ShowTableStatsStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showColumnStatsStatement.
+	VisitShowColumnStatsStatement(ctx *ShowColumnStatsStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showConvertLightSchemaChangeStatement.
+	VisitShowConvertLightSchemaChangeStatement(ctx *ShowConvertLightSchemaChangeStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showCatalogRecycleBinStatement.
+	VisitShowCatalogRecycleBinStatement(ctx *ShowCatalogRecycleBinStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showTrashStatement.
+	VisitShowTrashStatement(ctx *ShowTrashStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showMigrationsStatement.
+	VisitShowMigrationsStatement(ctx *ShowMigrationsStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showWorkloadGroupsStatement.
+	VisitShowWorkloadGroupsStatement(ctx *ShowWorkloadGroupsStatementContext) interface{}
+
+	// Visit a parse tree produced by DorisSQLParser#showJobTaskStatement.
+	VisitShowJobTaskStatement(ctx *ShowJobTaskStatementContext) interface{}
 
 	// Visit a parse tree produced by DorisSQLParser#createUserStatement.
 	VisitCreateUserStatement(ctx *CreateUserStatementContext) interface{}

@@ -183,6 +183,7 @@ statement
     | showEventsStatement
     | showEnginesStatement
     | showFrontendsStatement
+    | showFrontendsDisksStatement
     | showPluginsStatement
     | showRepositoriesStatement
     | showOpenTableStatement
@@ -199,6 +200,29 @@ statement
     | showUserPropertyStatement
     | showVariablesStatement
     | showWarningStatement
+    | showQueryProfileStatement
+    | showQueryStatsStatement
+    | showLoadProfileStatement
+    | showDataSkewStatement
+    | showDataTypesStatement
+    | showSyncJobStatement
+    | showPolicyStatement
+    | showSqlBlockRuleStatement
+    | showEncryptKeysStatement
+    | showCreateLoadStatement
+    | showCreateRepositoryStatement
+    | showLastInsertStatement
+    | showTableIdStatement
+    | showDatabaseIdStatement
+    | showPartitionIdStatement
+    | showTableStatsStatement
+    | showColumnStatsStatement
+    | showConvertLightSchemaChangeStatement
+    | showCatalogRecycleBinStatement
+    | showTrashStatement
+    | showMigrationsStatement
+    | showWorkloadGroupsStatement
+    | showJobTaskStatement
     | helpStatement
 
     // authz Statement
@@ -1617,6 +1641,10 @@ showFrontendsStatement
     : SHOW FRONTENDS
     ;
 
+showFrontendsDisksStatement
+    : SHOW FRONTENDS DISKS
+    ;
+
 showPluginsStatement
     : SHOW PLUGINS
     ;
@@ -1684,6 +1712,106 @@ showWarningStatement
 
 helpStatement
     : HELP identifierOrString
+    ;
+
+showQueryProfileStatement
+    : SHOW QUERY PROFILE string (',' INTEGER_VALUE (',' INTEGER_VALUE)*)?
+    | SHOW QUERY PROFILE string SLASH_SYMBOL
+    | SHOW QUERY PROFILE string SLASH_SYMBOL INTEGER_VALUE
+    | SHOW QUERY PROFILE string SLASH_SYMBOL INTEGER_VALUE SLASH_SYMBOL INTEGER_VALUE
+    ;
+
+showQueryStatsStatement
+    : SHOW QUERY STATS ((FOR identifier) | (FROM qualifiedName))? ALL? VERBOSE?
+    ;
+
+showLoadProfileStatement
+    : SHOW LOAD PROFILE string (',' INTEGER_VALUE (',' INTEGER_VALUE)*)?
+    | SHOW LOAD PROFILE string SLASH_SYMBOL
+    | SHOW LOAD PROFILE string SLASH_SYMBOL INTEGER_VALUE
+    | SHOW LOAD PROFILE string SLASH_SYMBOL INTEGER_VALUE SLASH_SYMBOL INTEGER_VALUE
+    | SHOW LOAD PROFILE string SLASH_SYMBOL INTEGER_VALUE SLASH_SYMBOL INTEGER_VALUE SLASH_SYMBOL INTEGER_VALUE
+    ;
+
+showDataSkewStatement
+    : SHOW DATA SKEW FROM qualifiedName partitionNames?
+    ;
+
+showDataTypesStatement
+    : SHOW DATA TYPES
+    ;
+
+showSyncJobStatement
+    : SHOW SYNC JOB (FROM qualifiedName)?
+    ;
+
+showPolicyStatement
+    : SHOW ROW POLICY (FOR user)? (FOR ROLE identifierOrString)?
+    | SHOW STORAGE POLICY
+    ;
+
+showSqlBlockRuleStatement
+    : SHOW SQL BLOCK RULE (FOR identifier)?
+    ;
+
+showEncryptKeysStatement
+    : SHOW ENCRYPT KEYS ((IN | FROM) qualifiedName)? (LIKE pattern=string)?
+    ;
+
+showCreateLoadStatement
+    : SHOW CREATE LOAD FOR identifier
+    ;
+
+showCreateRepositoryStatement
+    : SHOW CREATE REPOSITORY identifier
+    ;
+
+showLastInsertStatement
+    : SHOW LAST INSERT
+    ;
+
+showTableIdStatement
+    : SHOW TABLE INTEGER_VALUE
+    ;
+
+showDatabaseIdStatement
+    : SHOW DATABASE INTEGER_VALUE
+    ;
+
+showPartitionIdStatement
+    : SHOW PARTITION INTEGER_VALUE
+    ;
+
+showTableStatsStatement
+    : SHOW TABLE STATS qualifiedName
+    ;
+
+showColumnStatsStatement
+    : SHOW COLUMN CACHED? STATS qualifiedName ('(' identifier (',' identifier)* ')')?
+    ;
+
+showConvertLightSchemaChangeStatement
+    : SHOW CONVERT LIGHT SCHEMA CHANGE PROCESS FROM qualifiedName
+    ;
+
+showCatalogRecycleBinStatement
+    : SHOW CATALOG RECYCLE BIN (WHERE NAME (EQ string | LIKE string))?
+    ;
+
+showTrashStatement
+    : SHOW TRASH (ON '(' string (',' string)* ')')?
+    ;
+
+showMigrationsStatement
+    : SHOW MIGRATIONS
+    ;
+
+showWorkloadGroupsStatement
+    : SHOW WORKLOAD GROUPS
+    ;
+
+showJobTaskStatement
+    : SHOW JOB TASKS FOR identifier
     ;
 
 // ------------------------------------------- Authz Statement -----------------------------------------------------
@@ -3094,12 +3222,12 @@ nonReserved
     : ACCESS | ACTIVE | ADVISOR | AFTER | AGGREGATE | APPLY | ASYNC | AUTHORS | AVG | ADMIN | ANTI | AUTHENTICATION | AUTO_INCREMENT | AUTOMATED
     | ARRAY_AGG | ARRAY_AGG_DISTINCT
     | BACKEND | BACKENDS | BACKUP | BEGIN | BITMAP_UNION | BLACKLIST | BLACKHOLE | BINARY | BODY | BOOLEAN | BRANCH | BROKER | BUCKETS
-    | BUILTIN | BASE | BEFORE | BASELINE
-    | CACHE | CAST | CANCEL | CATALOG | CATALOGS | CEIL | CHAIN | CHARSET | CLEAN | CLEAR | CLUSTER | CLUSTERS | CNGROUP | CNGROUPS | CURRENT | COLLATION | COLUMNS
+    | BUILTIN | BASE | BEFORE | BASELINE | BIN | BLOCK
+    | CACHE | CACHED | CAST | CANCEL | CATALOG | CATALOGS | CEIL | CHAIN | CHANGE | CHARSET | CLEAN | CLEAR | CLUSTER | CLUSTERS | CNGROUP | CNGROUPS | CURRENT | COLLATION | COLUMNS
     | CUME_DIST | CUMULATIVE | COMMENT | COMMIT | COMMITTED | COMPUTE | CONNECTION | CONSISTENT | COSTS | COUNT
     | CONFIG | COMPACT
-    | DATA | DATE | DATACACHE | DATETIME | DAY | DAYS | DECOMMISSION | DIALECT | DISABLE | DISK | DISTRIBUTION | DUPLICATE | DYNAMIC | DISTRIBUTED | DICTIONARY | DICTIONARY_GET | DEALLOCATE
-    | ENABLE | END | ENGINE | ENGINES | ERRORS | EVENTS | EXECUTE | EXTERNAL | EXTRACT | EVERY | ENCLOSE | ESCAPE | EXPORT
+    | DATA | DATE | DATACACHE | DATETIME | DAY | DAYS | DECOMMISSION | DIALECT | DISABLE | DISK | DISKS | DISTRIBUTION | DUPLICATE | DYNAMIC | DISTRIBUTED | DICTIONARY | DICTIONARY_GET | DEALLOCATE
+    | ENABLE | ENCRYPT | END | ENGINE | ENGINES | ERRORS | EVENTS | EXECUTE | EXTERNAL | EXTRACT | EVERY | ENCLOSE | ESCAPE | EXPORT
     | FAILPOINT | FAILPOINTS | FIELDS | FILE | FILTER | FIRST | FLOOR | FOLLOWING | FORMAT | FN | FRONTEND | FRONTENDS | FOLLOWER | FREE
     | FUNCTIONS
     | GLOBAL | GRANTS | GROUP_CONCAT
@@ -3107,25 +3235,25 @@ nonReserved
     | IDENTIFIED | IMAGE | IMPERSONATE | INACTIVE | INCREMENTAL | INDEXES | INSTALL | INTEGRATION | INTEGRATIONS | INTERMEDIATE
     | INTERVAL | ISOLATION
     | JOB
-    | LABEL | LAST | LESS | LEVEL | LIST | LOCAL | LOCATION | LOGS | LOGICAL | LOW_PRIORITY | LOCK | LOCATIONS
-    | MANUAL | MAP | MAPPING | MAPPINGS | MASKING | MATCH | MAPPINGS | MATERIALIZED | MAX | META | MIN | MINUTE | MINUTES | MODE | MODIFY | MONTH | MERGE | MINUS | MULTIPLE
+    | LABEL | LAST | LESS | LEVEL | LIGHT | LIST | LOCAL | LOCATION | LOGS | LOGICAL | LOW_PRIORITY | LOCK | LOCATIONS
+    | MANUAL | MAP | MAPPING | MAPPINGS | MASKING | MATCH | MAPPINGS | MATERIALIZED | MAX | META | MIGRATIONS | MIN | MINUTE | MINUTES | MODE | MODIFY | MONTH | MERGE | MINUS | MULTIPLE
     | NAME | NAMES | NEGATIVE | NO | NODE | NODES | NONE | NULLS | NUMBER | NUMERIC
     | OBSERVER | OF | OFFSET | ONLY | OPTIMIZER | OPEN | OPERATE | OPTION | OVERWRITE | OFF
     | PARTITIONS | PASSWORD | PATH | PAUSE | PENDING | PERCENTILE_UNION | PIVOT | PLAN | PLUGIN | PLUGINS | POLICY | POLICIES
-    | PERCENT_RANK | PREDICATE | PRECEDING | PRIORITY | PROC | PROCESSLIST | PROFILE | PROFILELIST | PROVIDER | PROVIDERS | PRIVILEGES | PROBABILITY | PROPERTIES | PROPERTY | PIPE | PIPES
+    | PERCENT_RANK | PREDICATE | PRECEDING | PRIORITY | PROC | PROCESS | PROCESSLIST | PROFILE | PROFILELIST | PROVIDER | PROVIDERS | PRIVILEGES | PROBABILITY | PROPERTIES | PROPERTY | PIPE | PIPES
     | QUARTER | QUERY | QUERIES | QUEUE | QUOTA | QUALIFY
-    | REASON | REMOVE | REWRITE | RANDOM | RANK | RECOVER | REFRESH | REPAIR | REPEATABLE | REPLACE_IF_NOT_NULL | REPLICA | REPOSITORY
+    | REASON | RECYCLE | REMOVE | REWRITE | RANDOM | RANK | RECOVER | REFRESH | REPAIR | REPEATABLE | REPLACE_IF_NOT_NULL | REPLICA | REPOSITORY
     | REPOSITORIES
     | RESOURCE | RESOURCES | RESTORE | RESUME | RETAIN | RETENTION | RETURNS | RETRY | REVERT | ROLE | ROLES | ROLLUP | ROLLBACK | ROUTINE | ROW | RUNNING | RULE | RULES
-    | SAMPLE | SCHEDULE | SCHEDULER | SECOND | SECURITY | SEPARATOR | SERIALIZABLE |SEMI | SESSION | SETS | SIGNED | SNAPSHOT | SNAPSHOTS | SQLBLACKLIST | START
+    | SAMPLE | SCHEDULE | SCHEDULER | SECOND | SECURITY | SEPARATOR | SERIALIZABLE |SEMI | SESSION | SETS | SIGNED | SKEW | SNAPSHOT | SNAPSHOTS | SQL | SQLBLACKLIST | START
     | STREAM | SUM | STATUS | STOP | SKIP_HEADER | SWAP
     | STORAGE| STRING | STRUCT | STATS | SUBMIT | SUSPEND | SYNC | SYSTEM_TIME
-    | TABLES | TABLET | TABLETS | TAG | TASK | TEMPORARY | TIMESTAMP | TIMESTAMPADD | TIMESTAMPDIFF | THAN | TIME | TIMES | TRANSACTION | TRACE | TRANSLATE
+    | TABLES | TABLET | TABLETS | TAG | TASK | TASKS | TEMPORARY | TIMESTAMP | TIMESTAMPADD | TIMESTAMPDIFF | THAN | TIME | TIMES | TRANSACTION | TRACE | TRANSLATE | TRASH
     | TRIM_SPACE
     | TRIGGERS | TRUNCATE | TYPE | TYPES
     | UNBOUNDED | UNCOMMITTED | UNSET | UNINSTALL | USAGE | USER | USERS | UNLOCK
     | VALUE | VARBINARY | VARIABLES | VIEW | VIEWS | VERBOSE | VERSION | VOLUME | VOLUMES
-    | WARNINGS | WEEK | WHITELIST | WORK | WRITE  | WAREHOUSE | WAREHOUSES
+    | WARNINGS | WEEK | WHITELIST | WORK | WORKLOAD | WRITE  | WAREHOUSE | WAREHOUSES
     | YEAR
     | DOTDOTDOT | NGRAMBF | VECTOR
     | FIELD
