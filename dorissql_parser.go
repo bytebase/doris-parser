@@ -1,7 +1,6 @@
 // Code generated from DorisSQL.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // DorisSQL
-
 import (
 	"fmt"
 	"strconv"
@@ -6069,6 +6068,18 @@ func (s *SqlStatementsContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SqlStatementsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSqlStatements(s)
+	}
+}
+
+func (s *SqlStatementsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSqlStatements(s)
+	}
+}
+
 func (s *SqlStatementsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -6205,6 +6216,18 @@ func (s *SingleStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SingleStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SingleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSingleStatement(s)
+	}
+}
+
+func (s *SingleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSingleStatement(s)
+	}
 }
 
 func (s *SingleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -10817,6 +10840,18 @@ func (s *StatementContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *StatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterStatement(s)
+	}
+}
+
+func (s *StatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitStatement(s)
+	}
+}
+
 func (s *StatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -12777,6 +12812,18 @@ func (s *UseDatabaseStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *UseDatabaseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUseDatabaseStatement(s)
+	}
+}
+
+func (s *UseDatabaseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUseDatabaseStatement(s)
+	}
+}
+
 func (s *UseDatabaseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -12890,6 +12937,18 @@ func (s *UseCatalogStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *UseCatalogStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UseCatalogStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUseCatalogStatement(s)
+	}
+}
+
+func (s *UseCatalogStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUseCatalogStatement(s)
+	}
 }
 
 func (s *UseCatalogStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -13010,6 +13069,18 @@ func (s *SetCatalogStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SetCatalogStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SetCatalogStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetCatalogStatement(s)
+	}
+}
+
+func (s *SetCatalogStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetCatalogStatement(s)
+	}
 }
 
 func (s *SetCatalogStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -13219,6 +13290,18 @@ func (s *ShowDatabasesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowDatabasesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowDatabasesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDatabasesStatement(s)
+	}
+}
+
+func (s *ShowDatabasesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDatabasesStatement(s)
+	}
 }
 
 func (s *ShowDatabasesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -13537,6 +13620,18 @@ func (s *AlterDbQuotaStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AlterDbQuotaStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterDbQuotaStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterDbQuotaStatement(s)
+	}
+}
+
+func (s *AlterDbQuotaStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterDbQuotaStatement(s)
+	}
 }
 
 func (s *AlterDbQuotaStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -13872,6 +13967,18 @@ func (s *CreateDbStatementContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateDbStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateDbStatement(s)
+	}
+}
+
+func (s *CreateDbStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateDbStatement(s)
+	}
+}
+
 func (s *CreateDbStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -14164,6 +14271,18 @@ func (s *DropDbStatementContext) ToStringTree(ruleNames []string, recog antlr.Re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropDbStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropDbStatement(s)
+	}
+}
+
+func (s *DropDbStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropDbStatement(s)
+	}
+}
+
 func (s *DropDbStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -14377,6 +14496,18 @@ func (s *ShowCreateDbStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowCreateDbStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateDbStatement(s)
+	}
+}
+
+func (s *ShowCreateDbStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateDbStatement(s)
+	}
+}
+
 func (s *ShowCreateDbStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -14549,6 +14680,18 @@ func (s *AlterDatabaseRenameStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterDatabaseRenameStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterDatabaseRenameStatement(s)
+	}
+}
+
+func (s *AlterDatabaseRenameStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterDatabaseRenameStatement(s)
+	}
+}
+
 func (s *AlterDatabaseRenameStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -14694,6 +14837,18 @@ func (s *RecoverDbStmtContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RecoverDbStmtContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRecoverDbStmt(s)
+	}
+}
+
+func (s *RecoverDbStmtContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRecoverDbStmt(s)
+	}
+}
+
 func (s *RecoverDbStmtContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -14830,6 +14985,18 @@ func (s *ShowDataStmtContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowDataStmtContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowDataStmtContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDataStmt(s)
+	}
+}
+
+func (s *ShowDataStmtContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDataStmt(s)
+	}
 }
 
 func (s *ShowDataStmtContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -15024,6 +15191,18 @@ func (s *ShowDataDistributionStmtContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowDataDistributionStmtContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowDataDistributionStmtContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDataDistributionStmt(s)
+	}
+}
+
+func (s *ShowDataDistributionStmtContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDataDistributionStmt(s)
+	}
 }
 
 func (s *ShowDataDistributionStmtContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -15465,6 +15644,18 @@ func (s *CreateTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateTableStatement(s)
+	}
+}
+
+func (s *CreateTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateTableStatement(s)
+	}
 }
 
 func (s *CreateTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -15996,6 +16187,18 @@ func (s *ColumnDescContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ColumnDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnDesc(s)
+	}
+}
+
+func (s *ColumnDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnDesc(s)
+	}
+}
+
 func (s *ColumnDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -16234,6 +16437,18 @@ func (s *CharsetNameContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CharsetNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCharsetName(s)
+	}
+}
+
+func (s *CharsetNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCharsetName(s)
+	}
+}
+
 func (s *CharsetNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -16435,6 +16650,18 @@ func (s *DefaultDescContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DefaultDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDefaultDesc(s)
+	}
+}
+
+func (s *DefaultDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDefaultDesc(s)
+	}
+}
+
 func (s *DefaultDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -16619,6 +16846,18 @@ func (s *GeneratedColumnDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *GeneratedColumnDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *GeneratedColumnDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGeneratedColumnDesc(s)
+	}
+}
+
+func (s *GeneratedColumnDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGeneratedColumnDesc(s)
+	}
 }
 
 func (s *GeneratedColumnDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -16815,6 +17054,18 @@ func (s *IndexDescContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *IndexDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIndexDesc(s)
+	}
+}
+
+func (s *IndexDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIndexDesc(s)
+	}
+}
+
 func (s *IndexDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -16986,6 +17237,18 @@ func (s *EngineDescContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *EngineDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterEngineDesc(s)
+	}
+}
+
+func (s *EngineDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitEngineDesc(s)
+	}
+}
+
 func (s *EngineDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -17132,6 +17395,18 @@ func (s *CharsetDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CharsetDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CharsetDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCharsetDesc(s)
+	}
+}
+
+func (s *CharsetDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCharsetDesc(s)
+	}
 }
 
 func (s *CharsetDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -17346,6 +17621,18 @@ func (s *CollateDescContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CollateDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCollateDesc(s)
+	}
+}
+
+func (s *CollateDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCollateDesc(s)
+	}
+}
+
 func (s *CollateDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -17519,6 +17806,18 @@ func (s *KeyDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *KeyDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterKeyDesc(s)
+	}
+}
+
+func (s *KeyDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitKeyDesc(s)
+	}
+}
+
 func (s *KeyDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -17652,6 +17951,18 @@ func (s *OrderByDescContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *OrderByDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOrderByDesc(s)
+	}
+}
+
+func (s *OrderByDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOrderByDesc(s)
+	}
+}
+
 func (s *OrderByDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -17761,6 +18072,18 @@ func (s *ColumnNullableContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ColumnNullableContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ColumnNullableContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnNullable(s)
+	}
+}
+
+func (s *ColumnNullableContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnNullable(s)
+	}
 }
 
 func (s *ColumnNullableContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -17916,6 +18239,18 @@ func (s *TypeWithNullableContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TypeWithNullableContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TypeWithNullableContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTypeWithNullable(s)
+	}
+}
+
+func (s *TypeWithNullableContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTypeWithNullable(s)
+	}
 }
 
 func (s *TypeWithNullableContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -18077,6 +18412,18 @@ func (s *AggStateDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AggStateDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AggStateDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAggStateDesc(s)
+	}
+}
+
+func (s *AggStateDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAggStateDesc(s)
+	}
 }
 
 func (s *AggStateDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -18269,6 +18616,18 @@ func (s *AggDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AggDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AggDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAggDesc(s)
+	}
+}
+
+func (s *AggDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAggDesc(s)
+	}
 }
 
 func (s *AggDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -18502,6 +18861,18 @@ func (s *RollupDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RollupDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RollupDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRollupDesc(s)
+	}
+}
+
+func (s *RollupDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRollupDesc(s)
+	}
 }
 
 func (s *RollupDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -18739,6 +19110,18 @@ func (s *RollupItemContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RollupItemContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRollupItem(s)
+	}
+}
+
+func (s *RollupItemContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRollupItem(s)
+	}
+}
+
 func (s *RollupItemContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -18902,6 +19285,18 @@ func (s *DupKeysContext) ToStringTree(ruleNames []string, recog antlr.Recognizer
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DupKeysContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDupKeys(s)
+	}
+}
+
+func (s *DupKeysContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDupKeys(s)
+	}
+}
+
 func (s *DupKeysContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -19025,6 +19420,18 @@ func (s *FromRollupContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *FromRollupContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterFromRollup(s)
+	}
+}
+
+func (s *FromRollupContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitFromRollup(s)
+	}
+}
+
 func (s *FromRollupContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -19126,6 +19533,18 @@ func (s *OrReplaceContext) GetRuleContext() antlr.RuleContext {
 
 func (s *OrReplaceContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *OrReplaceContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOrReplace(s)
+	}
+}
+
+func (s *OrReplaceContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOrReplace(s)
+	}
 }
 
 func (s *OrReplaceContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -19250,6 +19669,18 @@ func (s *IfNotExistsContext) GetRuleContext() antlr.RuleContext {
 
 func (s *IfNotExistsContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *IfNotExistsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIfNotExists(s)
+	}
+}
+
+func (s *IfNotExistsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIfNotExists(s)
+	}
 }
 
 func (s *IfNotExistsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -19624,6 +20055,18 @@ func (s *CreateTableAsSelectStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *CreateTableAsSelectStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateTableAsSelectStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateTableAsSelectStatement(s)
+	}
+}
+
+func (s *CreateTableAsSelectStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateTableAsSelectStatement(s)
+	}
 }
 
 func (s *CreateTableAsSelectStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -20066,6 +20509,18 @@ func (s *DropTableStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropTableStatement(s)
+	}
+}
+
+func (s *DropTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropTableStatement(s)
+	}
+}
+
 func (s *DropTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -20271,6 +20726,18 @@ func (s *CleanTemporaryTableStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *CleanTemporaryTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CleanTemporaryTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCleanTemporaryTableStatement(s)
+	}
+}
+
+func (s *CleanTemporaryTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCleanTemporaryTableStatement(s)
+	}
 }
 
 func (s *CleanTemporaryTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -20567,6 +21034,18 @@ func (s *AlterTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AlterTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterTableStatement(s)
+	}
+}
+
+func (s *AlterTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterTableStatement(s)
+	}
 }
 
 func (s *AlterTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -20986,6 +21465,18 @@ func (s *CreateIndexStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateIndexStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateIndexStatement(s)
+	}
+}
+
+func (s *CreateIndexStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateIndexStatement(s)
+	}
+}
+
 func (s *CreateIndexStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -21210,6 +21701,18 @@ func (s *DropIndexStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropIndexStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropIndexStatement(s)
+	}
+}
+
+func (s *DropIndexStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropIndexStatement(s)
+	}
+}
+
 func (s *DropIndexStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -21349,6 +21852,18 @@ func (s *IndexTypeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *IndexTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *IndexTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIndexType(s)
+	}
+}
+
+func (s *IndexTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIndexType(s)
+	}
 }
 
 func (s *IndexTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -21559,6 +22074,18 @@ func (s *ShowTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTableStatement(s)
+	}
+}
+
+func (s *ShowTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTableStatement(s)
+	}
 }
 
 func (s *ShowTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -21855,6 +22382,18 @@ func (s *ShowTemporaryTablesStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowTemporaryTablesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTemporaryTablesStatement(s)
+	}
+}
+
+func (s *ShowTemporaryTablesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTemporaryTablesStatement(s)
+	}
+}
+
 func (s *ShowTemporaryTablesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -22082,6 +22621,18 @@ func (s *ShowCreateTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowCreateTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCreateTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateTableStatement(s)
+	}
+}
+
+func (s *ShowCreateTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateTableStatement(s)
+	}
 }
 
 func (s *ShowCreateTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -22395,6 +22946,18 @@ func (s *ShowColumnStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowColumnStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowColumnStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowColumnStatement(s)
+	}
+}
+
+func (s *ShowColumnStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowColumnStatement(s)
+	}
 }
 
 func (s *ShowColumnStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -22714,6 +23277,18 @@ func (s *ShowTableStatusStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowTableStatusStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTableStatusStatement(s)
+	}
+}
+
+func (s *ShowTableStatusStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTableStatusStatement(s)
+	}
+}
+
 func (s *ShowTableStatusStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -22968,6 +23543,18 @@ func (s *RefreshTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RefreshTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RefreshTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRefreshTableStatement(s)
+	}
+}
+
+func (s *RefreshTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRefreshTableStatement(s)
+	}
 }
 
 func (s *RefreshTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -23315,6 +23902,18 @@ func (s *ShowAlterStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowAlterStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowAlterStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowAlterStatement(s)
+	}
+}
+
+func (s *ShowAlterStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowAlterStatement(s)
+	}
 }
 
 func (s *ShowAlterStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -23791,6 +24390,18 @@ func (s *DescTableStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DescTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDescTableStatement(s)
+	}
+}
+
+func (s *DescTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDescTableStatement(s)
+	}
+}
+
 func (s *DescTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -24069,6 +24680,18 @@ func (s *CreateTableLikeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateTableLikeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateTableLikeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateTableLikeStatement(s)
+	}
+}
+
+func (s *CreateTableLikeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateTableLikeStatement(s)
+	}
 }
 
 func (s *CreateTableLikeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -24393,6 +25016,18 @@ func (s *ShowIndexStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowIndexStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowIndexStatement(s)
+	}
+}
+
+func (s *ShowIndexStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowIndexStatement(s)
+	}
+}
+
 func (s *ShowIndexStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -24570,6 +25205,18 @@ func (s *RecoverTableStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RecoverTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRecoverTableStatement(s)
+	}
+}
+
+func (s *RecoverTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRecoverTableStatement(s)
+	}
+}
+
 func (s *RecoverTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -24713,6 +25360,18 @@ func (s *TruncateTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TruncateTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TruncateTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTruncateTableStatement(s)
+	}
+}
+
+func (s *TruncateTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTruncateTableStatement(s)
+	}
 }
 
 func (s *TruncateTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -24902,6 +25561,18 @@ func (s *CancelAlterTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CancelAlterTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CancelAlterTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelAlterTableStatement(s)
+	}
+}
+
+func (s *CancelAlterTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelAlterTableStatement(s)
+	}
 }
 
 func (s *CancelAlterTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -25309,6 +25980,18 @@ func (s *ShowPartitionsStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowPartitionsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPartitionsStatement(s)
+	}
+}
+
+func (s *ShowPartitionsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPartitionsStatement(s)
+	}
+}
+
 func (s *ShowPartitionsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -25595,6 +26278,18 @@ func (s *RecoverPartitionStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RecoverPartitionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRecoverPartitionStatement(s)
+	}
+}
+
+func (s *RecoverPartitionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRecoverPartitionStatement(s)
+	}
+}
+
 func (s *RecoverPartitionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -25858,6 +26553,18 @@ func (s *CreateViewStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateViewStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateViewStatement(s)
+	}
+}
+
+func (s *CreateViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateViewStatement(s)
+	}
 }
 
 func (s *CreateViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -26280,6 +26987,18 @@ func (s *AlterViewStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterViewStatement(s)
+	}
+}
+
+func (s *AlterViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterViewStatement(s)
+	}
+}
+
 func (s *AlterViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -26633,6 +27352,18 @@ func (s *DropViewStatementContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropViewStatement(s)
+	}
+}
+
+func (s *DropViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropViewStatement(s)
+	}
+}
+
 func (s *DropViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -26805,6 +27536,18 @@ func (s *ColumnNameWithCommentContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ColumnNameWithCommentContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ColumnNameWithCommentContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnNameWithComment(s)
+	}
+}
+
+func (s *ColumnNameWithCommentContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnNameWithComment(s)
+	}
 }
 
 func (s *ColumnNameWithCommentContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -27037,6 +27780,18 @@ func (s *SubmitTaskStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SubmitTaskStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubmitTaskStatement(s)
+	}
+}
+
+func (s *SubmitTaskStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubmitTaskStatement(s)
+	}
+}
+
 func (s *SubmitTaskStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -27239,6 +27994,18 @@ func (s *TaskClauseContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TaskClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTaskClause(s)
+	}
+}
+
+func (s *TaskClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTaskClause(s)
+	}
+}
+
 func (s *TaskClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -27374,6 +28141,18 @@ func (s *DropTaskStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropTaskStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropTaskStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropTaskStatement(s)
+	}
+}
+
+func (s *DropTaskStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropTaskStatement(s)
+	}
 }
 
 func (s *DropTaskStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -27544,6 +28323,18 @@ func (s *TaskScheduleDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TaskScheduleDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TaskScheduleDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTaskScheduleDesc(s)
+	}
+}
+
+func (s *TaskScheduleDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTaskScheduleDesc(s)
+	}
 }
 
 func (s *TaskScheduleDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -27929,6 +28720,18 @@ func (s *CreateMaterializedViewStatementContext) ToStringTree(ruleNames []string
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateMaterializedViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateMaterializedViewStatement(s)
+	}
+}
+
+func (s *CreateMaterializedViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateMaterializedViewStatement(s)
+	}
+}
+
 func (s *CreateMaterializedViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -28261,6 +29064,18 @@ func (s *MvPartitionExprsContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *MvPartitionExprsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMvPartitionExprs(s)
+	}
+}
+
+func (s *MvPartitionExprsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMvPartitionExprs(s)
+	}
+}
+
 func (s *MvPartitionExprsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -28504,6 +29319,18 @@ func (s *MaterializedViewDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *MaterializedViewDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *MaterializedViewDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMaterializedViewDesc(s)
+	}
+}
+
+func (s *MaterializedViewDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMaterializedViewDesc(s)
+	}
 }
 
 func (s *MaterializedViewDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -28756,6 +29583,18 @@ func (s *ShowMaterializedViewsStatementContext) ToStringTree(ruleNames []string,
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowMaterializedViewsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowMaterializedViewsStatement(s)
+	}
+}
+
+func (s *ShowMaterializedViewsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowMaterializedViewsStatement(s)
+	}
+}
+
 func (s *ShowMaterializedViewsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -28983,6 +29822,18 @@ func (s *DropMaterializedViewStatementContext) GetRuleContext() antlr.RuleContex
 
 func (s *DropMaterializedViewStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropMaterializedViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropMaterializedViewStatement(s)
+	}
+}
+
+func (s *DropMaterializedViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropMaterializedViewStatement(s)
+	}
 }
 
 func (s *DropMaterializedViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -29251,6 +30102,18 @@ func (s *AlterMaterializedViewStatementContext) GetRuleContext() antlr.RuleConte
 
 func (s *AlterMaterializedViewStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterMaterializedViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterMaterializedViewStatement(s)
+	}
+}
+
+func (s *AlterMaterializedViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterMaterializedViewStatement(s)
+	}
 }
 
 func (s *AlterMaterializedViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -29583,6 +30446,18 @@ func (s *RefreshMaterializedViewStatementContext) ToStringTree(ruleNames []strin
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RefreshMaterializedViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRefreshMaterializedViewStatement(s)
+	}
+}
+
+func (s *RefreshMaterializedViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRefreshMaterializedViewStatement(s)
+	}
+}
+
 func (s *RefreshMaterializedViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -29886,6 +30761,18 @@ func (s *CancelRefreshMaterializedViewStatementContext) ToStringTree(ruleNames [
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelRefreshMaterializedViewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelRefreshMaterializedViewStatement(s)
+	}
+}
+
+func (s *CancelRefreshMaterializedViewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelRefreshMaterializedViewStatement(s)
+	}
+}
+
 func (s *CancelRefreshMaterializedViewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -30071,6 +30958,18 @@ func (s *AdminSetConfigStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AdminSetConfigStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminSetConfigStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminSetConfigStatement(s)
+	}
+}
+
+func (s *AdminSetConfigStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminSetConfigStatement(s)
+	}
 }
 
 func (s *AdminSetConfigStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -30271,6 +31170,18 @@ func (s *AdminSetReplicaStatusStatementContext) ToStringTree(ruleNames []string,
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AdminSetReplicaStatusStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminSetReplicaStatusStatement(s)
+	}
+}
+
+func (s *AdminSetReplicaStatusStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminSetReplicaStatusStatement(s)
+	}
+}
+
 func (s *AdminSetReplicaStatusStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -30439,6 +31350,18 @@ func (s *AdminShowConfigStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AdminShowConfigStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminShowConfigStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminShowConfigStatement(s)
+	}
+}
+
+func (s *AdminShowConfigStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminShowConfigStatement(s)
+	}
 }
 
 func (s *AdminShowConfigStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -30639,6 +31562,18 @@ func (s *AdminShowReplicaDistributionStatementContext) GetRuleContext() antlr.Ru
 
 func (s *AdminShowReplicaDistributionStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminShowReplicaDistributionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminShowReplicaDistributionStatement(s)
+	}
+}
+
+func (s *AdminShowReplicaDistributionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminShowReplicaDistributionStatement(s)
+	}
 }
 
 func (s *AdminShowReplicaDistributionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -30874,6 +31809,18 @@ func (s *AdminShowReplicaStatusStatementContext) ToStringTree(ruleNames []string
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AdminShowReplicaStatusStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminShowReplicaStatusStatement(s)
+	}
+}
+
+func (s *AdminShowReplicaStatusStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminShowReplicaStatusStatement(s)
+	}
+}
+
 func (s *AdminShowReplicaStatusStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -31089,6 +32036,18 @@ func (s *AdminRepairTableStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AdminRepairTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminRepairTableStatement(s)
+	}
+}
+
+func (s *AdminRepairTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminRepairTableStatement(s)
+	}
+}
+
 func (s *AdminRepairTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -31266,6 +32225,18 @@ func (s *AdminCancelRepairTableStatementContext) GetRuleContext() antlr.RuleCont
 
 func (s *AdminCancelRepairTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminCancelRepairTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminCancelRepairTableStatement(s)
+	}
+}
+
+func (s *AdminCancelRepairTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminCancelRepairTableStatement(s)
+	}
 }
 
 func (s *AdminCancelRepairTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -31448,6 +32419,18 @@ func (s *AdminCheckTabletsStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AdminCheckTabletsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminCheckTabletsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminCheckTabletsStatement(s)
+	}
+}
+
+func (s *AdminCheckTabletsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminCheckTabletsStatement(s)
+	}
 }
 
 func (s *AdminCheckTabletsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -31688,6 +32671,18 @@ func (s *AdminSetPartitionVersionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AdminSetPartitionVersionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminSetPartitionVersionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminSetPartitionVersion(s)
+	}
+}
+
+func (s *AdminSetPartitionVersionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminSetPartitionVersion(s)
+	}
 }
 
 func (s *AdminSetPartitionVersionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -31942,6 +32937,18 @@ func (s *KillStatementContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *KillStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterKillStatement(s)
+	}
+}
+
+func (s *KillStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitKillStatement(s)
+	}
+}
+
 func (s *KillStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -32112,6 +33119,18 @@ func (s *SyncStatementContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SyncStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSyncStatement(s)
+	}
+}
+
+func (s *SyncStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSyncStatement(s)
+	}
+}
+
 func (s *SyncStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -32267,6 +33286,18 @@ func (s *AdminSetAutomatedSnapshotOnStatementContext) GetRuleContext() antlr.Rul
 
 func (s *AdminSetAutomatedSnapshotOnStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AdminSetAutomatedSnapshotOnStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminSetAutomatedSnapshotOnStatement(s)
+	}
+}
+
+func (s *AdminSetAutomatedSnapshotOnStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminSetAutomatedSnapshotOnStatement(s)
+	}
 }
 
 func (s *AdminSetAutomatedSnapshotOnStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -32464,6 +33495,18 @@ func (s *AdminSetAutomatedSnapshotOffStatementContext) ToStringTree(ruleNames []
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AdminSetAutomatedSnapshotOffStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAdminSetAutomatedSnapshotOffStatement(s)
+	}
+}
+
+func (s *AdminSetAutomatedSnapshotOffStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAdminSetAutomatedSnapshotOffStatement(s)
+	}
+}
+
 func (s *AdminSetAutomatedSnapshotOffStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -32618,6 +33661,18 @@ func (s *AlterSystemStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AlterSystemStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterSystemStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterSystemStatement(s)
+	}
+}
+
+func (s *AlterSystemStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterSystemStatement(s)
+	}
 }
 
 func (s *AlterSystemStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -32779,6 +33834,18 @@ func (s *CancelAlterSystemStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelAlterSystemStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelAlterSystemStatement(s)
+	}
+}
+
+func (s *CancelAlterSystemStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelAlterSystemStatement(s)
+	}
+}
+
 func (s *CancelAlterSystemStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -32931,6 +33998,18 @@ func (s *ShowComputeNodesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowComputeNodesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowComputeNodesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowComputeNodesStatement(s)
+	}
+}
+
+func (s *ShowComputeNodesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowComputeNodesStatement(s)
+	}
 }
 
 func (s *ShowComputeNodesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -33132,6 +34211,18 @@ func (s *CreateExternalCatalogStatementContext) GetRuleContext() antlr.RuleConte
 
 func (s *CreateExternalCatalogStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateExternalCatalogStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateExternalCatalogStatement(s)
+	}
+}
+
+func (s *CreateExternalCatalogStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateExternalCatalogStatement(s)
+	}
 }
 
 func (s *CreateExternalCatalogStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -33347,6 +34438,18 @@ func (s *ShowCreateExternalCatalogStatementContext) ToStringTree(ruleNames []str
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowCreateExternalCatalogStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateExternalCatalogStatement(s)
+	}
+}
+
+func (s *ShowCreateExternalCatalogStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateExternalCatalogStatement(s)
+	}
+}
+
 func (s *ShowCreateExternalCatalogStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -33509,6 +34612,18 @@ func (s *DropExternalCatalogStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *DropExternalCatalogStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropExternalCatalogStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropExternalCatalogStatement(s)
+	}
+}
+
+func (s *DropExternalCatalogStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropExternalCatalogStatement(s)
+	}
 }
 
 func (s *DropExternalCatalogStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -33684,6 +34799,18 @@ func (s *ShowCatalogsStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowCatalogsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCatalogsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCatalogsStatement(s)
+	}
+}
+
+func (s *ShowCatalogsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCatalogsStatement(s)
+	}
 }
 
 func (s *ShowCatalogsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -33867,6 +34994,18 @@ func (s *AlterCatalogStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AlterCatalogStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterCatalogStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterCatalogStatement(s)
+	}
+}
+
+func (s *AlterCatalogStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterCatalogStatement(s)
+	}
 }
 
 func (s *AlterCatalogStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -34107,6 +35246,18 @@ func (s *CreateStorageVolumeStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateStorageVolumeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateStorageVolumeStatement(s)
+	}
+}
+
+func (s *CreateStorageVolumeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateStorageVolumeStatement(s)
+	}
+}
+
 func (s *CreateStorageVolumeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -34318,6 +35469,18 @@ func (s *TypeDescContext) ToStringTree(ruleNames []string, recog antlr.Recognize
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TypeDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTypeDesc(s)
+	}
+}
+
+func (s *TypeDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTypeDesc(s)
+	}
+}
+
 func (s *TypeDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -34444,6 +35607,18 @@ func (s *LocationsDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *LocationsDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *LocationsDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLocationsDesc(s)
+	}
+}
+
+func (s *LocationsDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLocationsDesc(s)
+	}
 }
 
 func (s *LocationsDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -34593,6 +35768,18 @@ func (s *ShowStorageVolumesStatementContext) GetRuleContext() antlr.RuleContext 
 
 func (s *ShowStorageVolumesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowStorageVolumesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowStorageVolumesStatement(s)
+	}
+}
+
+func (s *ShowStorageVolumesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowStorageVolumesStatement(s)
+	}
 }
 
 func (s *ShowStorageVolumesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -34782,6 +35969,18 @@ func (s *DropStorageVolumeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropStorageVolumeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropStorageVolumeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropStorageVolumeStatement(s)
+	}
+}
+
+func (s *DropStorageVolumeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropStorageVolumeStatement(s)
+	}
 }
 
 func (s *DropStorageVolumeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -34999,6 +36198,18 @@ func (s *AlterStorageVolumeStatementContext) ToStringTree(ruleNames []string, re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterStorageVolumeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterStorageVolumeStatement(s)
+	}
+}
+
+func (s *AlterStorageVolumeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterStorageVolumeStatement(s)
+	}
+}
+
 func (s *AlterStorageVolumeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -35176,6 +36387,18 @@ func (s *AlterStorageVolumeClauseContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterStorageVolumeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterStorageVolumeClause(s)
+	}
+}
+
+func (s *AlterStorageVolumeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterStorageVolumeClause(s)
+	}
+}
+
 func (s *AlterStorageVolumeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -35303,6 +36526,18 @@ func (s *ModifyStorageVolumePropertiesClauseContext) ToStringTree(ruleNames []st
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ModifyStorageVolumePropertiesClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyStorageVolumePropertiesClause(s)
+	}
+}
+
+func (s *ModifyStorageVolumePropertiesClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyStorageVolumePropertiesClause(s)
+	}
+}
+
 func (s *ModifyStorageVolumePropertiesClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -35421,6 +36656,18 @@ func (s *ModifyStorageVolumeCommentClauseContext) GetRuleContext() antlr.RuleCon
 
 func (s *ModifyStorageVolumeCommentClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ModifyStorageVolumeCommentClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyStorageVolumeCommentClause(s)
+	}
+}
+
+func (s *ModifyStorageVolumeCommentClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyStorageVolumeCommentClause(s)
+	}
 }
 
 func (s *ModifyStorageVolumeCommentClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -35559,6 +36806,18 @@ func (s *DescStorageVolumeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DescStorageVolumeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DescStorageVolumeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDescStorageVolumeStatement(s)
+	}
+}
+
+func (s *DescStorageVolumeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDescStorageVolumeStatement(s)
+	}
 }
 
 func (s *DescStorageVolumeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -35715,6 +36974,18 @@ func (s *SetDefaultStorageVolumeStatementContext) GetRuleContext() antlr.RuleCon
 
 func (s *SetDefaultStorageVolumeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SetDefaultStorageVolumeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetDefaultStorageVolumeStatement(s)
+	}
+}
+
+func (s *SetDefaultStorageVolumeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetDefaultStorageVolumeStatement(s)
+	}
 }
 
 func (s *SetDefaultStorageVolumeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -35965,6 +37236,18 @@ func (s *UpdateFailPointStatusStatementContext) GetRuleContext() antlr.RuleConte
 
 func (s *UpdateFailPointStatusStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UpdateFailPointStatusStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUpdateFailPointStatusStatement(s)
+	}
+}
+
+func (s *UpdateFailPointStatusStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUpdateFailPointStatusStatement(s)
+	}
 }
 
 func (s *UpdateFailPointStatusStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -36284,6 +37567,18 @@ func (s *ShowFailPointStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowFailPointStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowFailPointStatement(s)
+	}
+}
+
+func (s *ShowFailPointStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowFailPointStatement(s)
+	}
+}
+
 func (s *ShowFailPointStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -36547,6 +37842,18 @@ func (s *CreateDictionaryStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateDictionaryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateDictionaryStatement(s)
+	}
+}
+
+func (s *CreateDictionaryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateDictionaryStatement(s)
+	}
+}
+
 func (s *CreateDictionaryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -36756,6 +38063,18 @@ func (s *DropDictionaryStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropDictionaryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropDictionaryStatement(s)
+	}
+}
+
+func (s *DropDictionaryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropDictionaryStatement(s)
+	}
+}
+
 func (s *DropDictionaryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -36904,6 +38223,18 @@ func (s *RefreshDictionaryStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RefreshDictionaryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRefreshDictionaryStatement(s)
+	}
+}
+
+func (s *RefreshDictionaryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRefreshDictionaryStatement(s)
+	}
+}
+
 func (s *RefreshDictionaryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -37030,6 +38361,18 @@ func (s *ShowDictionaryStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowDictionaryStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowDictionaryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDictionaryStatement(s)
+	}
+}
+
+func (s *ShowDictionaryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDictionaryStatement(s)
+	}
 }
 
 func (s *ShowDictionaryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -37177,6 +38520,18 @@ func (s *CancelRefreshDictionaryStatementContext) ToStringTree(ruleNames []strin
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelRefreshDictionaryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelRefreshDictionaryStatement(s)
+	}
+}
+
+func (s *CancelRefreshDictionaryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelRefreshDictionaryStatement(s)
+	}
+}
+
 func (s *CancelRefreshDictionaryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -37311,6 +38666,18 @@ func (s *DictionaryColumnDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DictionaryColumnDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DictionaryColumnDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDictionaryColumnDesc(s)
+	}
+}
+
+func (s *DictionaryColumnDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDictionaryColumnDesc(s)
+	}
 }
 
 func (s *DictionaryColumnDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -37448,6 +38815,18 @@ func (s *DictionaryNameContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DictionaryNameContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DictionaryNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDictionaryName(s)
+	}
+}
+
+func (s *DictionaryNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDictionaryName(s)
+	}
 }
 
 func (s *DictionaryNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -38351,6 +39730,18 @@ func (s *AlterClauseContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterClause(s)
+	}
+}
+
+func (s *AlterClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterClause(s)
+	}
+}
+
 func (s *AlterClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -38809,6 +40200,18 @@ func (s *AddFrontendClauseContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AddFrontendClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddFrontendClause(s)
+	}
+}
+
+func (s *AddFrontendClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddFrontendClause(s)
+	}
+}
+
 func (s *AddFrontendClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -38945,6 +40348,18 @@ func (s *DropFrontendClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropFrontendClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropFrontendClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropFrontendClause(s)
+	}
+}
+
+func (s *DropFrontendClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropFrontendClause(s)
+	}
 }
 
 func (s *DropFrontendClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -39114,6 +40529,18 @@ func (s *ModifyFrontendHostClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ModifyFrontendHostClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ModifyFrontendHostClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyFrontendHostClause(s)
+	}
+}
+
+func (s *ModifyFrontendHostClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyFrontendHostClause(s)
+	}
 }
 
 func (s *ModifyFrontendHostClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -39370,6 +40797,18 @@ func (s *AddBackendClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AddBackendClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AddBackendClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddBackendClause(s)
+	}
+}
+
+func (s *AddBackendClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddBackendClause(s)
+	}
 }
 
 func (s *AddBackendClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -39712,6 +41151,18 @@ func (s *DropBackendClauseContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropBackendClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropBackendClause(s)
+	}
+}
+
+func (s *DropBackendClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropBackendClause(s)
+	}
+}
+
 func (s *DropBackendClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -39981,6 +41432,18 @@ func (s *DecommissionBackendClauseContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DecommissionBackendClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDecommissionBackendClause(s)
+	}
+}
+
+func (s *DecommissionBackendClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDecommissionBackendClause(s)
+	}
+}
+
 func (s *DecommissionBackendClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -40202,6 +41665,18 @@ func (s *ModifyBackendClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ModifyBackendClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ModifyBackendClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyBackendClause(s)
+	}
+}
+
+func (s *ModifyBackendClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyBackendClause(s)
+	}
 }
 
 func (s *ModifyBackendClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -40514,6 +41989,18 @@ func (s *AddComputeNodeClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AddComputeNodeClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AddComputeNodeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddComputeNodeClause(s)
+	}
+}
+
+func (s *AddComputeNodeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddComputeNodeClause(s)
+	}
 }
 
 func (s *AddComputeNodeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -40868,6 +42355,18 @@ func (s *DropComputeNodeClauseContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropComputeNodeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropComputeNodeClause(s)
+	}
+}
+
+func (s *DropComputeNodeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropComputeNodeClause(s)
+	}
+}
+
 func (s *DropComputeNodeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -41154,6 +42653,18 @@ func (s *ModifyBrokerClauseContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ModifyBrokerClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyBrokerClause(s)
+	}
+}
+
+func (s *ModifyBrokerClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyBrokerClause(s)
+	}
+}
+
 func (s *ModifyBrokerClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -41438,6 +42949,18 @@ func (s *AlterLoadErrorUrlClauseContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterLoadErrorUrlClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterLoadErrorUrlClause(s)
+	}
+}
+
+func (s *AlterLoadErrorUrlClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterLoadErrorUrlClause(s)
+	}
+}
+
 func (s *AlterLoadErrorUrlClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -41577,6 +43100,18 @@ func (s *CreateImageClauseContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateImageClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateImageClause(s)
+	}
+}
+
+func (s *CreateImageClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateImageClause(s)
+	}
+}
+
 func (s *CreateImageClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -41692,6 +43227,18 @@ func (s *CleanTabletSchedQClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CleanTabletSchedQClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CleanTabletSchedQClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCleanTabletSchedQClause(s)
+	}
+}
+
+func (s *CleanTabletSchedQClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCleanTabletSchedQClause(s)
+	}
 }
 
 func (s *CleanTabletSchedQClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -41868,6 +43415,18 @@ func (s *DecommissionDiskClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DecommissionDiskClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DecommissionDiskClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDecommissionDiskClause(s)
+	}
+}
+
+func (s *DecommissionDiskClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDecommissionDiskClause(s)
+	}
 }
 
 func (s *DecommissionDiskClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -42087,6 +43646,18 @@ func (s *CancelDecommissionDiskClauseContext) GetRuleContext() antlr.RuleContext
 
 func (s *CancelDecommissionDiskClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CancelDecommissionDiskClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelDecommissionDiskClause(s)
+	}
+}
+
+func (s *CancelDecommissionDiskClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelDecommissionDiskClause(s)
+	}
 }
 
 func (s *CancelDecommissionDiskClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -42311,6 +43882,18 @@ func (s *DisableDiskClauseContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DisableDiskClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDisableDiskClause(s)
+	}
+}
+
+func (s *DisableDiskClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDisableDiskClause(s)
+	}
+}
+
 func (s *DisableDiskClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -42528,6 +44111,18 @@ func (s *CancelDisableDiskClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CancelDisableDiskClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CancelDisableDiskClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelDisableDiskClause(s)
+	}
+}
+
+func (s *CancelDisableDiskClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelDisableDiskClause(s)
+	}
 }
 
 func (s *CancelDisableDiskClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -42795,6 +44390,18 @@ func (s *CreateIndexClauseContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateIndexClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateIndexClause(s)
+	}
+}
+
+func (s *CreateIndexClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateIndexClause(s)
+	}
+}
+
 func (s *CreateIndexClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -42985,6 +44592,18 @@ func (s *DropIndexClauseContext) ToStringTree(ruleNames []string, recog antlr.Re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropIndexClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropIndexClause(s)
+	}
+}
+
+func (s *DropIndexClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropIndexClause(s)
+	}
+}
+
 func (s *DropIndexClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -43111,6 +44730,18 @@ func (s *TableRenameClauseContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TableRenameClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTableRenameClause(s)
+	}
+}
+
+func (s *TableRenameClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTableRenameClause(s)
+	}
+}
+
 func (s *TableRenameClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -43229,6 +44860,18 @@ func (s *SwapTableClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SwapTableClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SwapTableClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSwapTableClause(s)
+	}
+}
+
+func (s *SwapTableClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSwapTableClause(s)
+	}
 }
 
 func (s *SwapTableClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -43354,6 +44997,18 @@ func (s *ModifyPropertiesClauseContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ModifyPropertiesClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyPropertiesClause(s)
+	}
+}
+
+func (s *ModifyPropertiesClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyPropertiesClause(s)
+	}
+}
+
 func (s *ModifyPropertiesClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -43472,6 +45127,18 @@ func (s *ModifyCommentClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ModifyCommentClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ModifyCommentClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyCommentClause(s)
+	}
+}
+
+func (s *ModifyCommentClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyCommentClause(s)
+	}
 }
 
 func (s *ModifyCommentClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -43648,6 +45315,18 @@ func (s *OptimizeRangeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *OptimizeRangeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *OptimizeRangeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOptimizeRange(s)
+	}
+}
+
+func (s *OptimizeRangeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOptimizeRange(s)
+	}
 }
 
 func (s *OptimizeRangeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -43861,6 +45540,18 @@ func (s *OptimizeClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *OptimizeClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *OptimizeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOptimizeClause(s)
+	}
+}
+
+func (s *OptimizeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOptimizeClause(s)
+	}
 }
 
 func (s *OptimizeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -44144,6 +45835,18 @@ func (s *AddColumnClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AddColumnClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AddColumnClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddColumnClause(s)
+	}
+}
+
+func (s *AddColumnClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddColumnClause(s)
+	}
 }
 
 func (s *AddColumnClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -44433,6 +46136,18 @@ func (s *AddColumnsClauseContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AddColumnsClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddColumnsClause(s)
+	}
+}
+
+func (s *AddColumnsClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddColumnsClause(s)
+	}
+}
+
 func (s *AddColumnsClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -44708,6 +46423,18 @@ func (s *DropColumnClauseContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropColumnClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropColumnClause(s)
+	}
+}
+
+func (s *DropColumnClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropColumnClause(s)
+	}
+}
+
 func (s *DropColumnClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -44963,6 +46690,18 @@ func (s *ModifyColumnClauseContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ModifyColumnClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyColumnClause(s)
+	}
+}
+
+func (s *ModifyColumnClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyColumnClause(s)
+	}
+}
+
 func (s *ModifyColumnClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -45183,6 +46922,18 @@ func (s *ModifyColumnCommentClauseContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ModifyColumnCommentClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyColumnCommentClause(s)
+	}
+}
+
+func (s *ModifyColumnCommentClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyColumnCommentClause(s)
+	}
+}
+
 func (s *ModifyColumnCommentClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -45366,6 +47117,18 @@ func (s *ColumnRenameClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ColumnRenameClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ColumnRenameClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnRenameClause(s)
+	}
+}
+
+func (s *ColumnRenameClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnRenameClause(s)
+	}
 }
 
 func (s *ColumnRenameClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -45562,6 +47325,18 @@ func (s *ReorderColumnsClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ReorderColumnsClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ReorderColumnsClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterReorderColumnsClause(s)
+	}
+}
+
+func (s *ReorderColumnsClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitReorderColumnsClause(s)
+	}
 }
 
 func (s *ReorderColumnsClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -45781,6 +47556,18 @@ func (s *RollupRenameClauseContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RollupRenameClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRollupRenameClause(s)
+	}
+}
+
+func (s *RollupRenameClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRollupRenameClause(s)
+	}
+}
+
 func (s *RollupRenameClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -45941,6 +47728,18 @@ func (s *CompactionClauseContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CompactionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCompactionClause(s)
+	}
+}
+
+func (s *CompactionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCompactionClause(s)
+	}
+}
+
 func (s *CompactionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -46095,6 +47894,18 @@ func (s *SubfieldNameContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SubfieldNameContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SubfieldNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubfieldName(s)
+	}
+}
+
+func (s *SubfieldNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubfieldName(s)
+	}
 }
 
 func (s *SubfieldNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -46256,6 +48067,18 @@ func (s *NestedFieldNameContext) GetRuleContext() antlr.RuleContext {
 
 func (s *NestedFieldNameContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *NestedFieldNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNestedFieldName(s)
+	}
+}
+
+func (s *NestedFieldNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNestedFieldName(s)
+	}
 }
 
 func (s *NestedFieldNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -46503,6 +48326,18 @@ func (s *AddFieldClauseContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AddFieldClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddFieldClause(s)
+	}
+}
+
+func (s *AddFieldClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddFieldClause(s)
+	}
+}
+
 func (s *AddFieldClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -46745,6 +48580,18 @@ func (s *DropFieldClauseContext) ToStringTree(ruleNames []string, recog antlr.Re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropFieldClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropFieldClause(s)
+	}
+}
+
+func (s *DropFieldClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropFieldClause(s)
+	}
+}
+
 func (s *DropFieldClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -46949,6 +48796,18 @@ func (s *CreateOrReplaceTagClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateOrReplaceTagClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateOrReplaceTagClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateOrReplaceTagClause(s)
+	}
+}
+
+func (s *CreateOrReplaceTagClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateOrReplaceTagClause(s)
+	}
 }
 
 func (s *CreateOrReplaceTagClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -47226,6 +49085,18 @@ func (s *CreateOrReplaceBranchClauseContext) ToStringTree(ruleNames []string, re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateOrReplaceBranchClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateOrReplaceBranchClause(s)
+	}
+}
+
+func (s *CreateOrReplaceBranchClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateOrReplaceBranchClause(s)
+	}
+}
+
 func (s *CreateOrReplaceBranchClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -47469,6 +49340,18 @@ func (s *DropBranchClauseContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropBranchClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropBranchClause(s)
+	}
+}
+
+func (s *DropBranchClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropBranchClause(s)
+	}
+}
+
 func (s *DropBranchClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -47635,6 +49518,18 @@ func (s *DropTagClauseContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropTagClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropTagClause(s)
+	}
+}
+
+func (s *DropTagClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropTagClause(s)
+	}
+}
+
 func (s *DropTagClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -47786,6 +49681,18 @@ func (s *TableOperationClauseContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TableOperationClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTableOperationClause(s)
+	}
+}
+
+func (s *TableOperationClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTableOperationClause(s)
+	}
+}
+
 func (s *TableOperationClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -47926,6 +49833,18 @@ func (s *TagOptionsContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TagOptionsContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TagOptionsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTagOptions(s)
+	}
+}
+
+func (s *TagOptionsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTagOptions(s)
+	}
 }
 
 func (s *TagOptionsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -48129,6 +50048,18 @@ func (s *BranchOptionsContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *BranchOptionsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBranchOptions(s)
+	}
+}
+
+func (s *BranchOptionsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBranchOptions(s)
+	}
+}
+
 func (s *BranchOptionsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -48325,6 +50256,18 @@ func (s *SnapshotRetentionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SnapshotRetentionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SnapshotRetentionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSnapshotRetention(s)
+	}
+}
+
+func (s *SnapshotRetentionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSnapshotRetention(s)
+	}
 }
 
 func (s *SnapshotRetentionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -48553,6 +50496,18 @@ func (s *RefRetainContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RefRetainContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRefRetain(s)
+	}
+}
+
+func (s *RefRetainContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRefRetain(s)
+	}
+}
+
 func (s *RefRetainContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -48684,6 +50639,18 @@ func (s *MaxSnapshotAgeContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *MaxSnapshotAgeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMaxSnapshotAge(s)
+	}
+}
+
+func (s *MaxSnapshotAgeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMaxSnapshotAge(s)
+	}
+}
+
 func (s *MaxSnapshotAgeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -48793,6 +50760,18 @@ func (s *MinSnapshotsToKeepContext) GetRuleContext() antlr.RuleContext {
 
 func (s *MinSnapshotsToKeepContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *MinSnapshotsToKeepContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMinSnapshotsToKeep(s)
+	}
+}
+
+func (s *MinSnapshotsToKeepContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMinSnapshotsToKeep(s)
+	}
 }
 
 func (s *MinSnapshotsToKeepContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -48905,6 +50884,18 @@ func (s *SnapshotIdContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SnapshotIdContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSnapshotId(s)
+	}
+}
+
+func (s *SnapshotIdContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSnapshotId(s)
+	}
+}
+
 func (s *SnapshotIdContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -49003,6 +50994,18 @@ func (s *TimeUnitContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TimeUnitContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TimeUnitContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTimeUnit(s)
+	}
+}
+
+func (s *TimeUnitContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTimeUnit(s)
+	}
 }
 
 func (s *TimeUnitContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -49107,6 +51110,18 @@ func (s *Integer_listContext) GetRuleContext() antlr.RuleContext {
 
 func (s *Integer_listContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *Integer_listContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInteger_list(s)
+	}
+}
+
+func (s *Integer_listContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInteger_list(s)
+	}
 }
 
 func (s *Integer_listContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -49288,6 +51303,18 @@ func (s *DropPersistentIndexClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropPersistentIndexClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropPersistentIndexClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropPersistentIndexClause(s)
+	}
+}
+
+func (s *DropPersistentIndexClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropPersistentIndexClause(s)
+	}
 }
 
 func (s *DropPersistentIndexClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -49530,6 +51557,18 @@ func (s *AddPartitionClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AddPartitionClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AddPartitionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddPartitionClause(s)
+	}
+}
+
+func (s *AddPartitionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddPartitionClause(s)
+	}
 }
 
 func (s *AddPartitionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -49913,6 +51952,18 @@ func (s *DropPartitionClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropPartitionClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropPartitionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropPartitionClause(s)
+	}
+}
+
+func (s *DropPartitionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropPartitionClause(s)
+	}
 }
 
 func (s *DropPartitionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -50401,6 +52452,18 @@ func (s *TruncatePartitionClauseContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TruncatePartitionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTruncatePartitionClause(s)
+	}
+}
+
+func (s *TruncatePartitionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTruncatePartitionClause(s)
+	}
+}
+
 func (s *TruncatePartitionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -50580,6 +52643,18 @@ func (s *ModifyPartitionClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ModifyPartitionClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ModifyPartitionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterModifyPartitionClause(s)
+	}
+}
+
+func (s *ModifyPartitionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitModifyPartitionClause(s)
+	}
 }
 
 func (s *ModifyPartitionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -50866,6 +52941,18 @@ func (s *ReplacePartitionClauseContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ReplacePartitionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterReplacePartitionClause(s)
+	}
+}
+
+func (s *ReplacePartitionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitReplacePartitionClause(s)
+	}
+}
+
 func (s *ReplacePartitionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -51066,6 +53153,18 @@ func (s *PartitionRenameClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PartitionRenameClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PartitionRenameClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionRenameClause(s)
+	}
+}
+
+func (s *PartitionRenameClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionRenameClause(s)
+	}
 }
 
 func (s *PartitionRenameClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -51412,6 +53511,18 @@ func (s *InsertStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *InsertStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *InsertStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInsertStatement(s)
+	}
+}
+
+func (s *InsertStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInsertStatement(s)
+	}
 }
 
 func (s *InsertStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -51771,6 +53882,18 @@ func (s *InsertLabelOrColumnAliasesContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *InsertLabelOrColumnAliasesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInsertLabelOrColumnAliases(s)
+	}
+}
+
+func (s *InsertLabelOrColumnAliasesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInsertLabelOrColumnAliases(s)
+	}
+}
+
 func (s *InsertLabelOrColumnAliasesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -51920,6 +54043,18 @@ func (s *ColumnAliasesOrByNameContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ColumnAliasesOrByNameContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ColumnAliasesOrByNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnAliasesOrByName(s)
+	}
+}
+
+func (s *ColumnAliasesOrByNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnAliasesOrByName(s)
+	}
 }
 
 func (s *ColumnAliasesOrByNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -52165,6 +54300,18 @@ func (s *UpdateStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *UpdateStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UpdateStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUpdateStatement(s)
+	}
+}
+
+func (s *UpdateStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUpdateStatement(s)
+	}
 }
 
 func (s *UpdateStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -52473,6 +54620,18 @@ func (s *DeleteStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DeleteStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DeleteStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDeleteStatement(s)
+	}
+}
+
+func (s *DeleteStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDeleteStatement(s)
+	}
 }
 
 func (s *DeleteStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -52902,6 +55061,18 @@ func (s *CreateRoutineLoadStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateRoutineLoadStatement(s)
+	}
+}
+
+func (s *CreateRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateRoutineLoadStatement(s)
+	}
+}
+
 func (s *CreateRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -53292,6 +55463,18 @@ func (s *AlterRoutineLoadStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterRoutineLoadStatement(s)
+	}
+}
+
+func (s *AlterRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterRoutineLoadStatement(s)
+	}
+}
+
 func (s *AlterRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -53557,6 +55740,18 @@ func (s *DataSourceContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DataSourceContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDataSource(s)
+	}
+}
+
+func (s *DataSourceContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDataSource(s)
+	}
+}
+
 func (s *DataSourceContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -53747,6 +55942,18 @@ func (s *LoadPropertiesContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *LoadPropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLoadProperties(s)
+	}
+}
+
+func (s *LoadPropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLoadProperties(s)
+	}
+}
+
 func (s *LoadPropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -53912,6 +56119,18 @@ func (s *ColSeparatorPropertyContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ColSeparatorPropertyContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColSeparatorProperty(s)
+	}
+}
+
+func (s *ColSeparatorPropertyContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColSeparatorProperty(s)
+	}
+}
+
 func (s *ColSeparatorPropertyContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -54053,6 +56272,18 @@ func (s *RowDelimiterPropertyContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RowDelimiterPropertyContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRowDelimiterProperty(s)
+	}
+}
+
+func (s *RowDelimiterPropertyContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRowDelimiterProperty(s)
+	}
+}
+
 func (s *RowDelimiterPropertyContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -54182,6 +56413,18 @@ func (s *ImportColumnsContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ImportColumnsContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ImportColumnsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterImportColumns(s)
+	}
+}
+
+func (s *ImportColumnsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitImportColumns(s)
+	}
 }
 
 func (s *ImportColumnsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -54361,6 +56604,18 @@ func (s *ColumnPropertiesContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ColumnPropertiesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ColumnPropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnProperties(s)
+	}
+}
+
+func (s *ColumnPropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnProperties(s)
+	}
 }
 
 func (s *ColumnPropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -54547,6 +56802,18 @@ func (s *JobPropertiesContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *JobPropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterJobProperties(s)
+	}
+}
+
+func (s *JobPropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitJobProperties(s)
+	}
+}
+
 func (s *JobPropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -54647,6 +56914,18 @@ func (s *DataSourcePropertiesContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DataSourcePropertiesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DataSourcePropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDataSourceProperties(s)
+	}
+}
+
+func (s *DataSourcePropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDataSourceProperties(s)
+	}
 }
 
 func (s *DataSourcePropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -54808,6 +57087,18 @@ func (s *StopRoutineLoadStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *StopRoutineLoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *StopRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterStopRoutineLoadStatement(s)
+	}
+}
+
+func (s *StopRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitStopRoutineLoadStatement(s)
+	}
 }
 
 func (s *StopRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -55029,6 +57320,18 @@ func (s *ResumeRoutineLoadStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ResumeRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterResumeRoutineLoadStatement(s)
+	}
+}
+
+func (s *ResumeRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitResumeRoutineLoadStatement(s)
+	}
+}
+
 func (s *ResumeRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -55246,6 +57549,18 @@ func (s *PauseRoutineLoadStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PauseRoutineLoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PauseRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPauseRoutineLoadStatement(s)
+	}
+}
+
+func (s *PauseRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPauseRoutineLoadStatement(s)
+	}
 }
 
 func (s *PauseRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -55593,6 +57908,18 @@ func (s *ShowRoutineLoadStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowRoutineLoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowRoutineLoadStatement(s)
+	}
+}
+
+func (s *ShowRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowRoutineLoadStatement(s)
+	}
 }
 
 func (s *ShowRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -55962,6 +58289,18 @@ func (s *ShowRoutineLoadTaskStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowRoutineLoadTaskStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowRoutineLoadTaskStatement(s)
+	}
+}
+
+func (s *ShowRoutineLoadTaskStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowRoutineLoadTaskStatement(s)
+	}
+}
+
 func (s *ShowRoutineLoadTaskStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -56188,6 +58527,18 @@ func (s *ShowCreateRoutineLoadStatementContext) GetRuleContext() antlr.RuleConte
 
 func (s *ShowCreateRoutineLoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCreateRoutineLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateRoutineLoadStatement(s)
+	}
+}
+
+func (s *ShowCreateRoutineLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateRoutineLoadStatement(s)
+	}
 }
 
 func (s *ShowCreateRoutineLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -56535,6 +58886,18 @@ func (s *ShowStreamLoadStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowStreamLoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowStreamLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowStreamLoadStatement(s)
+	}
+}
+
+func (s *ShowStreamLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowStreamLoadStatement(s)
+	}
 }
 
 func (s *ShowStreamLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -56937,6 +59300,18 @@ func (s *AnalyzeStatementContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AnalyzeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAnalyzeStatement(s)
+	}
+}
+
+func (s *AnalyzeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAnalyzeStatement(s)
+	}
+}
+
 func (s *AnalyzeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -57165,6 +59540,18 @@ func (s *PredicateColumnsContext) COLUMNS() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserCOLUMNS, 0)
 }
 
+func (s *PredicateColumnsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPredicateColumns(s)
+	}
+}
+
+func (s *PredicateColumnsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPredicateColumns(s)
+	}
+}
+
 func (s *PredicateColumnsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -57234,6 +59621,18 @@ func (s *RegularColumnsContext) QualifiedName(i int) IQualifiedNameContext {
 	return t.(IQualifiedNameContext)
 }
 
+func (s *RegularColumnsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRegularColumns(s)
+	}
+}
+
+func (s *RegularColumnsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRegularColumns(s)
+	}
+}
+
 func (s *RegularColumnsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -57268,6 +59667,18 @@ func (s *AllColumnsContext) ALL() antlr.TerminalNode {
 
 func (s *AllColumnsContext) COLUMNS() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserCOLUMNS, 0)
+}
+
+func (s *AllColumnsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAllColumns(s)
+	}
+}
+
+func (s *AllColumnsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAllColumns(s)
+	}
 }
 
 func (s *AllColumnsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -57345,6 +59756,18 @@ func (s *MultiColumnSetContext) QualifiedName(i int) IQualifiedNameContext {
 	}
 
 	return t.(IQualifiedNameContext)
+}
+
+func (s *MultiColumnSetContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMultiColumnSet(s)
+	}
+}
+
+func (s *MultiColumnSetContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMultiColumnSet(s)
+	}
 }
 
 func (s *MultiColumnSetContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -57672,6 +60095,18 @@ func (s *DropStatsStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropStatsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropStatsStatement(s)
+	}
+}
+
+func (s *DropStatsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropStatsStatement(s)
+	}
+}
+
 func (s *DropStatsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -57903,6 +60338,18 @@ func (s *HistogramStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *HistogramStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterHistogramStatement(s)
+	}
+}
+
+func (s *HistogramStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitHistogramStatement(s)
+	}
+}
+
 func (s *HistogramStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -58120,6 +60567,18 @@ func (s *AnalyzeHistogramStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AnalyzeHistogramStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAnalyzeHistogramStatement(s)
+	}
+}
+
+func (s *AnalyzeHistogramStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAnalyzeHistogramStatement(s)
+	}
+}
+
 func (s *AnalyzeHistogramStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -58310,6 +60769,18 @@ func (s *DropHistogramStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropHistogramStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropHistogramStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropHistogramStatement(s)
+	}
+}
+
+func (s *DropHistogramStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropHistogramStatement(s)
+	}
 }
 
 func (s *DropHistogramStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -58609,6 +61080,18 @@ func (s *CreateAnalyzeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateAnalyzeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateAnalyzeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateAnalyzeStatement(s)
+	}
+}
+
+func (s *CreateAnalyzeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateAnalyzeStatement(s)
+	}
 }
 
 func (s *CreateAnalyzeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -58998,6 +61481,18 @@ func (s *DropAnalyzeJobStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropAnalyzeJobStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropAnalyzeJobStatement(s)
+	}
+}
+
+func (s *DropAnalyzeJobStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropAnalyzeJobStatement(s)
+	}
+}
+
 func (s *DropAnalyzeJobStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -59260,6 +61755,18 @@ func (s *ShowAnalyzeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowAnalyzeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowAnalyzeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowAnalyzeStatement(s)
+	}
+}
+
+func (s *ShowAnalyzeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowAnalyzeStatement(s)
+	}
 }
 
 func (s *ShowAnalyzeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -59591,6 +62098,18 @@ func (s *ShowStatsMetaStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowStatsMetaStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowStatsMetaStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowStatsMetaStatement(s)
+	}
+}
+
+func (s *ShowStatsMetaStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowStatsMetaStatement(s)
+	}
 }
 
 func (s *ShowStatsMetaStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -59927,6 +62446,18 @@ func (s *ShowHistogramMetaStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowHistogramMetaStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowHistogramMetaStatement(s)
+	}
+}
+
+func (s *ShowHistogramMetaStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowHistogramMetaStatement(s)
+	}
+}
+
 func (s *ShowHistogramMetaStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -60143,6 +62674,18 @@ func (s *KillAnalyzeStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *KillAnalyzeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterKillAnalyzeStatement(s)
+	}
+}
+
+func (s *KillAnalyzeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitKillAnalyzeStatement(s)
+	}
+}
+
 func (s *KillAnalyzeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -60288,6 +62831,18 @@ func (s *AnalyzeProfileStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AnalyzeProfileStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AnalyzeProfileStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAnalyzeProfileStatement(s)
+	}
+}
+
+func (s *AnalyzeProfileStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAnalyzeProfileStatement(s)
+	}
 }
 
 func (s *AnalyzeProfileStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -60577,6 +63132,18 @@ func (s *CreateBaselinePlanStatementContext) ToStringTree(ruleNames []string, re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateBaselinePlanStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateBaselinePlanStatement(s)
+	}
+}
+
+func (s *CreateBaselinePlanStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateBaselinePlanStatement(s)
+	}
+}
+
 func (s *CreateBaselinePlanStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -60762,6 +63329,18 @@ func (s *DropBaselinePlanStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropBaselinePlanStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropBaselinePlanStatement(s)
+	}
+}
+
+func (s *DropBaselinePlanStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropBaselinePlanStatement(s)
+	}
+}
+
 func (s *DropBaselinePlanStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -60909,6 +63488,18 @@ func (s *ShowBaselinePlanStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowBaselinePlanStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowBaselinePlanStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowBaselinePlanStatement(s)
+	}
+}
+
+func (s *ShowBaselinePlanStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowBaselinePlanStatement(s)
+	}
 }
 
 func (s *ShowBaselinePlanStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -61159,6 +63750,18 @@ func (s *CreateResourceGroupStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *CreateResourceGroupStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateResourceGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateResourceGroupStatement(s)
+	}
+}
+
+func (s *CreateResourceGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateResourceGroupStatement(s)
+	}
 }
 
 func (s *CreateResourceGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -61470,6 +64073,18 @@ func (s *DropResourceGroupStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropResourceGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropResourceGroupStatement(s)
+	}
+}
+
+func (s *DropResourceGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropResourceGroupStatement(s)
+	}
+}
+
 func (s *DropResourceGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -61725,6 +64340,18 @@ func (s *AlterResourceGroupStatementContext) GetRuleContext() antlr.RuleContext 
 
 func (s *AlterResourceGroupStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterResourceGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterResourceGroupStatement(s)
+	}
+}
+
+func (s *AlterResourceGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterResourceGroupStatement(s)
+	}
 }
 
 func (s *AlterResourceGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -62166,6 +64793,18 @@ func (s *ShowResourceGroupStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowResourceGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowResourceGroupStatement(s)
+	}
+}
+
+func (s *ShowResourceGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowResourceGroupStatement(s)
+	}
+}
+
 func (s *ShowResourceGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -62412,6 +65051,18 @@ func (s *ShowResourceGroupUsageStatementContext) ToStringTree(ruleNames []string
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowResourceGroupUsageStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowResourceGroupUsageStatement(s)
+	}
+}
+
+func (s *ShowResourceGroupUsageStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowResourceGroupUsageStatement(s)
+	}
+}
+
 func (s *ShowResourceGroupUsageStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -62640,6 +65291,18 @@ func (s *CreateResourceStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateResourceStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateResourceStatement(s)
+	}
+}
+
+func (s *CreateResourceStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateResourceStatement(s)
+	}
+}
+
 func (s *CreateResourceStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -62842,6 +65505,18 @@ func (s *AlterResourceStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterResourceStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterResourceStatement(s)
+	}
+}
+
+func (s *AlterResourceStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterResourceStatement(s)
+	}
+}
+
 func (s *AlterResourceStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -63000,6 +65675,18 @@ func (s *DropResourceStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropResourceStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropResourceStatement(s)
+	}
+}
+
+func (s *DropResourceStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropResourceStatement(s)
+	}
+}
+
 func (s *DropResourceStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -63114,6 +65801,18 @@ func (s *ShowResourceStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowResourceStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowResourceStatement(s)
+	}
+}
+
+func (s *ShowResourceStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowResourceStatement(s)
+	}
+}
+
 func (s *ShowResourceStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -63226,6 +65925,18 @@ func (s *ClassifierContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ClassifierContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ClassifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterClassifier(s)
+	}
+}
+
+func (s *ClassifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitClassifier(s)
+	}
 }
 
 func (s *ClassifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -63445,6 +66156,18 @@ func (s *ShowFunctionsStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowFunctionsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowFunctionsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowFunctionsStatement(s)
+	}
+}
+
+func (s *ShowFunctionsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowFunctionsStatement(s)
+	}
 }
 
 func (s *ShowFunctionsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -63711,6 +66434,18 @@ func (s *DropFunctionStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropFunctionStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropFunctionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropFunctionStatement(s)
+	}
+}
+
+func (s *DropFunctionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropFunctionStatement(s)
+	}
 }
 
 func (s *DropFunctionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -64068,6 +66803,18 @@ func (s *CreateFunctionStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateFunctionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateFunctionStatement(s)
+	}
+}
+
+func (s *CreateFunctionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateFunctionStatement(s)
+	}
+}
+
 func (s *CreateFunctionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -64304,6 +67051,18 @@ func (s *InlineFunctionContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *InlineFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInlineFunction(s)
+	}
+}
+
+func (s *InlineFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInlineFunction(s)
+	}
+}
+
 func (s *InlineFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -64447,6 +67206,18 @@ func (s *TypeListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TypeListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TypeListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTypeList(s)
+	}
+}
+
+func (s *TypeListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTypeList(s)
+	}
 }
 
 func (s *TypeListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -64797,6 +67568,18 @@ func (s *LoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *LoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLoadStatement(s)
+	}
+}
+
+func (s *LoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLoadStatement(s)
+	}
+}
+
 func (s *LoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -65139,6 +67922,18 @@ func (s *LabelNameContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *LabelNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLabelName(s)
+	}
+}
+
+func (s *LabelNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLabelName(s)
+	}
+}
+
 func (s *LabelNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -65291,6 +68086,18 @@ func (s *DataDescListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DataDescListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DataDescListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDataDescList(s)
+	}
+}
+
+func (s *DataDescListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDataDescList(s)
+	}
 }
 
 func (s *DataDescListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -65866,6 +68673,18 @@ func (s *DataDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DataDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DataDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDataDesc(s)
+	}
+}
+
+func (s *DataDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDataDesc(s)
+	}
 }
 
 func (s *DataDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -66531,6 +69350,18 @@ func (s *FormatPropsContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *FormatPropsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterFormatProps(s)
+	}
+}
+
+func (s *FormatPropsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitFormatProps(s)
+	}
+}
+
 func (s *FormatPropsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -66826,6 +69657,18 @@ func (s *BrokerDescContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *BrokerDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBrokerDesc(s)
+	}
+}
+
+func (s *BrokerDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBrokerDesc(s)
+	}
+}
+
 func (s *BrokerDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -67061,6 +69904,18 @@ func (s *ResourceDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ResourceDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ResourceDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterResourceDesc(s)
+	}
+}
+
+func (s *ResourceDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitResourceDesc(s)
+	}
 }
 
 func (s *ResourceDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -67313,6 +70168,18 @@ func (s *ShowLoadStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowLoadStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowLoadStatement(s)
+	}
+}
+
+func (s *ShowLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowLoadStatement(s)
+	}
 }
 
 func (s *ShowLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -67646,6 +70513,18 @@ func (s *ShowLoadWarningsStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowLoadWarningsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowLoadWarningsStatement(s)
+	}
+}
+
+func (s *ShowLoadWarningsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowLoadWarningsStatement(s)
+	}
+}
+
 func (s *ShowLoadWarningsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -67916,6 +70795,18 @@ func (s *CancelLoadStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelLoadStatement(s)
+	}
+}
+
+func (s *CancelLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelLoadStatement(s)
+	}
+}
+
 func (s *CancelLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -68147,6 +71038,18 @@ func (s *AlterLoadStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterLoadStatement(s)
+	}
+}
+
+func (s *AlterLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterLoadStatement(s)
+	}
+}
+
 func (s *AlterLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -68330,6 +71233,18 @@ func (s *CancelCompactionStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelCompactionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelCompactionStatement(s)
+	}
+}
+
+func (s *CancelCompactionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelCompactionStatement(s)
+	}
+}
+
 func (s *CancelCompactionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -68449,6 +71364,18 @@ func (s *ShowAuthorStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowAuthorStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowAuthorStatement(s)
+	}
+}
+
+func (s *ShowAuthorStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowAuthorStatement(s)
+	}
+}
+
 func (s *ShowAuthorStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -68556,6 +71483,18 @@ func (s *ShowBackendsStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowBackendsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowBackendsStatement(s)
+	}
+}
+
+func (s *ShowBackendsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowBackendsStatement(s)
+	}
+}
+
 func (s *ShowBackendsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -68661,6 +71600,18 @@ func (s *ShowBrokerStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowBrokerStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowBrokerStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowBrokerStatement(s)
+	}
+}
+
+func (s *ShowBrokerStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowBrokerStatement(s)
+	}
 }
 
 func (s *ShowBrokerStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -68838,6 +71789,18 @@ func (s *ShowCharsetStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowCharsetStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCharsetStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCharsetStatement(s)
+	}
+}
+
+func (s *ShowCharsetStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCharsetStatement(s)
+	}
 }
 
 func (s *ShowCharsetStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -69092,6 +72055,18 @@ func (s *ShowCollationStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowCollationStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCollationStatement(s)
+	}
+}
+
+func (s *ShowCollationStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCollationStatement(s)
+	}
+}
+
 func (s *ShowCollationStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -69278,6 +72253,18 @@ func (s *ShowDeleteStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowDeleteStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDeleteStatement(s)
+	}
+}
+
+func (s *ShowDeleteStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDeleteStatement(s)
+	}
+}
+
 func (s *ShowDeleteStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -69461,6 +72448,18 @@ func (s *ShowDynamicPartitionStatementContext) GetRuleContext() antlr.RuleContex
 
 func (s *ShowDynamicPartitionStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowDynamicPartitionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDynamicPartitionStatement(s)
+	}
+}
+
+func (s *ShowDynamicPartitionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDynamicPartitionStatement(s)
+	}
 }
 
 func (s *ShowDynamicPartitionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -69709,6 +72708,18 @@ func (s *ShowEventsStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowEventsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowEventsStatement(s)
+	}
+}
+
+func (s *ShowEventsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowEventsStatement(s)
+	}
+}
+
 func (s *ShowEventsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -69887,6 +72898,18 @@ func (s *ShowEnginesStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowEnginesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowEnginesStatement(s)
+	}
+}
+
+func (s *ShowEnginesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowEnginesStatement(s)
+	}
+}
+
 func (s *ShowEnginesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -69992,6 +73015,18 @@ func (s *ShowFrontendsStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowFrontendsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowFrontendsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowFrontendsStatement(s)
+	}
+}
+
+func (s *ShowFrontendsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowFrontendsStatement(s)
+	}
 }
 
 func (s *ShowFrontendsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -70104,6 +73139,18 @@ func (s *ShowFrontendsDisksStatementContext) GetRuleContext() antlr.RuleContext 
 
 func (s *ShowFrontendsDisksStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowFrontendsDisksStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowFrontendsDisksStatement(s)
+	}
+}
+
+func (s *ShowFrontendsDisksStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowFrontendsDisksStatement(s)
+	}
 }
 
 func (s *ShowFrontendsDisksStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -70221,6 +73268,18 @@ func (s *ShowPluginsStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowPluginsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPluginsStatement(s)
+	}
+}
+
+func (s *ShowPluginsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPluginsStatement(s)
+	}
+}
+
 func (s *ShowPluginsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -70326,6 +73385,18 @@ func (s *ShowRepositoriesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowRepositoriesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowRepositoriesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowRepositoriesStatement(s)
+	}
+}
+
+func (s *ShowRepositoriesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowRepositoriesStatement(s)
+	}
 }
 
 func (s *ShowRepositoriesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -70438,6 +73509,18 @@ func (s *ShowOpenTableStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowOpenTableStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowOpenTableStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowOpenTableStatement(s)
+	}
+}
+
+func (s *ShowOpenTableStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowOpenTableStatement(s)
+	}
 }
 
 func (s *ShowOpenTableStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -70553,6 +73636,18 @@ func (s *ShowPrivilegesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowPrivilegesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowPrivilegesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPrivilegesStatement(s)
+	}
+}
+
+func (s *ShowPrivilegesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPrivilegesStatement(s)
+	}
 }
 
 func (s *ShowPrivilegesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -70736,6 +73831,18 @@ func (s *ShowProcedureStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowProcedureStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowProcedureStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowProcedureStatement(s)
+	}
+}
+
+func (s *ShowProcedureStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowProcedureStatement(s)
+	}
 }
 
 func (s *ShowProcedureStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -70930,6 +74037,18 @@ func (s *ShowProcStatementContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowProcStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowProcStatement(s)
+	}
+}
+
+func (s *ShowProcStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowProcStatement(s)
+	}
+}
+
 func (s *ShowProcStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -71069,6 +74188,18 @@ func (s *ShowProcesslistStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowProcesslistStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowProcesslistStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowProcesslistStatement(s)
+	}
+}
+
+func (s *ShowProcesslistStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowProcesslistStatement(s)
+	}
 }
 
 func (s *ShowProcesslistStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -71241,6 +74372,18 @@ func (s *ShowProfilelistStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowProfilelistStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowProfilelistStatement(s)
+	}
+}
+
+func (s *ShowProfilelistStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowProfilelistStatement(s)
+	}
+}
+
 func (s *ShowProfilelistStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -71403,6 +74546,18 @@ func (s *ShowRunningQueriesStatementContext) GetRuleContext() antlr.RuleContext 
 
 func (s *ShowRunningQueriesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowRunningQueriesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowRunningQueriesStatement(s)
+	}
+}
+
+func (s *ShowRunningQueriesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowRunningQueriesStatement(s)
+	}
 }
 
 func (s *ShowRunningQueriesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -71621,6 +74776,18 @@ func (s *ShowStatusStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowStatusStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowStatusStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowStatusStatement(s)
+	}
+}
+
+func (s *ShowStatusStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowStatusStatement(s)
+	}
 }
 
 func (s *ShowStatusStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -71926,6 +75093,18 @@ func (s *ShowTabletStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowTabletStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowTabletStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTabletStatement(s)
+	}
+}
+
+func (s *ShowTabletStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTabletStatement(s)
+	}
 }
 
 func (s *ShowTabletStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -72259,6 +75438,18 @@ func (s *ShowTransactionStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowTransactionStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTransactionStatement(s)
+	}
+}
+
+func (s *ShowTransactionStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTransactionStatement(s)
+	}
+}
+
 func (s *ShowTransactionStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -72516,6 +75707,18 @@ func (s *ShowTriggersStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowTriggersStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTriggersStatement(s)
+	}
+}
+
+func (s *ShowTriggersStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTriggersStatement(s)
+	}
+}
+
 func (s *ShowTriggersStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -72768,6 +75971,18 @@ func (s *ShowUserPropertyStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowUserPropertyStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowUserPropertyStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowUserPropertyStatement(s)
+	}
+}
+
+func (s *ShowUserPropertyStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowUserPropertyStatement(s)
+	}
 }
 
 func (s *ShowUserPropertyStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -73070,6 +76285,18 @@ func (s *ShowVariablesStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowVariablesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowVariablesStatement(s)
+	}
+}
+
+func (s *ShowVariablesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowVariablesStatement(s)
+	}
+}
+
 func (s *ShowVariablesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -73256,6 +76483,18 @@ func (s *ShowWarningStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowWarningStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowWarningStatement(s)
+	}
+}
+
+func (s *ShowWarningStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowWarningStatement(s)
+	}
+}
+
 func (s *ShowWarningStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -73392,6 +76631,18 @@ func (s *HelpStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *HelpStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *HelpStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterHelpStatement(s)
+	}
+}
+
+func (s *HelpStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitHelpStatement(s)
+	}
 }
 
 func (s *HelpStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -73537,6 +76788,18 @@ func (s *ShowQueryProfileStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowQueryProfileStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowQueryProfileStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowQueryProfileStatement(s)
+	}
+}
+
+func (s *ShowQueryProfileStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowQueryProfileStatement(s)
+	}
 }
 
 func (s *ShowQueryProfileStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -73938,6 +77201,18 @@ func (s *ShowQueryStatsStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowQueryStatsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowQueryStatsStatement(s)
+	}
+}
+
+func (s *ShowQueryStatsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowQueryStatsStatement(s)
+	}
+}
+
 func (s *ShowQueryStatsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -74169,6 +77444,18 @@ func (s *ShowLoadProfileStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowLoadProfileStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowLoadProfileStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowLoadProfileStatement(s)
+	}
+}
+
+func (s *ShowLoadProfileStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowLoadProfileStatement(s)
+	}
 }
 
 func (s *ShowLoadProfileStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -74634,6 +77921,18 @@ func (s *ShowDataSkewStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowDataSkewStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDataSkewStatement(s)
+	}
+}
+
+func (s *ShowDataSkewStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDataSkewStatement(s)
+	}
+}
+
 func (s *ShowDataSkewStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -74782,6 +78081,18 @@ func (s *ShowDataTypesStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowDataTypesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDataTypesStatement(s)
+	}
+}
+
+func (s *ShowDataTypesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDataTypesStatement(s)
+	}
+}
+
 func (s *ShowDataTypesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -74922,6 +78233,18 @@ func (s *ShowSyncJobStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowSyncJobStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowSyncJobStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowSyncJobStatement(s)
+	}
+}
+
+func (s *ShowSyncJobStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowSyncJobStatement(s)
+	}
 }
 
 func (s *ShowSyncJobStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -75120,6 +78443,18 @@ func (s *ShowPolicyStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowPolicyStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowPolicyStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPolicyStatement(s)
+	}
+}
+
+func (s *ShowPolicyStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPolicyStatement(s)
+	}
 }
 
 func (s *ShowPolicyStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -75360,6 +78695,18 @@ func (s *ShowSqlBlockRuleStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowSqlBlockRuleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowSqlBlockRuleStatement(s)
+	}
+}
+
+func (s *ShowSqlBlockRuleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowSqlBlockRuleStatement(s)
+	}
+}
+
 func (s *ShowSqlBlockRuleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -75572,6 +78919,18 @@ func (s *ShowEncryptKeysStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowEncryptKeysStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowEncryptKeysStatement(s)
+	}
+}
+
+func (s *ShowEncryptKeysStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowEncryptKeysStatement(s)
+	}
+}
+
 func (s *ShowEncryptKeysStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -75766,6 +79125,18 @@ func (s *ShowCreateLoadStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowCreateLoadStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateLoadStatement(s)
+	}
+}
+
+func (s *ShowCreateLoadStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateLoadStatement(s)
+	}
+}
+
 func (s *ShowCreateLoadStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -75915,6 +79286,18 @@ func (s *ShowCreateRepositoryStatementContext) ToStringTree(ruleNames []string, 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowCreateRepositoryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateRepositoryStatement(s)
+	}
+}
+
+func (s *ShowCreateRepositoryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateRepositoryStatement(s)
+	}
+}
+
 func (s *ShowCreateRepositoryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -76039,6 +79422,18 @@ func (s *ShowLastInsertStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowLastInsertStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowLastInsertStatement(s)
+	}
+}
+
+func (s *ShowLastInsertStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowLastInsertStatement(s)
+	}
+}
+
 func (s *ShowLastInsertStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -76157,6 +79552,18 @@ func (s *ShowTableIdStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowTableIdStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowTableIdStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTableIdStatement(s)
+	}
+}
+
+func (s *ShowTableIdStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTableIdStatement(s)
+	}
 }
 
 func (s *ShowTableIdStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -76279,6 +79686,18 @@ func (s *ShowDatabaseIdStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowDatabaseIdStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDatabaseIdStatement(s)
+	}
+}
+
+func (s *ShowDatabaseIdStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDatabaseIdStatement(s)
+	}
+}
+
 func (s *ShowDatabaseIdStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -76397,6 +79816,18 @@ func (s *ShowPartitionIdStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowPartitionIdStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowPartitionIdStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPartitionIdStatement(s)
+	}
+}
+
+func (s *ShowPartitionIdStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPartitionIdStatement(s)
+	}
 }
 
 func (s *ShowPartitionIdStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -76534,6 +79965,18 @@ func (s *ShowTableStatsStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowTableStatsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowTableStatsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTableStatsStatement(s)
+	}
+}
+
+func (s *ShowTableStatsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTableStatsStatement(s)
+	}
 }
 
 func (s *ShowTableStatsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -76723,6 +80166,18 @@ func (s *ShowColumnStatsStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowColumnStatsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowColumnStatsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowColumnStatsStatement(s)
+	}
+}
+
+func (s *ShowColumnStatsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowColumnStatsStatement(s)
+	}
 }
 
 func (s *ShowColumnStatsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -76965,6 +80420,18 @@ func (s *ShowConvertLightSchemaChangeStatementContext) ToStringTree(ruleNames []
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowConvertLightSchemaChangeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowConvertLightSchemaChangeStatement(s)
+	}
+}
+
+func (s *ShowConvertLightSchemaChangeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowConvertLightSchemaChangeStatement(s)
+	}
+}
+
 func (s *ShowConvertLightSchemaChangeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -77161,6 +80628,18 @@ func (s *ShowCatalogRecycleBinStatementContext) GetRuleContext() antlr.RuleConte
 
 func (s *ShowCatalogRecycleBinStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCatalogRecycleBinStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCatalogRecycleBinStatement(s)
+	}
+}
+
+func (s *ShowCatalogRecycleBinStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCatalogRecycleBinStatement(s)
+	}
 }
 
 func (s *ShowCatalogRecycleBinStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -77401,6 +80880,18 @@ func (s *ShowTrashStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowTrashStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowTrashStatement(s)
+	}
+}
+
+func (s *ShowTrashStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowTrashStatement(s)
+	}
+}
+
 func (s *ShowTrashStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -77576,6 +81067,18 @@ func (s *ShowMigrationsStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowMigrationsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowMigrationsStatement(s)
+	}
+}
+
+func (s *ShowMigrationsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowMigrationsStatement(s)
+	}
+}
+
 func (s *ShowMigrationsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -77686,6 +81189,18 @@ func (s *ShowWorkloadGroupsStatementContext) GetRuleContext() antlr.RuleContext 
 
 func (s *ShowWorkloadGroupsStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowWorkloadGroupsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowWorkloadGroupsStatement(s)
+	}
+}
+
+func (s *ShowWorkloadGroupsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowWorkloadGroupsStatement(s)
+	}
 }
 
 func (s *ShowWorkloadGroupsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -77828,6 +81343,18 @@ func (s *ShowJobTaskStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowJobTaskStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowJobTaskStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowJobTaskStatement(s)
+	}
+}
+
+func (s *ShowJobTaskStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowJobTaskStatement(s)
+	}
 }
 
 func (s *ShowJobTaskStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -78048,6 +81575,18 @@ func (s *CreateUserStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateUserStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateUserStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateUserStatement(s)
+	}
+}
+
+func (s *CreateUserStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateUserStatement(s)
+	}
 }
 
 func (s *CreateUserStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -78280,6 +81819,18 @@ func (s *DropUserStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropUserStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropUserStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropUserStatement(s)
+	}
+}
+
+func (s *DropUserStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropUserStatement(s)
+	}
 }
 
 func (s *DropUserStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -78522,6 +82073,18 @@ func (s *AlterUserStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AlterUserStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterUserStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterUserStatement(s)
+	}
+}
+
+func (s *AlterUserStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterUserStatement(s)
+	}
 }
 
 func (s *AlterUserStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -78846,6 +82409,18 @@ func (s *ShowUserStatementContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowUserStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowUserStatement(s)
+	}
+}
+
+func (s *ShowUserStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowUserStatement(s)
+	}
+}
+
 func (s *ShowUserStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -78979,6 +82554,18 @@ func (s *ShowAllAuthenticationContext) AUTHENTICATION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserAUTHENTICATION, 0)
 }
 
+func (s *ShowAllAuthenticationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowAllAuthentication(s)
+	}
+}
+
+func (s *ShowAllAuthenticationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowAllAuthentication(s)
+	}
+}
+
 func (s *ShowAllAuthenticationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -79033,6 +82620,18 @@ func (s *ShowAuthenticationForUserContext) User() IUserContext {
 	}
 
 	return t.(IUserContext)
+}
+
+func (s *ShowAuthenticationForUserContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowAuthenticationForUser(s)
+	}
+}
+
+func (s *ShowAuthenticationForUserContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowAuthenticationForUser(s)
+	}
 }
 
 func (s *ShowAuthenticationForUserContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -79239,6 +82838,18 @@ func (s *ExecuteAsStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExecuteAsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExecuteAsStatement(s)
+	}
+}
+
+func (s *ExecuteAsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExecuteAsStatement(s)
+	}
+}
+
 func (s *ExecuteAsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -79433,6 +83044,18 @@ func (s *CreateRoleStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateRoleStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateRoleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateRoleStatement(s)
+	}
+}
+
+func (s *CreateRoleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateRoleStatement(s)
+	}
 }
 
 func (s *CreateRoleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -79655,6 +83278,18 @@ func (s *AlterRoleStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterRoleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterRoleStatement(s)
+	}
+}
+
+func (s *AlterRoleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterRoleStatement(s)
+	}
+}
+
 func (s *AlterRoleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -79849,6 +83484,18 @@ func (s *DropRoleStatementContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropRoleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropRoleStatement(s)
+	}
+}
+
+func (s *DropRoleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropRoleStatement(s)
+	}
+}
+
 func (s *DropRoleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -79986,6 +83633,18 @@ func (s *ShowRolesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowRolesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowRolesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowRolesStatement(s)
+	}
+}
+
+func (s *ShowRolesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowRolesStatement(s)
+	}
 }
 
 func (s *ShowRolesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -80148,6 +83807,18 @@ func (s *GrantRoleToUserContext) USER() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserUSER, 0)
 }
 
+func (s *GrantRoleToUserContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantRoleToUser(s)
+	}
+}
+
+func (s *GrantRoleToUserContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantRoleToUser(s)
+	}
+}
+
 func (s *GrantRoleToUserContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -80218,6 +83889,18 @@ func (s *GrantRoleToRoleContext) IdentifierOrString() IIdentifierOrStringContext
 	}
 
 	return t.(IIdentifierOrStringContext)
+}
+
+func (s *GrantRoleToRoleContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantRoleToRole(s)
+	}
+}
+
+func (s *GrantRoleToRoleContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantRoleToRole(s)
+	}
 }
 
 func (s *GrantRoleToRoleContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -80453,6 +84136,18 @@ func (s *RevokeRoleFromUserContext) USER() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserUSER, 0)
 }
 
+func (s *RevokeRoleFromUserContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeRoleFromUser(s)
+	}
+}
+
+func (s *RevokeRoleFromUserContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeRoleFromUser(s)
+	}
+}
+
 func (s *RevokeRoleFromUserContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -80523,6 +84218,18 @@ func (s *RevokeRoleFromRoleContext) IdentifierOrString() IIdentifierOrStringCont
 	}
 
 	return t.(IIdentifierOrStringContext)
+}
+
+func (s *RevokeRoleFromRoleContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeRoleFromRole(s)
+	}
+}
+
+func (s *RevokeRoleFromRoleContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeRoleFromRole(s)
+	}
 }
 
 func (s *RevokeRoleFromRoleContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -80740,6 +84447,18 @@ func (s *SetRoleStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SetRoleStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SetRoleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetRoleStatement(s)
+	}
+}
+
+func (s *SetRoleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetRoleStatement(s)
+	}
 }
 
 func (s *SetRoleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -81024,6 +84743,18 @@ func (s *SetDefaultRoleStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SetDefaultRoleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetDefaultRoleStatement(s)
+	}
+}
+
+func (s *SetDefaultRoleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetDefaultRoleStatement(s)
+	}
+}
+
 func (s *SetDefaultRoleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -81219,6 +84950,18 @@ func (s *GrantRevokeClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *GrantRevokeClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *GrantRevokeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantRevokeClause(s)
+	}
+}
+
+func (s *GrantRevokeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantRevokeClause(s)
+	}
 }
 
 func (s *GrantRevokeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -81480,6 +85223,18 @@ func (s *GrantOnAllContext) OPTION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserOPTION, 0)
 }
 
+func (s *GrantOnAllContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantOnAll(s)
+	}
+}
+
+func (s *GrantOnAllContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantOnAll(s)
+	}
+}
+
 func (s *GrantOnAllContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -81586,6 +85341,18 @@ func (s *GrantOnFuncContext) WITH() antlr.TerminalNode {
 
 func (s *GrantOnFuncContext) OPTION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserOPTION, 0)
+}
+
+func (s *GrantOnFuncContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantOnFunc(s)
+	}
+}
+
+func (s *GrantOnFuncContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantOnFunc(s)
+	}
 }
 
 func (s *GrantOnFuncContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -81704,6 +85471,18 @@ func (s *GrantOnPrimaryObjContext) OPTION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserOPTION, 0)
 }
 
+func (s *GrantOnPrimaryObjContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantOnPrimaryObj(s)
+	}
+}
+
+func (s *GrantOnPrimaryObjContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantOnPrimaryObj(s)
+	}
+}
+
 func (s *GrantOnPrimaryObjContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -81802,6 +85581,18 @@ func (s *GrantOnTableBriefContext) WITH() antlr.TerminalNode {
 
 func (s *GrantOnTableBriefContext) OPTION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserOPTION, 0)
+}
+
+func (s *GrantOnTableBriefContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantOnTableBrief(s)
+	}
+}
+
+func (s *GrantOnTableBriefContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantOnTableBrief(s)
+	}
 }
 
 func (s *GrantOnTableBriefContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -81921,6 +85712,18 @@ func (s *GrantOnUserContext) OPTION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserOPTION, 0)
 }
 
+func (s *GrantOnUserContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantOnUser(s)
+	}
+}
+
+func (s *GrantOnUserContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantOnUser(s)
+	}
+}
+
 func (s *GrantOnUserContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -82007,6 +85810,18 @@ func (s *GrantOnSystemContext) WITH() antlr.TerminalNode {
 
 func (s *GrantOnSystemContext) OPTION() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserOPTION, 0)
+}
+
+func (s *GrantOnSystemContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGrantOnSystem(s)
+	}
+}
+
+func (s *GrantOnSystemContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGrantOnSystem(s)
+	}
 }
 
 func (s *GrantOnSystemContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -82781,6 +86596,18 @@ func (s *RevokeOnPrimaryObjContext) GrantRevokeClause() IGrantRevokeClauseContex
 	return t.(IGrantRevokeClauseContext)
 }
 
+func (s *RevokeOnPrimaryObjContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeOnPrimaryObj(s)
+	}
+}
+
+func (s *RevokeOnPrimaryObjContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeOnPrimaryObj(s)
+	}
+}
+
 func (s *RevokeOnPrimaryObjContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -82867,6 +86694,18 @@ func (s *RevokeOnTableBriefContext) GrantRevokeClause() IGrantRevokeClauseContex
 	}
 
 	return t.(IGrantRevokeClauseContext)
+}
+
+func (s *RevokeOnTableBriefContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeOnTableBrief(s)
+	}
+}
+
+func (s *RevokeOnTableBriefContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeOnTableBrief(s)
+	}
 }
 
 func (s *RevokeOnTableBriefContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -82998,6 +86837,18 @@ func (s *RevokeOnAllContext) IdentifierOrString() IIdentifierOrStringContext {
 	return t.(IIdentifierOrStringContext)
 }
 
+func (s *RevokeOnAllContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeOnAll(s)
+	}
+}
+
+func (s *RevokeOnAllContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeOnAll(s)
+	}
+}
+
 func (s *RevokeOnAllContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -83103,6 +86954,18 @@ func (s *RevokeOnUserContext) GrantRevokeClause() IGrantRevokeClauseContext {
 	return t.(IGrantRevokeClauseContext)
 }
 
+func (s *RevokeOnUserContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeOnUser(s)
+	}
+}
+
+func (s *RevokeOnUserContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeOnUser(s)
+	}
+}
+
 func (s *RevokeOnUserContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -83199,6 +87062,18 @@ func (s *RevokeOnFuncContext) GLOBAL() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserGLOBAL, 0)
 }
 
+func (s *RevokeOnFuncContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeOnFunc(s)
+	}
+}
+
+func (s *RevokeOnFuncContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeOnFunc(s)
+	}
+}
+
 func (s *RevokeOnFuncContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -83273,6 +87148,18 @@ func (s *RevokeOnSystemContext) GrantRevokeClause() IGrantRevokeClauseContext {
 	}
 
 	return t.(IGrantRevokeClauseContext)
+}
+
+func (s *RevokeOnSystemContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRevokeOnSystem(s)
+	}
+}
+
+func (s *RevokeOnSystemContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRevokeOnSystem(s)
+	}
 }
 
 func (s *RevokeOnSystemContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -83807,6 +87694,18 @@ func (s *ShowGrantsStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowGrantsStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowGrantsStatement(s)
+	}
+}
+
+func (s *ShowGrantsStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowGrantsStatement(s)
+	}
+}
+
 func (s *ShowGrantsStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -84069,6 +87968,18 @@ func (s *AuthWithPluginContext) AS() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserAS, 0)
 }
 
+func (s *AuthWithPluginContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAuthWithPlugin(s)
+	}
+}
+
+func (s *AuthWithPluginContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAuthWithPlugin(s)
+	}
+}
+
 func (s *AuthWithPluginContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -84123,6 +88034,18 @@ func (s *AuthWithoutPluginContext) String_() IStringContext {
 
 func (s *AuthWithoutPluginContext) PASSWORD() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserPASSWORD, 0)
+}
+
+func (s *AuthWithoutPluginContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAuthWithoutPlugin(s)
+	}
+}
+
+func (s *AuthWithoutPluginContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAuthWithoutPlugin(s)
+	}
 }
 
 func (s *AuthWithoutPluginContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -84351,6 +88274,18 @@ func (s *PrivObjectNameContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PrivObjectNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivObjectName(s)
+	}
+}
+
+func (s *PrivObjectNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivObjectName(s)
+	}
+}
+
 func (s *PrivObjectNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -84501,6 +88436,18 @@ func (s *PrivObjectNameListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PrivObjectNameListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PrivObjectNameListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivObjectNameList(s)
+	}
+}
+
+func (s *PrivObjectNameListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivObjectNameList(s)
+	}
 }
 
 func (s *PrivObjectNameListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -84704,6 +88651,18 @@ func (s *PrivFunctionObjectNameListContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PrivFunctionObjectNameListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivFunctionObjectNameList(s)
+	}
+}
+
+func (s *PrivFunctionObjectNameListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivFunctionObjectNameList(s)
+	}
+}
+
 func (s *PrivFunctionObjectNameListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -84900,6 +88859,18 @@ func (s *PrivilegeTypeListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PrivilegeTypeListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PrivilegeTypeListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivilegeTypeList(s)
+	}
+}
+
+func (s *PrivilegeTypeListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivilegeTypeList(s)
+	}
 }
 
 func (s *PrivilegeTypeListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -85195,6 +89166,18 @@ func (s *PrivilegeTypeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PrivilegeTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PrivilegeTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivilegeType(s)
+	}
+}
+
+func (s *PrivilegeTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivilegeType(s)
+	}
 }
 
 func (s *PrivilegeTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -85768,6 +89751,18 @@ func (s *PrivObjectTypeContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PrivObjectTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivObjectType(s)
+	}
+}
+
+func (s *PrivObjectTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivObjectType(s)
+	}
+}
+
 func (s *PrivObjectTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -86081,6 +90076,18 @@ func (s *PrivObjectTypePluralContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PrivObjectTypePluralContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PrivObjectTypePluralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrivObjectTypePlural(s)
+	}
+}
+
+func (s *PrivObjectTypePluralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrivObjectTypePlural(s)
+	}
 }
 
 func (s *PrivObjectTypePluralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -86409,6 +90416,18 @@ func (s *CreateSecurityIntegrationStatementContext) ToStringTree(ruleNames []str
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateSecurityIntegrationStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateSecurityIntegrationStatement(s)
+	}
+}
+
+func (s *CreateSecurityIntegrationStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateSecurityIntegrationStatement(s)
+	}
+}
+
 func (s *CreateSecurityIntegrationStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -86576,6 +90595,18 @@ func (s *AlterSecurityIntegrationStatementContext) ToStringTree(ruleNames []stri
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterSecurityIntegrationStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterSecurityIntegrationStatement(s)
+	}
+}
+
+func (s *AlterSecurityIntegrationStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterSecurityIntegrationStatement(s)
+	}
+}
+
 func (s *AlterSecurityIntegrationStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -86729,6 +90760,18 @@ func (s *DropSecurityIntegrationStatementContext) ToStringTree(ruleNames []strin
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropSecurityIntegrationStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropSecurityIntegrationStatement(s)
+	}
+}
+
+func (s *DropSecurityIntegrationStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropSecurityIntegrationStatement(s)
+	}
+}
+
 func (s *DropSecurityIntegrationStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -86851,6 +90894,18 @@ func (s *ShowSecurityIntegrationStatementContext) GetRuleContext() antlr.RuleCon
 
 func (s *ShowSecurityIntegrationStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowSecurityIntegrationStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowSecurityIntegrationStatement(s)
+	}
+}
+
+func (s *ShowSecurityIntegrationStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowSecurityIntegrationStatement(s)
+	}
 }
 
 func (s *ShowSecurityIntegrationStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -86994,6 +91049,18 @@ func (s *ShowCreateSecurityIntegrationStatementContext) GetRuleContext() antlr.R
 
 func (s *ShowCreateSecurityIntegrationStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCreateSecurityIntegrationStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateSecurityIntegrationStatement(s)
+	}
+}
+
+func (s *ShowCreateSecurityIntegrationStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateSecurityIntegrationStatement(s)
+	}
 }
 
 func (s *ShowCreateSecurityIntegrationStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -87162,6 +91229,18 @@ func (s *CreateGroupProviderStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateGroupProviderStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateGroupProviderStatement(s)
+	}
+}
+
+func (s *CreateGroupProviderStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateGroupProviderStatement(s)
+	}
+}
+
 func (s *CreateGroupProviderStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -87307,6 +91386,18 @@ func (s *DropGroupProviderStatementContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropGroupProviderStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropGroupProviderStatement(s)
+	}
+}
+
+func (s *DropGroupProviderStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropGroupProviderStatement(s)
+	}
+}
+
 func (s *DropGroupProviderStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -87429,6 +91520,18 @@ func (s *ShowGroupProvidersStatementContext) GetRuleContext() antlr.RuleContext 
 
 func (s *ShowGroupProvidersStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowGroupProvidersStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowGroupProvidersStatement(s)
+	}
+}
+
+func (s *ShowGroupProvidersStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowGroupProvidersStatement(s)
+	}
 }
 
 func (s *ShowGroupProvidersStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -87571,6 +91674,18 @@ func (s *ShowCreateGroupProviderStatementContext) GetRuleContext() antlr.RuleCon
 
 func (s *ShowCreateGroupProviderStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowCreateGroupProviderStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowCreateGroupProviderStatement(s)
+	}
+}
+
+func (s *ShowCreateGroupProviderStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowCreateGroupProviderStatement(s)
+	}
 }
 
 func (s *ShowCreateGroupProviderStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -87897,6 +92012,18 @@ func (s *BackupStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BackupStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BackupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBackupStatement(s)
+	}
+}
+
+func (s *BackupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBackupStatement(s)
+	}
 }
 
 func (s *BackupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -88243,6 +92370,18 @@ func (s *CancelBackupStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelBackupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelBackupStatement(s)
+	}
+}
+
+func (s *CancelBackupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelBackupStatement(s)
+	}
+}
+
 func (s *CancelBackupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -88430,6 +92569,18 @@ func (s *ShowBackupStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowBackupStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowBackupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowBackupStatement(s)
+	}
+}
+
+func (s *ShowBackupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowBackupStatement(s)
+	}
 }
 
 func (s *ShowBackupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -88779,6 +92930,18 @@ func (s *RestoreStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RestoreStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RestoreStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRestoreStatement(s)
+	}
+}
+
+func (s *RestoreStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRestoreStatement(s)
+	}
 }
 
 func (s *RestoreStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -89150,6 +93313,18 @@ func (s *CancelRestoreStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CancelRestoreStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelRestoreStatement(s)
+	}
+}
+
+func (s *CancelRestoreStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelRestoreStatement(s)
+	}
+}
+
 func (s *CancelRestoreStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -89372,6 +93547,18 @@ func (s *ShowRestoreStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowRestoreStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowRestoreStatement(s)
+	}
+}
+
+func (s *ShowRestoreStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowRestoreStatement(s)
+	}
+}
+
 func (s *ShowRestoreStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -89573,6 +93760,18 @@ func (s *ShowSnapshotStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowSnapshotStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowSnapshotStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowSnapshotStatement(s)
+	}
+}
+
+func (s *ShowSnapshotStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowSnapshotStatement(s)
+	}
 }
 
 func (s *ShowSnapshotStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -89858,6 +94057,18 @@ func (s *CreateRepositoryStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreateRepositoryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateRepositoryStatement(s)
+	}
+}
+
+func (s *CreateRepositoryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateRepositoryStatement(s)
+	}
+}
+
 func (s *CreateRepositoryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -90095,6 +94306,18 @@ func (s *DropRepositoryStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropRepositoryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropRepositoryStatement(s)
+	}
+}
+
+func (s *DropRepositoryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropRepositoryStatement(s)
+	}
+}
+
 func (s *DropRepositoryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -90223,6 +94446,18 @@ func (s *AddSqlBlackListStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AddSqlBlackListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddSqlBlackListStatement(s)
+	}
+}
+
+func (s *AddSqlBlackListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddSqlBlackListStatement(s)
+	}
+}
+
 func (s *AddSqlBlackListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -90342,6 +94577,18 @@ func (s *DelSqlBlackListStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DelSqlBlackListStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DelSqlBlackListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDelSqlBlackListStatement(s)
+	}
+}
+
+func (s *DelSqlBlackListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDelSqlBlackListStatement(s)
+	}
 }
 
 func (s *DelSqlBlackListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -90493,6 +94740,18 @@ func (s *ShowSqlBlackListStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowSqlBlackListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowSqlBlackListStatement(s)
+	}
+}
+
+func (s *ShowSqlBlackListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowSqlBlackListStatement(s)
+	}
+}
+
 func (s *ShowSqlBlackListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -90598,6 +94857,18 @@ func (s *ShowWhiteListStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowWhiteListStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowWhiteListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowWhiteListStatement(s)
+	}
+}
+
+func (s *ShowWhiteListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowWhiteListStatement(s)
+	}
 }
 
 func (s *ShowWhiteListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -90720,6 +94991,18 @@ func (s *AddBackendBlackListStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *AddBackendBlackListStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AddBackendBlackListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAddBackendBlackListStatement(s)
+	}
+}
+
+func (s *AddBackendBlackListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAddBackendBlackListStatement(s)
+	}
 }
 
 func (s *AddBackendBlackListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -90894,6 +95177,18 @@ func (s *DelBackendBlackListStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DelBackendBlackListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDelBackendBlackListStatement(s)
+	}
+}
+
+func (s *DelBackendBlackListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDelBackendBlackListStatement(s)
+	}
+}
+
 func (s *DelBackendBlackListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -91056,6 +95351,18 @@ func (s *ShowBackendBlackListStatementContext) ToStringTree(ruleNames []string, 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowBackendBlackListStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowBackendBlackListStatement(s)
+	}
+}
+
+func (s *ShowBackendBlackListStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowBackendBlackListStatement(s)
+	}
+}
+
 func (s *ShowBackendBlackListStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -91202,6 +95509,18 @@ func (s *DataCacheTargetContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DataCacheTargetContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DataCacheTargetContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDataCacheTarget(s)
+	}
+}
+
+func (s *DataCacheTargetContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDataCacheTarget(s)
+	}
 }
 
 func (s *DataCacheTargetContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -91402,6 +95721,18 @@ func (s *CreateDataCacheRuleStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *CreateDataCacheRuleStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateDataCacheRuleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateDataCacheRuleStatement(s)
+	}
+}
+
+func (s *CreateDataCacheRuleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateDataCacheRuleStatement(s)
+	}
 }
 
 func (s *CreateDataCacheRuleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -91608,6 +95939,18 @@ func (s *ShowDataCacheRulesStatementContext) ToStringTree(ruleNames []string, re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowDataCacheRulesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowDataCacheRulesStatement(s)
+	}
+}
+
+func (s *ShowDataCacheRulesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowDataCacheRulesStatement(s)
+	}
+}
+
 func (s *ShowDataCacheRulesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -91731,6 +96074,18 @@ func (s *DropDataCacheRuleStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropDataCacheRuleStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropDataCacheRuleStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropDataCacheRuleStatement(s)
+	}
+}
+
+func (s *DropDataCacheRuleStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropDataCacheRuleStatement(s)
+	}
 }
 
 func (s *DropDataCacheRuleStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -91859,6 +96214,18 @@ func (s *ClearDataCacheRulesStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *ClearDataCacheRulesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ClearDataCacheRulesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterClearDataCacheRulesStatement(s)
+	}
+}
+
+func (s *ClearDataCacheRulesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitClearDataCacheRulesStatement(s)
+	}
 }
 
 func (s *ClearDataCacheRulesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -92089,6 +96456,18 @@ func (s *DataCacheSelectStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DataCacheSelectStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DataCacheSelectStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDataCacheSelectStatement(s)
+	}
+}
+
+func (s *DataCacheSelectStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDataCacheSelectStatement(s)
+	}
 }
 
 func (s *DataCacheSelectStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -92393,6 +96772,18 @@ func (s *ExportStatementContext) ToStringTree(ruleNames []string, recog antlr.Re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExportStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExportStatement(s)
+	}
+}
+
+func (s *ExportStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExportStatement(s)
+	}
+}
+
 func (s *ExportStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -92686,6 +97077,18 @@ func (s *CancelExportStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CancelExportStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CancelExportStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCancelExportStatement(s)
+	}
+}
+
+func (s *CancelExportStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCancelExportStatement(s)
+	}
 }
 
 func (s *CancelExportStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -93029,6 +97432,18 @@ func (s *ShowExportStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowExportStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowExportStatement(s)
+	}
+}
+
+func (s *ShowExportStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowExportStatement(s)
+	}
+}
+
 func (s *ShowExportStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -93318,6 +97733,18 @@ func (s *InstallPluginStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *InstallPluginStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInstallPluginStatement(s)
+	}
+}
+
+func (s *InstallPluginStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInstallPluginStatement(s)
+	}
+}
+
 func (s *InstallPluginStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -93468,6 +97895,18 @@ func (s *UninstallPluginStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *UninstallPluginStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UninstallPluginStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUninstallPluginStatement(s)
+	}
+}
+
+func (s *UninstallPluginStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUninstallPluginStatement(s)
+	}
 }
 
 func (s *UninstallPluginStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -93651,6 +98090,18 @@ func (s *CreateFileStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateFileStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateFileStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateFileStatement(s)
+	}
+}
+
+func (s *CreateFileStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateFileStatement(s)
+	}
 }
 
 func (s *CreateFileStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -93870,6 +98321,18 @@ func (s *DropFileStatementContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropFileStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropFileStatement(s)
+	}
+}
+
+func (s *DropFileStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropFileStatement(s)
+	}
+}
+
 func (s *DropFileStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -94051,6 +98514,18 @@ func (s *ShowSmallFilesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowSmallFilesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowSmallFilesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowSmallFilesStatement(s)
+	}
+}
+
+func (s *ShowSmallFilesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowSmallFilesStatement(s)
+	}
 }
 
 func (s *ShowSmallFilesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -94280,6 +98755,18 @@ func (s *CreatePipeStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CreatePipeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreatePipeStatement(s)
+	}
+}
+
+func (s *CreatePipeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreatePipeStatement(s)
+	}
+}
+
 func (s *CreatePipeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -94452,6 +98939,18 @@ func (s *DropPipeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DropPipeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DropPipeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropPipeStatement(s)
+	}
+}
+
+func (s *DropPipeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropPipeStatement(s)
+	}
 }
 
 func (s *DropPipeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -94656,6 +99155,18 @@ func (s *AlterPipeClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AlterPipeClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AlterPipeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterPipeClause(s)
+	}
+}
+
+func (s *AlterPipeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterPipeClause(s)
+	}
 }
 
 func (s *AlterPipeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -94874,6 +99385,18 @@ func (s *AlterPipeStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterPipeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterPipeStatement(s)
+	}
+}
+
+func (s *AlterPipeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterPipeStatement(s)
+	}
+}
+
 func (s *AlterPipeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -95009,6 +99532,18 @@ func (s *DescPipeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DescPipeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DescPipeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDescPipeStatement(s)
+	}
+}
+
+func (s *DescPipeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDescPipeStatement(s)
+	}
 }
 
 func (s *DescPipeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -95272,6 +99807,18 @@ func (s *ShowPipeStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowPipeStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowPipeStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPipeStatement(s)
+	}
+}
+
+func (s *ShowPipeStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPipeStatement(s)
+	}
 }
 
 func (s *ShowPipeStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -95548,6 +100095,18 @@ func (s *SetStatementContext) ToStringTree(ruleNames []string, recog antlr.Recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SetStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetStatement(s)
+	}
+}
+
+func (s *SetStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetStatement(s)
+	}
+}
+
 func (s *SetStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -95726,6 +100285,18 @@ func (s *SetTransactionContext) VarType() IVarTypeContext {
 	return t.(IVarTypeContext)
 }
 
+func (s *SetTransactionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetTransaction(s)
+	}
+}
+
+func (s *SetTransactionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetTransaction(s)
+	}
+}
+
 func (s *SetTransactionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -95837,6 +100408,18 @@ func (s *SetNamesContext) COLLATE() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserCOLLATE, 0)
 }
 
+func (s *SetNamesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetNames(s)
+	}
+}
+
+func (s *SetNamesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetNames(s)
+	}
+}
+
 func (s *SetNamesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -95913,6 +100496,18 @@ func (s *SetPasswordContext) User() IUserContext {
 	return t.(IUserContext)
 }
 
+func (s *SetPasswordContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetPassword(s)
+	}
+}
+
+func (s *SetPasswordContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetPassword(s)
+	}
+}
+
 func (s *SetPasswordContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -95975,6 +100570,18 @@ func (s *SetUserVarContext) Expression() IExpressionContext {
 	}
 
 	return t.(IExpressionContext)
+}
+
+func (s *SetUserVarContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetUserVar(s)
+	}
+}
+
+func (s *SetUserVarContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetUserVar(s)
+	}
 }
 
 func (s *SetUserVarContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -96071,6 +100678,18 @@ func (s *SetSystemVarContext) SystemVariable() ISystemVariableContext {
 	}
 
 	return t.(ISystemVariableContext)
+}
+
+func (s *SetSystemVarContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetSystemVar(s)
+	}
+}
+
+func (s *SetSystemVarContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetSystemVar(s)
+	}
 }
 
 func (s *SetSystemVarContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -96625,6 +101244,18 @@ func (s *Transaction_characteristicsContext) ToStringTree(ruleNames []string, re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *Transaction_characteristicsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTransaction_characteristics(s)
+	}
+}
+
+func (s *Transaction_characteristicsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTransaction_characteristics(s)
+	}
+}
+
 func (s *Transaction_characteristicsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -96782,6 +101413,18 @@ func (s *Transaction_access_modeContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *Transaction_access_modeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTransaction_access_mode(s)
+	}
+}
+
+func (s *Transaction_access_modeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTransaction_access_mode(s)
+	}
+}
+
 func (s *Transaction_access_modeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -96937,6 +101580,18 @@ func (s *Isolation_levelContext) ToStringTree(ruleNames []string, recog antlr.Re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *Isolation_levelContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIsolation_level(s)
+	}
+}
+
+func (s *Isolation_levelContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIsolation_level(s)
+	}
+}
+
 func (s *Isolation_levelContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -97061,6 +101716,18 @@ func (s *Isolation_typesContext) GetRuleContext() antlr.RuleContext {
 
 func (s *Isolation_typesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *Isolation_typesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIsolation_types(s)
+	}
+}
+
+func (s *Isolation_typesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIsolation_types(s)
+	}
 }
 
 func (s *Isolation_typesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -97253,6 +101920,18 @@ func (s *SetExprOrDefaultContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SetExprOrDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetExprOrDefault(s)
+	}
+}
+
+func (s *SetExprOrDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetExprOrDefault(s)
+	}
+}
+
 func (s *SetExprOrDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -97433,6 +102112,18 @@ func (s *SetUserPropertyStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SetUserPropertyStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetUserPropertyStatement(s)
+	}
+}
+
+func (s *SetUserPropertyStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetUserPropertyStatement(s)
+	}
+}
+
 func (s *SetUserPropertyStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -97601,6 +102292,18 @@ func (s *RoleListContext) ToStringTree(ruleNames []string, recog antlr.Recognize
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RoleListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRoleList(s)
+	}
+}
+
+func (s *RoleListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRoleList(s)
+	}
+}
+
 func (s *RoleListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -97756,6 +102459,18 @@ func (s *ExecuteScriptStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ExecuteScriptStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ExecuteScriptStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExecuteScriptStatement(s)
+	}
+}
+
+func (s *ExecuteScriptStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExecuteScriptStatement(s)
+	}
 }
 
 func (s *ExecuteScriptStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -97936,6 +102651,18 @@ func (s *UnsupportedStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *UnsupportedStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UnsupportedStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUnsupportedStatement(s)
+	}
+}
+
+func (s *UnsupportedStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUnsupportedStatement(s)
+	}
 }
 
 func (s *UnsupportedStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -98177,6 +102904,18 @@ func (s *Lock_itemContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *Lock_itemContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLock_item(s)
+	}
+}
+
+func (s *Lock_itemContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLock_item(s)
+	}
+}
+
 func (s *Lock_itemContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -98319,6 +103058,18 @@ func (s *Lock_typeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *Lock_typeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *Lock_typeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLock_type(s)
+	}
+}
+
+func (s *Lock_typeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLock_type(s)
+	}
 }
 
 func (s *Lock_typeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -98509,6 +103260,18 @@ func (s *AlterPlanAdvisorAddStatementContext) ToStringTree(ruleNames []string, r
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterPlanAdvisorAddStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterPlanAdvisorAddStatement(s)
+	}
+}
+
+func (s *AlterPlanAdvisorAddStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterPlanAdvisorAddStatement(s)
+	}
+}
+
 func (s *AlterPlanAdvisorAddStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -98639,6 +103402,18 @@ func (s *TruncatePlanAdvisorStatementContext) GetRuleContext() antlr.RuleContext
 
 func (s *TruncatePlanAdvisorStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TruncatePlanAdvisorStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTruncatePlanAdvisorStatement(s)
+	}
+}
+
+func (s *TruncatePlanAdvisorStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTruncatePlanAdvisorStatement(s)
+	}
 }
 
 func (s *TruncatePlanAdvisorStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -98783,6 +103558,18 @@ func (s *AlterPlanAdvisorDropStatementContext) ToStringTree(ruleNames []string, 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterPlanAdvisorDropStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterPlanAdvisorDropStatement(s)
+	}
+}
+
+func (s *AlterPlanAdvisorDropStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterPlanAdvisorDropStatement(s)
+	}
+}
+
 func (s *AlterPlanAdvisorDropStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -98913,6 +103700,18 @@ func (s *ShowPlanAdvisorStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowPlanAdvisorStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowPlanAdvisorStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowPlanAdvisorStatement(s)
+	}
+}
+
+func (s *ShowPlanAdvisorStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowPlanAdvisorStatement(s)
+	}
 }
 
 func (s *ShowPlanAdvisorStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -99109,6 +103908,18 @@ func (s *CreateWarehouseStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateWarehouseStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateWarehouseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateWarehouseStatement(s)
+	}
+}
+
+func (s *CreateWarehouseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateWarehouseStatement(s)
+	}
 }
 
 func (s *CreateWarehouseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -99333,6 +104144,18 @@ func (s *DropWarehouseStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropWarehouseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropWarehouseStatement(s)
+	}
+}
+
+func (s *DropWarehouseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropWarehouseStatement(s)
+	}
+}
+
 func (s *DropWarehouseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -99502,6 +104325,18 @@ func (s *SuspendWarehouseStatementContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SuspendWarehouseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSuspendWarehouseStatement(s)
+	}
+}
+
+func (s *SuspendWarehouseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSuspendWarehouseStatement(s)
+	}
+}
+
 func (s *SuspendWarehouseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -99668,6 +104503,18 @@ func (s *ResumeWarehouseStatementContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ResumeWarehouseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterResumeWarehouseStatement(s)
+	}
+}
+
+func (s *ResumeWarehouseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitResumeWarehouseStatement(s)
+	}
+}
+
 func (s *ResumeWarehouseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -99832,6 +104679,18 @@ func (s *SetWarehouseStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SetWarehouseStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SetWarehouseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetWarehouseStatement(s)
+	}
+}
+
+func (s *SetWarehouseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetWarehouseStatement(s)
+	}
 }
 
 func (s *SetWarehouseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -100016,6 +104875,18 @@ func (s *ShowWarehousesStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ShowWarehousesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowWarehousesStatement(s)
+	}
+}
+
+func (s *ShowWarehousesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowWarehousesStatement(s)
+	}
+}
+
 func (s *ShowWarehousesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -100180,6 +105051,18 @@ func (s *ShowClustersStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowClustersStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowClustersStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowClustersStatement(s)
+	}
+}
+
+func (s *ShowClustersStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowClustersStatement(s)
+	}
 }
 
 func (s *ShowClustersStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -100410,6 +105293,18 @@ func (s *ShowNodesStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ShowNodesStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ShowNodesStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterShowNodesStatement(s)
+	}
+}
+
+func (s *ShowNodesStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitShowNodesStatement(s)
+	}
 }
 
 func (s *ShowNodesStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -100687,6 +105582,18 @@ func (s *AlterWarehouseStatementContext) ToStringTree(ruleNames []string, recog 
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterWarehouseStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterWarehouseStatement(s)
+	}
+}
+
+func (s *AlterWarehouseStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterWarehouseStatement(s)
+	}
+}
+
 func (s *AlterWarehouseStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -100935,6 +105842,18 @@ func (s *CreateCNGroupStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CreateCNGroupStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CreateCNGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCreateCNGroupStatement(s)
+	}
+}
+
+func (s *CreateCNGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCreateCNGroupStatement(s)
+	}
 }
 
 func (s *CreateCNGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -101234,6 +106153,18 @@ func (s *DropCNGroupStatementContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DropCNGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDropCNGroupStatement(s)
+	}
+}
+
+func (s *DropCNGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDropCNGroupStatement(s)
+	}
+}
+
 func (s *DropCNGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -101500,6 +106431,18 @@ func (s *EnableCNGroupStatementContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *EnableCNGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterEnableCNGroupStatement(s)
+	}
+}
+
+func (s *EnableCNGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitEnableCNGroupStatement(s)
+	}
+}
+
 func (s *EnableCNGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -101718,6 +106661,18 @@ func (s *DisableCNGroupStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DisableCNGroupStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DisableCNGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDisableCNGroupStatement(s)
+	}
+}
+
+func (s *DisableCNGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDisableCNGroupStatement(s)
+	}
 }
 
 func (s *DisableCNGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -101957,6 +106912,18 @@ func (s *AlterCNGroupStatementContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AlterCNGroupStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAlterCNGroupStatement(s)
+	}
+}
+
+func (s *AlterCNGroupStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAlterCNGroupStatement(s)
+	}
+}
+
 func (s *AlterCNGroupStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -102121,6 +107088,18 @@ func (s *BeginStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BeginStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BeginStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBeginStatement(s)
+	}
+}
+
+func (s *BeginStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBeginStatement(s)
+	}
 }
 
 func (s *BeginStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -102331,6 +107310,18 @@ func (s *CommitStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CommitStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CommitStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCommitStatement(s)
+	}
+}
+
+func (s *CommitStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCommitStatement(s)
+	}
 }
 
 func (s *CommitStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -102555,6 +107546,18 @@ func (s *RollbackStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RollbackStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RollbackStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRollbackStatement(s)
+	}
+}
+
+func (s *RollbackStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRollbackStatement(s)
+	}
 }
 
 func (s *RollbackStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -102785,6 +107788,18 @@ func (s *TranslateStatementContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TranslateStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTranslateStatement(s)
+	}
+}
+
+func (s *TranslateStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTranslateStatement(s)
+	}
+}
+
 func (s *TranslateStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -102899,6 +107914,18 @@ func (s *DialectContext) ToStringTree(ruleNames []string, recog antlr.Recognizer
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DialectContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDialect(s)
+	}
+}
+
+func (s *DialectContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDialect(s)
+	}
+}
+
 func (s *DialectContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -102978,6 +108005,18 @@ func (s *TranslateSQLContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TranslateSQLContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TranslateSQLContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTranslateSQL(s)
+	}
+}
+
+func (s *TranslateSQLContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTranslateSQL(s)
+	}
 }
 
 func (s *TranslateSQLContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -103155,6 +108194,18 @@ func (s *QueryStatementContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *QueryStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQueryStatement(s)
+	}
+}
+
+func (s *QueryStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQueryStatement(s)
+	}
+}
+
 func (s *QueryStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -103312,6 +108363,18 @@ func (s *QueryRelationContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *QueryRelationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQueryRelation(s)
+	}
+}
+
+func (s *QueryRelationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQueryRelation(s)
+	}
+}
+
 func (s *QueryRelationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -103459,6 +108522,18 @@ func (s *WithClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *WithClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *WithClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterWithClause(s)
+	}
+}
+
+func (s *WithClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitWithClause(s)
+	}
 }
 
 func (s *WithClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -103669,6 +108744,18 @@ func (s *QueryNoWithContext) GetRuleContext() antlr.RuleContext {
 
 func (s *QueryNoWithContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *QueryNoWithContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQueryNoWith(s)
+	}
+}
+
+func (s *QueryNoWithContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQueryNoWith(s)
+	}
 }
 
 func (s *QueryNoWithContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -103939,6 +109026,18 @@ func (s *QueryPeriodContext) GetRuleContext() antlr.RuleContext {
 
 func (s *QueryPeriodContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *QueryPeriodContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQueryPeriod(s)
+	}
+}
+
+func (s *QueryPeriodContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQueryPeriod(s)
+	}
 }
 
 func (s *QueryPeriodContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -104227,6 +109326,18 @@ func (s *PeriodTypeContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PeriodTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPeriodType(s)
+	}
+}
+
+func (s *PeriodTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPeriodType(s)
+	}
+}
+
 func (s *PeriodTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -104356,6 +109467,18 @@ func (s *QueryWithParenthesesContext) Subquery() ISubqueryContext {
 	return t.(ISubqueryContext)
 }
 
+func (s *QueryWithParenthesesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQueryWithParentheses(s)
+	}
+}
+
+func (s *QueryWithParenthesesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQueryWithParentheses(s)
+	}
+}
+
 func (s *QueryWithParenthesesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -104472,6 +109595,18 @@ func (s *SetOperationContext) MINUS() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserMINUS, 0)
 }
 
+func (s *SetOperationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetOperation(s)
+	}
+}
+
+func (s *SetOperationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetOperation(s)
+	}
+}
+
 func (s *SetOperationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -104514,6 +109649,18 @@ func (s *QueryPrimaryDefaultContext) QuerySpecification() IQuerySpecificationCon
 	}
 
 	return t.(IQuerySpecificationContext)
+}
+
+func (s *QueryPrimaryDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQueryPrimaryDefault(s)
+	}
+}
+
+func (s *QueryPrimaryDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQueryPrimaryDefault(s)
+	}
 }
 
 func (s *QueryPrimaryDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -104791,6 +109938,18 @@ func (s *SubqueryContext) ToStringTree(ruleNames []string, recog antlr.Recognize
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SubqueryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubquery(s)
+	}
+}
+
+func (s *SubqueryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubquery(s)
+	}
+}
+
 func (s *SubqueryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -104907,6 +110066,18 @@ func (s *RowConstructorContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RowConstructorContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RowConstructorContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRowConstructor(s)
+	}
+}
+
+func (s *RowConstructorContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRowConstructor(s)
+	}
 }
 
 func (s *RowConstructorContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -105072,6 +110243,18 @@ func (s *SortItemContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SortItemContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SortItemContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSortItem(s)
+	}
+}
+
+func (s *SortItemContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSortItem(s)
+	}
 }
 
 func (s *SortItemContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -105250,6 +110433,18 @@ func (s *LimitConstExprContext) GetRuleContext() antlr.RuleContext {
 
 func (s *LimitConstExprContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *LimitConstExprContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLimitConstExpr(s)
+	}
+}
+
+func (s *LimitConstExprContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLimitConstExpr(s)
+	}
 }
 
 func (s *LimitConstExprContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -105445,6 +110640,18 @@ func (s *LimitElementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *LimitElementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *LimitElementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLimitElement(s)
+	}
+}
+
+func (s *LimitElementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLimitElement(s)
+	}
 }
 
 func (s *LimitElementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -105848,6 +111055,18 @@ func (s *QuerySpecificationContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *QuerySpecificationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQuerySpecification(s)
+	}
+}
+
+func (s *QuerySpecificationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQuerySpecification(s)
+	}
+}
+
 func (s *QuerySpecificationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -106138,6 +111357,18 @@ func (s *DualContext) DUAL() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserDUAL, 0)
 }
 
+func (s *DualContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDual(s)
+	}
+}
+
+func (s *DualContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDual(s)
+	}
+}
+
 func (s *DualContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -106200,6 +111431,18 @@ func (s *FromContext) PivotClause() IPivotClauseContext {
 	}
 
 	return t.(IPivotClauseContext)
+}
+
+func (s *FromContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterFrom(s)
+	}
+}
+
+func (s *FromContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitFrom(s)
+	}
 }
 
 func (s *FromContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -106416,6 +111659,18 @@ func (s *MultipleGroupingSetsContext) GroupingSet(i int) IGroupingSetContext {
 	return t.(IGroupingSetContext)
 }
 
+func (s *MultipleGroupingSetsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMultipleGroupingSets(s)
+	}
+}
+
+func (s *MultipleGroupingSetsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMultipleGroupingSets(s)
+	}
+}
+
 func (s *MultipleGroupingSetsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -106458,6 +111713,18 @@ func (s *SingleGroupingSetContext) ExpressionList() IExpressionListContext {
 	}
 
 	return t.(IExpressionListContext)
+}
+
+func (s *SingleGroupingSetContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSingleGroupingSet(s)
+	}
+}
+
+func (s *SingleGroupingSetContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSingleGroupingSet(s)
+	}
 }
 
 func (s *SingleGroupingSetContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -106508,6 +111775,18 @@ func (s *CubeContext) ExpressionList() IExpressionListContext {
 	return t.(IExpressionListContext)
 }
 
+func (s *CubeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCube(s)
+	}
+}
+
+func (s *CubeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCube(s)
+	}
+}
+
 func (s *CubeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -106554,6 +111833,18 @@ func (s *RollupContext) ExpressionList() IExpressionListContext {
 	}
 
 	return t.(IExpressionListContext)
+}
+
+func (s *RollupContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRollup(s)
+	}
+}
+
+func (s *RollupContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRollup(s)
+	}
 }
 
 func (s *RollupContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -106851,6 +112142,18 @@ func (s *GroupingSetContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *GroupingSetContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGroupingSet(s)
+	}
+}
+
+func (s *GroupingSetContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGroupingSet(s)
+	}
+}
+
 func (s *GroupingSetContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -107059,6 +112362,18 @@ func (s *CommonTableExpressionContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CommonTableExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCommonTableExpression(s)
+	}
+}
+
+func (s *CommonTableExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCommonTableExpression(s)
+	}
+}
+
 func (s *CommonTableExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -107199,6 +112514,18 @@ func (s *SetQuantifierContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SetQuantifierContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SetQuantifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSetQuantifier(s)
+	}
+}
+
+func (s *SetQuantifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSetQuantifier(s)
+	}
 }
 
 func (s *SetQuantifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -107350,6 +112677,18 @@ func (s *SelectAllContext) ExcludeClause() IExcludeClauseContext {
 	return t.(IExcludeClauseContext)
 }
 
+func (s *SelectAllContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSelectAll(s)
+	}
+}
+
+func (s *SelectAllContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSelectAll(s)
+	}
+}
+
 func (s *SelectAllContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -107428,6 +112767,18 @@ func (s *SelectSingleContext) String_() IStringContext {
 
 func (s *SelectSingleContext) AS() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserAS, 0)
+}
+
+func (s *SelectSingleContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSelectSingle(s)
+	}
+}
+
+func (s *SelectSingleContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSelectSingle(s)
+	}
 }
 
 func (s *SelectSingleContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -107692,6 +113043,18 @@ func (s *ExcludeClauseContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExcludeClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExcludeClause(s)
+	}
+}
+
+func (s *ExcludeClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExcludeClause(s)
+	}
+}
+
 func (s *ExcludeClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -107887,6 +113250,18 @@ func (s *RelationsContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RelationsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRelations(s)
+	}
+}
+
+func (s *RelationsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRelations(s)
+	}
+}
+
 func (s *RelationsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -108061,6 +113436,18 @@ func (s *RelationLateralViewContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RelationLateralViewContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RelationLateralViewContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRelationLateralView(s)
+	}
+}
+
+func (s *RelationLateralViewContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRelationLateralView(s)
+	}
 }
 
 func (s *RelationLateralViewContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -108280,6 +113667,18 @@ func (s *LateralViewContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *LateralViewContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLateralView(s)
+	}
+}
+
+func (s *LateralViewContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLateralView(s)
+	}
+}
+
 func (s *LateralViewContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -108446,6 +113845,18 @@ func (s *GeneratorFunctionContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *GeneratorFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGeneratorFunction(s)
+	}
+}
+
+func (s *GeneratorFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGeneratorFunction(s)
+	}
+}
+
 func (s *GeneratorFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -108598,6 +114009,18 @@ func (s *RelationContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RelationContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RelationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRelation(s)
+	}
+}
+
+func (s *RelationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRelation(s)
+	}
 }
 
 func (s *RelationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -108847,6 +114270,18 @@ func (s *SubqueryWithAliasContext) ColumnAliases() IColumnAliasesContext {
 	return t.(IColumnAliasesContext)
 }
 
+func (s *SubqueryWithAliasContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubqueryWithAlias(s)
+	}
+}
+
+func (s *SubqueryWithAliasContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubqueryWithAlias(s)
+	}
+}
+
 func (s *SubqueryWithAliasContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -108952,6 +114387,18 @@ func (s *NormalizedTableFunctionContext) ColumnAliases() IColumnAliasesContext {
 	return t.(IColumnAliasesContext)
 }
 
+func (s *NormalizedTableFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNormalizedTableFunction(s)
+	}
+}
+
+func (s *NormalizedTableFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNormalizedTableFunction(s)
+	}
+}
+
 func (s *NormalizedTableFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -109053,6 +114500,18 @@ func (s *TableFunctionContext) ColumnAliases() IColumnAliasesContext {
 	return t.(IColumnAliasesContext)
 }
 
+func (s *TableFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTableFunction(s)
+	}
+}
+
+func (s *TableFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTableFunction(s)
+	}
+}
+
 func (s *TableFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -109095,6 +114554,18 @@ func (s *ParenthesizedRelationContext) Relations() IRelationsContext {
 	}
 
 	return t.(IRelationsContext)
+}
+
+func (s *ParenthesizedRelationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterParenthesizedRelation(s)
+	}
+}
+
+func (s *ParenthesizedRelationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitParenthesizedRelation(s)
+	}
 }
 
 func (s *ParenthesizedRelationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -109184,6 +114655,18 @@ func (s *FileTableFunctionContext) ColumnAliases() IColumnAliasesContext {
 	}
 
 	return t.(IColumnAliasesContext)
+}
+
+func (s *FileTableFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterFileTableFunction(s)
+	}
+}
+
+func (s *FileTableFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitFileTableFunction(s)
+	}
 }
 
 func (s *FileTableFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -109376,6 +114859,18 @@ func (s *TableAtomContext) AS() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserAS, 0)
 }
 
+func (s *TableAtomContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTableAtom(s)
+	}
+}
+
+func (s *TableAtomContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTableAtom(s)
+	}
+}
+
 func (s *TableAtomContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -109488,6 +114983,18 @@ func (s *InlineTableContext) ColumnAliases() IColumnAliasesContext {
 	}
 
 	return t.(IColumnAliasesContext)
+}
+
+func (s *InlineTableContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInlineTable(s)
+	}
+}
+
+func (s *InlineTableContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInlineTable(s)
+	}
 }
 
 func (s *InlineTableContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -110266,6 +115773,18 @@ func (s *PivotClauseContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PivotClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPivotClause(s)
+	}
+}
+
+func (s *PivotClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPivotClause(s)
+	}
+}
+
 func (s *PivotClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -110548,6 +116067,18 @@ func (s *PivotAggregationExpressionContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PivotAggregationExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPivotAggregationExpression(s)
+	}
+}
+
+func (s *PivotAggregationExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPivotAggregationExpression(s)
+	}
+}
+
 func (s *PivotAggregationExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -110759,6 +116290,18 @@ func (s *PivotValueContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PivotValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPivotValue(s)
+	}
+}
+
+func (s *PivotValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPivotValue(s)
+	}
+}
+
 func (s *PivotValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -110938,6 +116481,18 @@ func (s *SampleClauseContext) ToStringTree(ruleNames []string, recog antlr.Recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SampleClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSampleClause(s)
+	}
+}
+
+func (s *SampleClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSampleClause(s)
+	}
+}
+
 func (s *SampleClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -111071,6 +116626,18 @@ func (s *ArgumentListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ArgumentListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ArgumentListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArgumentList(s)
+	}
+}
+
+func (s *ArgumentListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArgumentList(s)
+	}
 }
 
 func (s *ArgumentListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -111218,6 +116785,18 @@ func (s *NamedArgumentListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *NamedArgumentListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *NamedArgumentListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNamedArgumentList(s)
+	}
+}
+
+func (s *NamedArgumentListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNamedArgumentList(s)
+	}
 }
 
 func (s *NamedArgumentListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -111384,6 +116963,18 @@ func (s *NamedArgumentsContext) Expression() IExpressionContext {
 	}
 
 	return t.(IExpressionContext)
+}
+
+func (s *NamedArgumentsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNamedArguments(s)
+	}
+}
+
+func (s *NamedArgumentsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNamedArguments(s)
+	}
 }
 
 func (s *NamedArgumentsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -111583,6 +117174,18 @@ func (s *JoinRelationContext) GetRuleContext() antlr.RuleContext {
 
 func (s *JoinRelationContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *JoinRelationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterJoinRelation(s)
+	}
+}
+
+func (s *JoinRelationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitJoinRelation(s)
+	}
 }
 
 func (s *JoinRelationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -111801,6 +117404,18 @@ func (s *CrossOrInnerJoinTypeContext) ToStringTree(ruleNames []string, recog ant
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *CrossOrInnerJoinTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCrossOrInnerJoinType(s)
+	}
+}
+
+func (s *CrossOrInnerJoinTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCrossOrInnerJoinType(s)
+	}
+}
+
 func (s *CrossOrInnerJoinTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -111984,6 +117599,18 @@ func (s *OuterAndSemiJoinTypeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *OuterAndSemiJoinTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *OuterAndSemiJoinTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOuterAndSemiJoinType(s)
+	}
+}
+
+func (s *OuterAndSemiJoinTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOuterAndSemiJoinType(s)
+	}
 }
 
 func (s *OuterAndSemiJoinTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -112404,6 +118031,18 @@ func (s *BracketHintContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *BracketHintContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBracketHint(s)
+	}
+}
+
+func (s *BracketHintContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBracketHint(s)
+	}
+}
+
 func (s *BracketHintContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -112647,6 +118286,18 @@ func (s *HintMapContext) ToStringTree(ruleNames []string, recog antlr.Recognizer
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *HintMapContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterHintMap(s)
+	}
+}
+
+func (s *HintMapContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitHintMap(s)
+	}
+}
+
 func (s *HintMapContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -112818,6 +118469,18 @@ func (s *JoinCriteriaContext) GetRuleContext() antlr.RuleContext {
 
 func (s *JoinCriteriaContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *JoinCriteriaContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterJoinCriteria(s)
+	}
+}
+
+func (s *JoinCriteriaContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitJoinCriteria(s)
+	}
 }
 
 func (s *JoinCriteriaContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -113030,6 +118693,18 @@ func (s *ColumnAliasesContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ColumnAliasesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnAliases(s)
+	}
+}
+
+func (s *ColumnAliasesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnAliases(s)
+	}
+}
+
 func (s *ColumnAliasesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -113202,6 +118877,18 @@ func (s *ColumnAliasesWithoutParenthesesContext) GetRuleContext() antlr.RuleCont
 
 func (s *ColumnAliasesWithoutParenthesesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ColumnAliasesWithoutParenthesesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnAliasesWithoutParentheses(s)
+	}
+}
+
+func (s *ColumnAliasesWithoutParenthesesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnAliasesWithoutParentheses(s)
+	}
 }
 
 func (s *ColumnAliasesWithoutParenthesesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -113399,6 +119086,18 @@ func (s *PartitionNamesContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PartitionNamesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PartitionNamesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionNames(s)
+	}
+}
+
+func (s *PartitionNamesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionNames(s)
+	}
 }
 
 func (s *PartitionNamesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -113680,6 +119379,18 @@ func (s *KeyPartitionListContext) KeyPartition(i int) IKeyPartitionContext {
 	return t.(IKeyPartitionContext)
 }
 
+func (s *KeyPartitionListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterKeyPartitionList(s)
+	}
+}
+
+func (s *KeyPartitionListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitKeyPartitionList(s)
+	}
+}
+
 func (s *KeyPartitionListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -113833,6 +119544,18 @@ func (s *TabletListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TabletListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TabletListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTabletList(s)
+	}
+}
+
+func (s *TabletListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTabletList(s)
+	}
 }
 
 func (s *TabletListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -114026,6 +119749,18 @@ func (s *PrepareStatementContext) ToStringTree(ruleNames []string, recog antlr.R
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PrepareStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrepareStatement(s)
+	}
+}
+
+func (s *PrepareStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrepareStatement(s)
+	}
+}
+
 func (s *PrepareStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -114151,6 +119886,18 @@ func (s *PrepareSqlContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PrepareSqlContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PrepareSqlContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPrepareSql(s)
+	}
+}
+
+func (s *PrepareSqlContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPrepareSql(s)
+	}
 }
 
 func (s *PrepareSqlContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -114340,6 +120087,18 @@ func (s *ExecuteStatementContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ExecuteStatementContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ExecuteStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExecuteStatement(s)
+	}
+}
+
+func (s *ExecuteStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExecuteStatement(s)
+	}
 }
 
 func (s *ExecuteStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -114535,6 +120294,18 @@ func (s *DeallocateStatementContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DeallocateStatementContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDeallocateStatement(s)
+	}
+}
+
+func (s *DeallocateStatementContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDeallocateStatement(s)
+	}
+}
+
 func (s *DeallocateStatementContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -114654,6 +120425,18 @@ func (s *ReplicaListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ReplicaListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ReplicaListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterReplicaList(s)
+	}
+}
+
+func (s *ReplicaListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitReplicaList(s)
+	}
 }
 
 func (s *ReplicaListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -114846,6 +120629,18 @@ func (s *ExpressionsWithDefaultContext) ToStringTree(ruleNames []string, recog a
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExpressionsWithDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExpressionsWithDefault(s)
+	}
+}
+
+func (s *ExpressionsWithDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExpressionsWithDefault(s)
+	}
+}
+
 func (s *ExpressionsWithDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -114999,6 +120794,18 @@ func (s *ExpressionOrDefaultContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExpressionOrDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExpressionOrDefault(s)
+	}
+}
+
+func (s *ExpressionOrDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExpressionOrDefault(s)
+	}
+}
+
 func (s *ExpressionOrDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -115149,6 +120956,18 @@ func (s *MapExpressionListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *MapExpressionListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *MapExpressionListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMapExpressionList(s)
+	}
+}
+
+func (s *MapExpressionListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMapExpressionList(s)
+	}
 }
 
 func (s *MapExpressionListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -115331,6 +121150,18 @@ func (s *MapExpressionContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *MapExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMapExpression(s)
+	}
+}
+
+func (s *MapExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMapExpression(s)
+	}
+}
+
 func (s *MapExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -115454,6 +121285,18 @@ func (s *ExpressionSingletonContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ExpressionSingletonContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ExpressionSingletonContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExpressionSingleton(s)
+	}
+}
+
+func (s *ExpressionSingletonContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExpressionSingleton(s)
+	}
 }
 
 func (s *ExpressionSingletonContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -115588,6 +121431,18 @@ func (s *ExpressionDefaultContext) BINARY() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserBINARY, 0)
 }
 
+func (s *ExpressionDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExpressionDefault(s)
+	}
+}
+
+func (s *ExpressionDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExpressionDefault(s)
+	}
+}
+
 func (s *ExpressionDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -115634,6 +121489,18 @@ func (s *LogicalNotContext) Expression() IExpressionContext {
 	}
 
 	return t.(IExpressionContext)
+}
+
+func (s *LogicalNotContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLogicalNot(s)
+	}
+}
+
+func (s *LogicalNotContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLogicalNot(s)
+	}
 }
 
 func (s *LogicalNotContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -115734,6 +121601,18 @@ func (s *LogicalBinaryContext) OR() antlr.TerminalNode {
 
 func (s *LogicalBinaryContext) LOGICAL_OR() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserLOGICAL_OR, 0)
+}
+
+func (s *LogicalBinaryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLogicalBinary(s)
+	}
+}
+
+func (s *LogicalBinaryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLogicalBinary(s)
+	}
 }
 
 func (s *LogicalBinaryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -116040,6 +121919,18 @@ func (s *ExpressionListContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExpressionListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExpressionList(s)
+	}
+}
+
+func (s *ExpressionListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExpressionList(s)
+	}
+}
+
 func (s *ExpressionListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -116239,6 +122130,18 @@ func (s *ComparisonContext) Predicate() IPredicateContext {
 	return t.(IPredicateContext)
 }
 
+func (s *ComparisonContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterComparison(s)
+	}
+}
+
+func (s *ComparisonContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitComparison(s)
+	}
+}
+
 func (s *ComparisonContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -116281,6 +122184,18 @@ func (s *BooleanExpressionDefaultContext) Predicate() IPredicateContext {
 	}
 
 	return t.(IPredicateContext)
+}
+
+func (s *BooleanExpressionDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBooleanExpressionDefault(s)
+	}
+}
+
+func (s *BooleanExpressionDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBooleanExpressionDefault(s)
+	}
 }
 
 func (s *BooleanExpressionDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -116337,6 +122252,18 @@ func (s *IsNullContext) NULL() antlr.TerminalNode {
 
 func (s *IsNullContext) NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNOT, 0)
+}
+
+func (s *IsNullContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIsNull(s)
+	}
+}
+
+func (s *IsNullContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIsNull(s)
+	}
 }
 
 func (s *IsNullContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -116413,6 +122340,18 @@ func (s *ScalarSubqueryContext) QueryRelation() IQueryRelationContext {
 	}
 
 	return t.(IQueryRelationContext)
+}
+
+func (s *ScalarSubqueryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterScalarSubquery(s)
+	}
+}
+
+func (s *ScalarSubqueryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitScalarSubquery(s)
+	}
 }
 
 func (s *ScalarSubqueryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -116720,6 +122659,18 @@ func (s *PredicateContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PredicateContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPredicate(s)
+	}
+}
+
+func (s *PredicateContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPredicate(s)
+	}
+}
+
 func (s *PredicateContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -116907,6 +122858,18 @@ func (s *TupleInSubqueryContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TupleInSubqueryContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TupleInSubqueryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTupleInSubquery(s)
+	}
+}
+
+func (s *TupleInSubqueryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTupleInSubquery(s)
+	}
 }
 
 func (s *TupleInSubqueryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -117157,6 +123120,18 @@ func (s *LikeContext) NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNOT, 0)
 }
 
+func (s *LikeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLike(s)
+	}
+}
+
+func (s *LikeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLike(s)
+	}
+}
+
 func (s *LikeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -117209,6 +123184,18 @@ func (s *InSubqueryContext) NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNOT, 0)
 }
 
+func (s *InSubqueryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInSubquery(s)
+	}
+}
+
+func (s *InSubqueryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInSubquery(s)
+	}
+}
+
 func (s *InSubqueryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -117259,6 +123246,18 @@ func (s *InListContext) ExpressionList() IExpressionListContext {
 
 func (s *InListContext) NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNOT, 0)
+}
+
+func (s *InListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInList(s)
+	}
+}
+
+func (s *InListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInList(s)
+	}
 }
 
 func (s *InListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -117341,6 +123340,18 @@ func (s *BetweenContext) Predicate() IPredicateContext {
 
 func (s *BetweenContext) NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNOT, 0)
+}
+
+func (s *BetweenContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBetween(s)
+	}
+}
+
+func (s *BetweenContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBetween(s)
+	}
 }
 
 func (s *BetweenContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -117662,6 +123673,18 @@ func (s *ValueExpressionDefaultContext) PrimaryExpression() IPrimaryExpressionCo
 	return t.(IPrimaryExpressionContext)
 }
 
+func (s *ValueExpressionDefaultContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterValueExpressionDefault(s)
+	}
+}
+
+func (s *ValueExpressionDefaultContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitValueExpressionDefault(s)
+	}
+}
+
 func (s *ValueExpressionDefaultContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -117796,6 +123819,18 @@ func (s *ArithmeticBinaryContext) BIT_SHIFT_RIGHT() antlr.TerminalNode {
 
 func (s *ArithmeticBinaryContext) BIT_SHIFT_RIGHT_LOGICAL() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserBIT_SHIFT_RIGHT_LOGICAL, 0)
+}
+
+func (s *ArithmeticBinaryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArithmeticBinary(s)
+	}
+}
+
+func (s *ArithmeticBinaryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArithmeticBinary(s)
+	}
 }
 
 func (s *ArithmeticBinaryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118259,6 +124294,18 @@ func (s *DereferenceContext) Identifier() IIdentifierContext {
 	return t.(IIdentifierContext)
 }
 
+func (s *DereferenceContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDereference(s)
+	}
+}
+
+func (s *DereferenceContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDereference(s)
+	}
+}
+
 func (s *DereferenceContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -118305,6 +124352,18 @@ func (s *OdbcFunctionCallExpressionContext) FunctionCall() IFunctionCallContext 
 	}
 
 	return t.(IFunctionCallContext)
+}
+
+func (s *OdbcFunctionCallExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOdbcFunctionCallExpression(s)
+	}
+}
+
+func (s *OdbcFunctionCallExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOdbcFunctionCallExpression(s)
+	}
 }
 
 func (s *OdbcFunctionCallExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118394,6 +124453,18 @@ func (s *MatchExprContext) NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNOT, 0)
 }
 
+func (s *MatchExprContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMatchExpr(s)
+	}
+}
+
+func (s *MatchExprContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMatchExpr(s)
+	}
+}
+
 func (s *MatchExprContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -118436,6 +124507,18 @@ func (s *ColumnRefContext) ColumnReference() IColumnReferenceContext {
 	}
 
 	return t.(IColumnReferenceContext)
+}
+
+func (s *ColumnRefContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnRef(s)
+	}
+}
+
+func (s *ColumnRefContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnRef(s)
+	}
 }
 
 func (s *ColumnRefContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118500,6 +124583,18 @@ func (s *ConvertContext) Type_() ITypeContext {
 	}
 
 	return t.(ITypeContext)
+}
+
+func (s *ConvertContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterConvert(s)
+	}
+}
+
+func (s *ConvertContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitConvert(s)
+	}
 }
 
 func (s *ConvertContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118572,6 +124667,18 @@ func (s *CollectionSubscriptContext) ValueExpression() IValueExpressionContext {
 	return t.(IValueExpressionContext)
 }
 
+func (s *CollectionSubscriptContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCollectionSubscript(s)
+	}
+}
+
+func (s *CollectionSubscriptContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCollectionSubscript(s)
+	}
+}
+
 func (s *CollectionSubscriptContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -118614,6 +124721,18 @@ func (s *LiteralContext) LiteralExpression() ILiteralExpressionContext {
 	}
 
 	return t.(ILiteralExpressionContext)
+}
+
+func (s *LiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLiteral(s)
+	}
+}
+
+func (s *LiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLiteral(s)
+	}
 }
 
 func (s *LiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118684,6 +124803,18 @@ func (s *CastContext) Type_() ITypeContext {
 	return t.(ITypeContext)
 }
 
+func (s *CastContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCast(s)
+	}
+}
+
+func (s *CastContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCast(s)
+	}
+}
+
 func (s *CastContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -118726,6 +124857,18 @@ func (s *ParenthesizedExpressionContext) Expression() IExpressionContext {
 	}
 
 	return t.(IExpressionContext)
+}
+
+func (s *ParenthesizedExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterParenthesizedExpression(s)
+	}
+}
+
+func (s *ParenthesizedExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitParenthesizedExpression(s)
+	}
 }
 
 func (s *ParenthesizedExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118772,6 +124915,18 @@ func (s *UserVariableExpressionContext) UserVariable() IUserVariableContext {
 	return t.(IUserVariableContext)
 }
 
+func (s *UserVariableExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUserVariableExpression(s)
+	}
+}
+
+func (s *UserVariableExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUserVariableExpression(s)
+	}
+}
+
 func (s *UserVariableExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -118814,6 +124969,18 @@ func (s *FunctionCallExpressionContext) FunctionCall() IFunctionCallContext {
 	}
 
 	return t.(IFunctionCallContext)
+}
+
+func (s *FunctionCallExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterFunctionCallExpression(s)
+	}
+}
+
+func (s *FunctionCallExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitFunctionCallExpression(s)
+	}
 }
 
 func (s *FunctionCallExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -118948,6 +125115,18 @@ func (s *SimpleCaseContext) ELSE() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserELSE, 0)
 }
 
+func (s *SimpleCaseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSimpleCase(s)
+	}
+}
+
+func (s *SimpleCaseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSimpleCase(s)
+	}
+}
+
 func (s *SimpleCaseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119012,6 +125191,18 @@ func (s *ArrowExpressionContext) String_() IStringContext {
 	return t.(IStringContext)
 }
 
+func (s *ArrowExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArrowExpression(s)
+	}
+}
+
+func (s *ArrowExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArrowExpression(s)
+	}
+}
+
 func (s *ArrowExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119060,6 +125251,18 @@ func (s *ArrayExprContext) ExpressionList() IExpressionListContext {
 	return t.(IExpressionListContext)
 }
 
+func (s *ArrayExprContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArrayExpr(s)
+	}
+}
+
+func (s *ArrayExprContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArrayExpr(s)
+	}
+}
+
 func (s *ArrayExprContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119102,6 +125305,18 @@ func (s *SystemVariableExpressionContext) SystemVariable() ISystemVariableContex
 	}
 
 	return t.(ISystemVariableContext)
+}
+
+func (s *SystemVariableExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSystemVariableExpression(s)
+	}
+}
+
+func (s *SystemVariableExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSystemVariableExpression(s)
+	}
 }
 
 func (s *SystemVariableExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -119187,6 +125402,18 @@ func (s *ConcatContext) PrimaryExpression(i int) IPrimaryExpressionContext {
 	return t.(IPrimaryExpressionContext)
 }
 
+func (s *ConcatContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterConcat(s)
+	}
+}
+
+func (s *ConcatContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitConcat(s)
+	}
+}
+
 func (s *ConcatContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119229,6 +125456,18 @@ func (s *SubqueryExpressionContext) Subquery() ISubqueryContext {
 	}
 
 	return t.(ISubqueryContext)
+}
+
+func (s *SubqueryExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubqueryExpression(s)
+	}
+}
+
+func (s *SubqueryExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubqueryExpression(s)
+	}
 }
 
 func (s *SubqueryExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -119327,6 +125566,18 @@ func (s *LambdaFunctionExprContext) ExpressionList() IExpressionListContext {
 	return t.(IExpressionListContext)
 }
 
+func (s *LambdaFunctionExprContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLambdaFunctionExpr(s)
+	}
+}
+
+func (s *LambdaFunctionExprContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLambdaFunctionExpr(s)
+	}
+}
+
 func (s *LambdaFunctionExprContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119373,6 +125624,18 @@ func (s *DictionaryGetExprContext) ExpressionList() IExpressionListContext {
 	}
 
 	return t.(IExpressionListContext)
+}
+
+func (s *DictionaryGetExprContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDictionaryGetExpr(s)
+	}
+}
+
+func (s *DictionaryGetExprContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDictionaryGetExpr(s)
+	}
 }
 
 func (s *DictionaryGetExprContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -119455,6 +125718,18 @@ func (s *CollateContext) String_() IStringContext {
 	return t.(IStringContext)
 }
 
+func (s *CollateContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCollate(s)
+	}
+}
+
+func (s *CollateContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCollate(s)
+	}
+}
+
 func (s *CollateContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119513,6 +125788,18 @@ func (s *ArrayConstructorContext) ExpressionList() IExpressionListContext {
 	}
 
 	return t.(IExpressionListContext)
+}
+
+func (s *ArrayConstructorContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArrayConstructor(s)
+	}
+}
+
+func (s *ArrayConstructorContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArrayConstructor(s)
+	}
 }
 
 func (s *ArrayConstructorContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -119579,6 +125866,18 @@ func (s *MapConstructorContext) MAP() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserMAP, 0)
 }
 
+func (s *MapConstructorContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMapConstructor(s)
+	}
+}
+
+func (s *MapConstructorContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMapConstructor(s)
+	}
+}
+
 func (s *MapConstructorContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119641,6 +125940,18 @@ func (s *ArraySliceContext) INTEGER_VALUE(i int) antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserINTEGER_VALUE, i)
 }
 
+func (s *ArraySliceContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArraySlice(s)
+	}
+}
+
+func (s *ArraySliceContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArraySlice(s)
+	}
+}
+
 func (s *ArraySliceContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119687,6 +125998,18 @@ func (s *ExistsContext) QueryRelation() IQueryRelationContext {
 	}
 
 	return t.(IQueryRelationContext)
+}
+
+func (s *ExistsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExists(s)
+	}
+}
+
+func (s *ExistsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExists(s)
+	}
 }
 
 func (s *ExistsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -119791,6 +126114,18 @@ func (s *SearchedCaseContext) Expression() IExpressionContext {
 	return t.(IExpressionContext)
 }
 
+func (s *SearchedCaseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSearchedCase(s)
+	}
+}
+
+func (s *SearchedCaseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSearchedCase(s)
+	}
+}
+
 func (s *SearchedCaseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -119854,6 +126189,18 @@ func (s *ArithmeticUnaryContext) BITNOT() antlr.TerminalNode {
 
 func (s *ArithmeticUnaryContext) LOGICAL_NOT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserLOGICAL_NOT, 0)
+}
+
+func (s *ArithmeticUnaryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArithmeticUnary(s)
+	}
+}
+
+func (s *ArithmeticUnaryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArithmeticUnary(s)
+	}
 }
 
 func (s *ArithmeticUnaryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121036,6 +127383,18 @@ func (s *BinaryLiteralContext) Binary() IBinaryContext {
 	return t.(IBinaryContext)
 }
 
+func (s *BinaryLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBinaryLiteral(s)
+	}
+}
+
+func (s *BinaryLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBinaryLiteral(s)
+	}
+}
+
 func (s *BinaryLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121066,6 +127425,18 @@ func (s *NullLiteralContext) GetRuleContext() antlr.RuleContext {
 
 func (s *NullLiteralContext) NULL() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserNULL, 0)
+}
+
+func (s *NullLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNullLiteral(s)
+	}
+}
+
+func (s *NullLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNullLiteral(s)
+	}
 }
 
 func (s *NullLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121112,6 +127483,18 @@ func (s *StringLiteralContext) String_() IStringContext {
 	return t.(IStringContext)
 }
 
+func (s *StringLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterStringLiteral(s)
+	}
+}
+
+func (s *StringLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitStringLiteral(s)
+	}
+}
+
 func (s *StringLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121142,6 +127525,18 @@ func (s *ParameterContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ParameterContext) PARAMETER() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserPARAMETER, 0)
+}
+
+func (s *ParameterContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterParameter(s)
+	}
+}
+
+func (s *ParameterContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitParameter(s)
+	}
 }
 
 func (s *ParameterContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121196,6 +127591,18 @@ func (s *DateLiteralContext) DATETIME() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserDATETIME, 0)
 }
 
+func (s *DateLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDateLiteral(s)
+	}
+}
+
+func (s *DateLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDateLiteral(s)
+	}
+}
+
 func (s *DateLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121238,6 +127645,18 @@ func (s *BooleanLiteralContext) BooleanValue() IBooleanValueContext {
 	}
 
 	return t.(IBooleanValueContext)
+}
+
+func (s *BooleanLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBooleanLiteral(s)
+	}
+}
+
+func (s *BooleanLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBooleanLiteral(s)
+	}
 }
 
 func (s *BooleanLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121284,6 +127703,18 @@ func (s *NumericLiteralContext) Number() INumberContext {
 	return t.(INumberContext)
 }
 
+func (s *NumericLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNumericLiteral(s)
+	}
+}
+
+func (s *NumericLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNumericLiteral(s)
+	}
+}
+
 func (s *NumericLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121328,6 +127759,18 @@ func (s *IntervalLiteralContext) Interval() IIntervalContext {
 	return t.(IIntervalContext)
 }
 
+func (s *IntervalLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIntervalLiteral(s)
+	}
+}
+
+func (s *IntervalLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIntervalLiteral(s)
+	}
+}
+
 func (s *IntervalLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121370,6 +127813,18 @@ func (s *UnitBoundaryLiteralContext) UnitBoundary() IUnitBoundaryContext {
 	}
 
 	return t.(IUnitBoundaryContext)
+}
+
+func (s *UnitBoundaryLiteralContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUnitBoundaryLiteral(s)
+	}
+}
+
+func (s *UnitBoundaryLiteralContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUnitBoundaryLiteral(s)
+	}
 }
 
 func (s *UnitBoundaryLiteralContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121607,6 +128062,18 @@ func (s *AggregationFunctionCallContext) Over() IOverContext {
 	return t.(IOverContext)
 }
 
+func (s *AggregationFunctionCallContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAggregationFunctionCall(s)
+	}
+}
+
+func (s *AggregationFunctionCallContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAggregationFunctionCall(s)
+	}
+}
+
 func (s *AggregationFunctionCallContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121675,6 +128142,18 @@ func (s *ExtractContext) ValueExpression() IValueExpressionContext {
 	return t.(IValueExpressionContext)
 }
 
+func (s *ExtractContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExtract(s)
+	}
+}
+
+func (s *ExtractContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExtract(s)
+	}
+}
+
 func (s *ExtractContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121717,6 +128196,18 @@ func (s *SpecialFunctionContext) SpecialFunctionExpression() ISpecialFunctionExp
 	}
 
 	return t.(ISpecialFunctionExpressionContext)
+}
+
+func (s *SpecialFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSpecialFunction(s)
+	}
+}
+
+func (s *SpecialFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSpecialFunction(s)
+	}
 }
 
 func (s *SpecialFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121820,6 +128311,18 @@ func (s *SimpleFunctionCallContext) Over() IOverContext {
 	return t.(IOverContext)
 }
 
+func (s *SimpleFunctionCallContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSimpleFunctionCall(s)
+	}
+}
+
+func (s *SimpleFunctionCallContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSimpleFunctionCall(s)
+	}
+}
+
 func (s *SimpleFunctionCallContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121862,6 +128365,18 @@ func (s *SpecialDateTimeContext) SpecialDateTimeExpression() ISpecialDateTimeExp
 	}
 
 	return t.(ISpecialDateTimeExpressionContext)
+}
+
+func (s *SpecialDateTimeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSpecialDateTime(s)
+	}
+}
+
+func (s *SpecialDateTimeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSpecialDateTime(s)
+	}
 }
 
 func (s *SpecialDateTimeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -121924,6 +128439,18 @@ func (s *WindowFunctionCallContext) Over() IOverContext {
 	return t.(IOverContext)
 }
 
+func (s *WindowFunctionCallContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterWindowFunctionCall(s)
+	}
+}
+
+func (s *WindowFunctionCallContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitWindowFunctionCall(s)
+	}
+}
+
 func (s *WindowFunctionCallContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -121966,6 +128493,18 @@ func (s *InformationFunctionContext) InformationFunctionExpression() IInformatio
 	}
 
 	return t.(IInformationFunctionExpressionContext)
+}
+
+func (s *InformationFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInformationFunction(s)
+	}
+}
+
+func (s *InformationFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInformationFunction(s)
+	}
 }
 
 func (s *InformationFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -122039,6 +128578,18 @@ func (s *TranslateFunctionCallContext) Expression(i int) IExpressionContext {
 	}
 
 	return t.(IExpressionContext)
+}
+
+func (s *TranslateFunctionCallContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTranslateFunctionCall(s)
+	}
+}
+
+func (s *TranslateFunctionCallContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTranslateFunctionCall(s)
+	}
 }
 
 func (s *TranslateFunctionCallContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -122116,6 +128667,18 @@ func (s *GroupingOperationContext) Expression(i int) IExpressionContext {
 
 func (s *GroupingOperationContext) GROUPING_ID() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserGROUPING_ID, 0)
+}
+
+func (s *GroupingOperationContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterGroupingOperation(s)
+	}
+}
+
+func (s *GroupingOperationContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitGroupingOperation(s)
+	}
 }
 
 func (s *GroupingOperationContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -122776,6 +129339,18 @@ func (s *AggregationFunctionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *AggregationFunctionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *AggregationFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAggregationFunction(s)
+	}
+}
+
+func (s *AggregationFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAggregationFunction(s)
+	}
 }
 
 func (s *AggregationFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -123557,6 +130132,18 @@ func (s *UserVariableContext) ToStringTree(ruleNames []string, recog antlr.Recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *UserVariableContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUserVariable(s)
+	}
+}
+
+func (s *UserVariableContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUserVariable(s)
+	}
+}
+
 func (s *UserVariableContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -123692,6 +130279,18 @@ func (s *SystemVariableContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SystemVariableContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SystemVariableContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSystemVariable(s)
+	}
+}
+
+func (s *SystemVariableContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSystemVariable(s)
+	}
 }
 
 func (s *SystemVariableContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -123832,6 +130431,18 @@ func (s *ColumnReferenceContext) ToStringTree(ruleNames []string, recog antlr.Re
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ColumnReferenceContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterColumnReference(s)
+	}
+}
+
+func (s *ColumnReferenceContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitColumnReference(s)
+	}
+}
+
 func (s *ColumnReferenceContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -123961,6 +130572,18 @@ func (s *InformationFunctionExpressionContext) GetRuleContext() antlr.RuleContex
 
 func (s *InformationFunctionExpressionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *InformationFunctionExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInformationFunctionExpression(s)
+	}
+}
+
+func (s *InformationFunctionExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInformationFunctionExpression(s)
+	}
 }
 
 func (s *InformationFunctionExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -124327,6 +130950,18 @@ func (s *SpecialDateTimeExpressionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SpecialDateTimeExpressionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SpecialDateTimeExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSpecialDateTimeExpression(s)
+	}
+}
+
+func (s *SpecialDateTimeExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSpecialDateTimeExpression(s)
+	}
 }
 
 func (s *SpecialDateTimeExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -124810,6 +131445,18 @@ func (s *SpecialFunctionExpressionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SpecialFunctionExpressionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SpecialFunctionExpressionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSpecialFunctionExpression(s)
+	}
+}
+
+func (s *SpecialFunctionExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSpecialFunctionExpression(s)
+	}
 }
 
 func (s *SpecialFunctionExpressionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -125899,6 +132546,18 @@ func (s *WindowFunctionContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *WindowFunctionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterWindowFunction(s)
+	}
+}
+
+func (s *WindowFunctionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitWindowFunction(s)
+	}
+}
+
 func (s *WindowFunctionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -126661,6 +133320,18 @@ func (s *WhenClauseContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *WhenClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterWhenClause(s)
+	}
+}
+
+func (s *WhenClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitWhenClause(s)
+	}
+}
+
 func (s *WhenClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -126939,6 +133610,18 @@ func (s *OverContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) s
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *OverContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOver(s)
+	}
+}
+
+func (s *OverContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOver(s)
+	}
+}
+
 func (s *OverContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -127208,6 +133891,18 @@ func (s *IgnoreNullsContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *IgnoreNullsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIgnoreNulls(s)
+	}
+}
+
+func (s *IgnoreNullsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIgnoreNulls(s)
+	}
+}
+
 func (s *IgnoreNullsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -127399,6 +134094,18 @@ func (s *WindowFrameContext) GetRuleContext() antlr.RuleContext {
 
 func (s *WindowFrameContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *WindowFrameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterWindowFrame(s)
+	}
+}
+
+func (s *WindowFrameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitWindowFrame(s)
+	}
 }
 
 func (s *WindowFrameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -127669,6 +134376,18 @@ func (s *BoundedFrameContext) FOLLOWING() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserFOLLOWING, 0)
 }
 
+func (s *BoundedFrameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBoundedFrame(s)
+	}
+}
+
+func (s *BoundedFrameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBoundedFrame(s)
+	}
+}
+
 func (s *BoundedFrameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -127714,6 +134433,18 @@ func (s *UnboundedFrameContext) FOLLOWING() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserFOLLOWING, 0)
 }
 
+func (s *UnboundedFrameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUnboundedFrame(s)
+	}
+}
+
+func (s *UnboundedFrameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUnboundedFrame(s)
+	}
+}
+
 func (s *UnboundedFrameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -127748,6 +134479,18 @@ func (s *CurrentRowBoundContext) CURRENT() antlr.TerminalNode {
 
 func (s *CurrentRowBoundContext) ROW() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserROW, 0)
+}
+
+func (s *CurrentRowBoundContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterCurrentRowBound(s)
+	}
+}
+
+func (s *CurrentRowBoundContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitCurrentRowBound(s)
+	}
 }
 
 func (s *CurrentRowBoundContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -128028,6 +134771,18 @@ func (s *BackupRestoreObjectDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BackupRestoreObjectDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BackupRestoreObjectDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBackupRestoreObjectDesc(s)
+	}
+}
+
+func (s *BackupRestoreObjectDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBackupRestoreObjectDesc(s)
+	}
 }
 
 func (s *BackupRestoreObjectDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -128453,6 +135208,18 @@ func (s *TableDescContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TableDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTableDesc(s)
+	}
+}
+
+func (s *TableDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTableDesc(s)
+	}
+}
+
 func (s *TableDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -128608,6 +135375,18 @@ func (s *BackupRestoreTableDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BackupRestoreTableDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BackupRestoreTableDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBackupRestoreTableDesc(s)
+	}
+}
+
+func (s *BackupRestoreTableDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBackupRestoreTableDesc(s)
+	}
 }
 
 func (s *BackupRestoreTableDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -128773,6 +135552,18 @@ func (s *ExplainDescContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExplainDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExplainDesc(s)
+	}
+}
+
+func (s *ExplainDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExplainDesc(s)
+	}
+}
+
 func (s *ExplainDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -128935,6 +135726,18 @@ func (s *OptimizerTraceContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *OptimizerTraceContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOptimizerTrace(s)
+	}
+}
+
+func (s *OptimizerTraceContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOptimizerTrace(s)
+	}
+}
+
 func (s *OptimizerTraceContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -129083,6 +135886,18 @@ func (s *PartitionExprContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PartitionExprContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PartitionExprContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionExpr(s)
+	}
+}
+
+func (s *PartitionExprContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionExpr(s)
+	}
 }
 
 func (s *PartitionExprContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -129387,6 +136202,18 @@ func (s *PartitionDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PartitionDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PartitionDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionDesc(s)
+	}
+}
+
+func (s *PartitionDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionDesc(s)
+	}
 }
 
 func (s *PartitionDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -129997,6 +136824,18 @@ func (s *ListPartitionDescContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ListPartitionDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterListPartitionDesc(s)
+	}
+}
+
+func (s *ListPartitionDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitListPartitionDesc(s)
+	}
+}
+
 func (s *ListPartitionDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -130180,6 +137019,18 @@ func (s *SingleItemListPartitionDescContext) GetRuleContext() antlr.RuleContext 
 
 func (s *SingleItemListPartitionDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SingleItemListPartitionDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSingleItemListPartitionDesc(s)
+	}
+}
+
+func (s *SingleItemListPartitionDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSingleItemListPartitionDesc(s)
+	}
 }
 
 func (s *SingleItemListPartitionDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -130426,6 +137277,18 @@ func (s *MultiItemListPartitionDescContext) ToStringTree(ruleNames []string, rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *MultiItemListPartitionDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMultiItemListPartitionDesc(s)
+	}
+}
+
+func (s *MultiItemListPartitionDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMultiItemListPartitionDesc(s)
+	}
+}
+
 func (s *MultiItemListPartitionDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -130632,6 +137495,18 @@ func (s *MultiListPartitionValuesContext) ToStringTree(ruleNames []string, recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *MultiListPartitionValuesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMultiListPartitionValues(s)
+	}
+}
+
+func (s *MultiListPartitionValuesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMultiListPartitionValues(s)
+	}
+}
+
 func (s *MultiListPartitionValuesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -130806,6 +137681,18 @@ func (s *SingleListPartitionValuesContext) ToStringTree(ruleNames []string, reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SingleListPartitionValuesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSingleListPartitionValues(s)
+	}
+}
+
+func (s *SingleListPartitionValuesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSingleListPartitionValues(s)
+	}
+}
+
 func (s *SingleListPartitionValuesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -130971,6 +137858,18 @@ func (s *ListPartitionValuesContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ListPartitionValuesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterListPartitionValues(s)
+	}
+}
+
+func (s *ListPartitionValuesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitListPartitionValues(s)
+	}
+}
+
 func (s *ListPartitionValuesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -131095,6 +137994,18 @@ func (s *ListPartitionValueContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ListPartitionValueContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ListPartitionValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterListPartitionValue(s)
+	}
+}
+
+func (s *ListPartitionValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitListPartitionValue(s)
+	}
 }
 
 func (s *ListPartitionValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -131247,6 +138158,18 @@ func (s *StringListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *StringListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *StringListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterStringList(s)
+	}
+}
+
+func (s *StringListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitStringList(s)
+	}
 }
 
 func (s *StringListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -131423,6 +138346,18 @@ func (s *LiteralExpressionListContext) ToStringTree(ruleNames []string, recog an
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *LiteralExpressionListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterLiteralExpressionList(s)
+	}
+}
+
+func (s *LiteralExpressionListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitLiteralExpressionList(s)
+	}
+}
+
 func (s *LiteralExpressionListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -131586,6 +138521,18 @@ func (s *RangePartitionDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *RangePartitionDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *RangePartitionDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRangePartitionDesc(s)
+	}
+}
+
+func (s *RangePartitionDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRangePartitionDesc(s)
+	}
 }
 
 func (s *RangePartitionDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -131767,6 +138714,18 @@ func (s *SingleRangePartitionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *SingleRangePartitionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *SingleRangePartitionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSingleRangePartition(s)
+	}
+}
+
+func (s *SingleRangePartitionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSingleRangePartition(s)
+	}
 }
 
 func (s *SingleRangePartitionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -132002,6 +138961,18 @@ func (s *MultiRangePartitionContext) GetRuleContext() antlr.RuleContext {
 
 func (s *MultiRangePartitionContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *MultiRangePartitionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMultiRangePartition(s)
+	}
+}
+
+func (s *MultiRangePartitionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMultiRangePartition(s)
+	}
 }
 
 func (s *MultiRangePartitionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -132325,6 +139296,18 @@ func (s *PartitionRangeDescContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PartitionRangeDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionRangeDesc(s)
+	}
+}
+
+func (s *PartitionRangeDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionRangeDesc(s)
+	}
+}
+
 func (s *PartitionRangeDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -132518,6 +139501,18 @@ func (s *PartitionKeyDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PartitionKeyDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PartitionKeyDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionKeyDesc(s)
+	}
+}
+
+func (s *PartitionKeyDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionKeyDesc(s)
+	}
 }
 
 func (s *PartitionKeyDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -132735,6 +139730,18 @@ func (s *PartitionValueListContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PartitionValueListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionValueList(s)
+	}
+}
+
+func (s *PartitionValueListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionValueList(s)
+	}
+}
+
 func (s *PartitionValueListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -132931,6 +139938,18 @@ func (s *KeyPartitionContext) ToStringTree(ruleNames []string, recog antlr.Recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *KeyPartitionContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterKeyPartition(s)
+	}
+}
+
+func (s *KeyPartitionContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitKeyPartition(s)
+	}
+}
+
 func (s *KeyPartitionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -133054,6 +140073,18 @@ func (s *PartitionValueContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PartitionValueContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PartitionValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPartitionValue(s)
+	}
+}
+
+func (s *PartitionValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPartitionValue(s)
+	}
 }
 
 func (s *PartitionValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -133205,6 +140236,18 @@ func (s *DistributionClauseContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DistributionClauseContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DistributionClauseContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDistributionClause(s)
+	}
+}
+
+func (s *DistributionClauseContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDistributionClause(s)
+	}
 }
 
 func (s *DistributionClauseContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -133432,6 +140475,18 @@ func (s *DistributionDescContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DistributionDescContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *DistributionDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDistributionDesc(s)
+	}
+}
+
+func (s *DistributionDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDistributionDesc(s)
+	}
 }
 
 func (s *DistributionDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -133741,6 +140796,18 @@ func (s *RefreshSchemeDescContext) ToStringTree(ruleNames []string, recog antlr.
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *RefreshSchemeDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterRefreshSchemeDesc(s)
+	}
+}
+
+func (s *RefreshSchemeDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitRefreshSchemeDesc(s)
+	}
+}
+
 func (s *RefreshSchemeDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -133979,6 +141046,18 @@ func (s *StatusDescContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *StatusDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterStatusDesc(s)
+	}
+}
+
+func (s *StatusDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitStatusDesc(s)
+	}
+}
+
 func (s *StatusDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -134119,6 +141198,18 @@ func (s *PropertiesContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PropertiesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterProperties(s)
+	}
+}
+
+func (s *PropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitProperties(s)
+	}
 }
 
 func (s *PropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -134282,6 +141373,18 @@ func (s *ExtPropertiesContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ExtPropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterExtProperties(s)
+	}
+}
+
+func (s *ExtPropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitExtProperties(s)
+	}
+}
+
 func (s *ExtPropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -134416,6 +141519,18 @@ func (s *PropertyListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *PropertyListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PropertyListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterPropertyList(s)
+	}
+}
+
+func (s *PropertyListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitPropertyList(s)
+	}
 }
 
 func (s *PropertyListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -134590,6 +141705,18 @@ func (s *UserPropertyListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *UserPropertyListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UserPropertyListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUserPropertyList(s)
+	}
+}
+
+func (s *UserPropertyListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUserPropertyList(s)
+	}
 }
 
 func (s *UserPropertyListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -134777,6 +141904,18 @@ func (s *PropertyContext) ToStringTree(ruleNames []string, recog antlr.Recognize
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *PropertyContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterProperty(s)
+	}
+}
+
+func (s *PropertyContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitProperty(s)
+	}
+}
+
 func (s *PropertyContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -134921,6 +142060,18 @@ func (s *InlinePropertiesContext) GetRuleContext() antlr.RuleContext {
 
 func (s *InlinePropertiesContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *InlinePropertiesContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInlineProperties(s)
+	}
+}
+
+func (s *InlinePropertiesContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInlineProperties(s)
+	}
 }
 
 func (s *InlinePropertiesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -135091,6 +142242,18 @@ func (s *InlinePropertyContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *InlinePropertyContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInlineProperty(s)
+	}
+}
+
+func (s *InlinePropertyContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInlineProperty(s)
+	}
+}
+
 func (s *InlinePropertyContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -135214,6 +142377,18 @@ func (s *VarTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *VarTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterVarType(s)
+	}
+}
+
+func (s *VarTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitVarType(s)
+	}
+}
+
 func (s *VarTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -135328,6 +142503,18 @@ func (s *CommentContext) GetRuleContext() antlr.RuleContext {
 
 func (s *CommentContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *CommentContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterComment(s)
+	}
+}
+
+func (s *CommentContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitComment(s)
+	}
 }
 
 func (s *CommentContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -135493,6 +142680,18 @@ func (s *OutfileContext) GetRuleContext() antlr.RuleContext {
 
 func (s *OutfileContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *OutfileContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterOutfile(s)
+	}
+}
+
+func (s *OutfileContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitOutfile(s)
+	}
 }
 
 func (s *OutfileContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -135673,6 +142872,18 @@ func (s *FileFormatContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *FileFormatContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterFileFormat(s)
+	}
+}
+
+func (s *FileFormatContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitFileFormat(s)
+	}
+}
+
 func (s *FileFormatContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -135803,6 +143014,18 @@ func (s *StringContext) ToStringTree(ruleNames []string, recog antlr.Recognizer)
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *StringContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterString(s)
+	}
+}
+
+func (s *StringContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitString(s)
+	}
+}
+
 func (s *StringContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -135905,6 +143128,18 @@ func (s *BinaryContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BinaryContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BinaryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBinary(s)
+	}
+}
+
+func (s *BinaryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBinary(s)
+	}
 }
 
 func (s *BinaryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -136036,6 +143271,18 @@ func (s *ComparisonOperatorContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *ComparisonOperatorContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterComparisonOperator(s)
+	}
+}
+
+func (s *ComparisonOperatorContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitComparisonOperator(s)
+	}
+}
+
 func (s *ComparisonOperatorContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -136138,6 +143385,18 @@ func (s *BooleanValueContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BooleanValueContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BooleanValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBooleanValue(s)
+	}
+}
+
+func (s *BooleanValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBooleanValue(s)
+	}
 }
 
 func (s *BooleanValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -136293,6 +143552,18 @@ func (s *IntervalContext) GetRuleContext() antlr.RuleContext {
 
 func (s *IntervalContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *IntervalContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterInterval(s)
+	}
+}
+
+func (s *IntervalContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitInterval(s)
+	}
 }
 
 func (s *IntervalContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -136459,6 +143730,18 @@ func (s *TaskIntervalContext) ToStringTree(ruleNames []string, recog antlr.Recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TaskIntervalContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTaskInterval(s)
+	}
+}
+
+func (s *TaskIntervalContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTaskInterval(s)
+	}
+}
+
 func (s *TaskIntervalContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -136580,6 +143863,18 @@ func (s *TaskUnitIdentifierContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TaskUnitIdentifierContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TaskUnitIdentifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTaskUnitIdentifier(s)
+	}
+}
+
+func (s *TaskUnitIdentifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTaskUnitIdentifier(s)
+	}
 }
 
 func (s *TaskUnitIdentifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -136726,6 +144021,18 @@ func (s *UnitIdentifierContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *UnitIdentifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUnitIdentifier(s)
+	}
+}
+
+func (s *UnitIdentifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUnitIdentifier(s)
+	}
+}
+
 func (s *UnitIdentifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -136828,6 +144135,18 @@ func (s *UnitBoundaryContext) GetRuleContext() antlr.RuleContext {
 
 func (s *UnitBoundaryContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *UnitBoundaryContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUnitBoundary(s)
+	}
+}
+
+func (s *UnitBoundaryContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUnitBoundary(s)
+	}
 }
 
 func (s *UnitBoundaryContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -137009,6 +144328,18 @@ func (s *TypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) s
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterType(s)
+	}
+}
+
+func (s *TypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitType(s)
+	}
+}
+
 func (s *TypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -137165,6 +144496,18 @@ func (s *ArrayTypeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *ArrayTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *ArrayTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterArrayType(s)
+	}
+}
+
+func (s *ArrayTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitArrayType(s)
+	}
 }
 
 func (s *ArrayTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -137332,6 +144675,18 @@ func (s *MapTypeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *MapTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *MapTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterMapType(s)
+	}
+}
+
+func (s *MapTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitMapType(s)
+	}
 }
 
 func (s *MapTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -137506,6 +144861,18 @@ func (s *SubfieldDescContext) ToStringTree(ruleNames []string, recog antlr.Recog
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SubfieldDescContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubfieldDesc(s)
+	}
+}
+
+func (s *SubfieldDescContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubfieldDesc(s)
+	}
+}
+
 func (s *SubfieldDescContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -137656,6 +145023,18 @@ func (s *SubfieldDescsContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *SubfieldDescsContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterSubfieldDescs(s)
+	}
+}
+
+func (s *SubfieldDescsContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitSubfieldDescs(s)
+	}
+}
+
 func (s *SubfieldDescsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -137803,6 +145182,18 @@ func (s *StructTypeContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *StructTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterStructType(s)
+	}
+}
+
+func (s *StructTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitStructType(s)
+	}
+}
+
 func (s *StructTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -137915,6 +145306,18 @@ func (s *TypeParameterContext) GetRuleContext() antlr.RuleContext {
 
 func (s *TypeParameterContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *TypeParameterContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTypeParameter(s)
+	}
+}
+
+func (s *TypeParameterContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTypeParameter(s)
+	}
 }
 
 func (s *TypeParameterContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -138157,6 +145560,18 @@ func (s *BaseTypeContext) GetRuleContext() antlr.RuleContext {
 
 func (s *BaseTypeContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *BaseTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBaseType(s)
+	}
+}
+
+func (s *BaseTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBaseType(s)
+	}
 }
 
 func (s *BaseTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -138816,6 +146231,18 @@ func (s *DecimalTypeContext) ToStringTree(ruleNames []string, recog antlr.Recogn
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *DecimalTypeContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDecimalType(s)
+	}
+}
+
+func (s *DecimalTypeContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDecimalType(s)
+	}
+}
+
 func (s *DecimalTypeContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -139029,6 +146456,18 @@ func (s *QualifiedNameContext) ToStringTree(ruleNames []string, recog antlr.Reco
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *QualifiedNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterQualifiedName(s)
+	}
+}
+
+func (s *QualifiedNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitQualifiedName(s)
+	}
+}
+
 func (s *QualifiedNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -139191,6 +146630,18 @@ func (s *TableNameContext) ToStringTree(ruleNames []string, recog antlr.Recogniz
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *TableNameContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterTableName(s)
+	}
+}
+
+func (s *TableNameContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitTableName(s)
+	}
+}
+
 func (s *TableNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -139311,6 +146762,18 @@ func (s *WriteBranchContext) GetRuleContext() antlr.RuleContext {
 
 func (s *WriteBranchContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *WriteBranchContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterWriteBranch(s)
+	}
+}
+
+func (s *WriteBranchContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitWriteBranch(s)
+	}
 }
 
 func (s *WriteBranchContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -139465,6 +146928,18 @@ func (s *BackQuotedIdentifierContext) BACKQUOTED_IDENTIFIER() antlr.TerminalNode
 	return s.GetToken(DorisSQLParserBACKQUOTED_IDENTIFIER, 0)
 }
 
+func (s *BackQuotedIdentifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterBackQuotedIdentifier(s)
+	}
+}
+
+func (s *BackQuotedIdentifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitBackQuotedIdentifier(s)
+	}
+}
+
 func (s *BackQuotedIdentifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -139495,6 +146970,18 @@ func (s *DigitIdentifierContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DigitIdentifierContext) DIGIT_IDENTIFIER() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserDIGIT_IDENTIFIER, 0)
+}
+
+func (s *DigitIdentifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDigitIdentifier(s)
+	}
+}
+
+func (s *DigitIdentifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDigitIdentifier(s)
+	}
 }
 
 func (s *DigitIdentifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -139543,6 +147030,18 @@ func (s *UnquotedIdentifierContext) NonReserved() INonReservedContext {
 	}
 
 	return t.(INonReservedContext)
+}
+
+func (s *UnquotedIdentifierContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUnquotedIdentifier(s)
+	}
+}
+
+func (s *UnquotedIdentifierContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUnquotedIdentifier(s)
+	}
 }
 
 func (s *UnquotedIdentifierContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -139750,6 +147249,18 @@ func (s *IdentifierWithAliasContext) ToStringTree(ruleNames []string, recog antl
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *IdentifierWithAliasContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIdentifierWithAlias(s)
+	}
+}
+
+func (s *IdentifierWithAliasContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIdentifierWithAlias(s)
+	}
+}
+
 func (s *IdentifierWithAliasContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -139906,6 +147417,18 @@ func (s *IdentifierWithAliasListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *IdentifierWithAliasListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *IdentifierWithAliasListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIdentifierWithAliasList(s)
+	}
+}
+
+func (s *IdentifierWithAliasListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIdentifierWithAliasList(s)
+	}
 }
 
 func (s *IdentifierWithAliasListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -140082,6 +147605,18 @@ func (s *IdentifierListContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *IdentifierListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIdentifierList(s)
+	}
+}
+
+func (s *IdentifierListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIdentifierList(s)
+	}
+}
+
 func (s *IdentifierListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -140247,6 +147782,18 @@ func (s *IdentifierOrStringContext) ToStringTree(ruleNames []string, recog antlr
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *IdentifierOrStringContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIdentifierOrString(s)
+	}
+}
+
+func (s *IdentifierOrStringContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIdentifierOrString(s)
+	}
+}
+
 func (s *IdentifierOrStringContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -140393,6 +147940,18 @@ func (s *IdentifierOrStringListContext) GetRuleContext() antlr.RuleContext {
 
 func (s *IdentifierOrStringListContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *IdentifierOrStringListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIdentifierOrStringList(s)
+	}
+}
+
+func (s *IdentifierOrStringListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIdentifierOrStringList(s)
+	}
 }
 
 func (s *IdentifierOrStringListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -140547,6 +148106,18 @@ func (s *IdentifierOrStringOrStarContext) GetRuleContext() antlr.RuleContext {
 
 func (s *IdentifierOrStringOrStarContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *IdentifierOrStringOrStarContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIdentifierOrStringOrStar(s)
+	}
+}
+
+func (s *IdentifierOrStringOrStarContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIdentifierOrStringOrStar(s)
+	}
 }
 
 func (s *IdentifierOrStringOrStarContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -140729,6 +148300,18 @@ func (s *UserWithHostAndBlanketContext) AT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserAT, 0)
 }
 
+func (s *UserWithHostAndBlanketContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUserWithHostAndBlanket(s)
+	}
+}
+
+func (s *UserWithHostAndBlanketContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUserWithHostAndBlanket(s)
+	}
+}
+
 func (s *UserWithHostAndBlanketContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -140802,6 +148385,18 @@ func (s *UserWithHostContext) AT() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserAT, 0)
 }
 
+func (s *UserWithHostContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUserWithHost(s)
+	}
+}
+
+func (s *UserWithHostContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUserWithHost(s)
+	}
+}
+
 func (s *UserWithHostContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -140844,6 +148439,18 @@ func (s *UserWithoutHostContext) IdentifierOrString() IIdentifierOrStringContext
 	}
 
 	return t.(IIdentifierOrStringContext)
+}
+
+func (s *UserWithoutHostContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterUserWithoutHost(s)
+	}
+}
+
+func (s *UserWithoutHostContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitUserWithoutHost(s)
+	}
 }
 
 func (s *UserWithoutHostContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -141039,6 +148646,18 @@ func (s *AssignmentContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AssignmentContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAssignment(s)
+	}
+}
+
+func (s *AssignmentContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAssignment(s)
+	}
+}
+
 func (s *AssignmentContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -141179,6 +148798,18 @@ func (s *AssignmentListContext) ToStringTree(ruleNames []string, recog antlr.Rec
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+func (s *AssignmentListContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterAssignmentList(s)
+	}
+}
+
+func (s *AssignmentListContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitAssignmentList(s)
+	}
+}
+
 func (s *AssignmentListContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -141317,6 +148948,18 @@ func (s *DecimalValueContext) DECIMAL_VALUE() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserDECIMAL_VALUE, 0)
 }
 
+func (s *DecimalValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDecimalValue(s)
+	}
+}
+
+func (s *DecimalValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDecimalValue(s)
+	}
+}
+
 func (s *DecimalValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -141349,6 +148992,18 @@ func (s *IntegerValueContext) INTEGER_VALUE() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserINTEGER_VALUE, 0)
 }
 
+func (s *IntegerValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterIntegerValue(s)
+	}
+}
+
+func (s *IntegerValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitIntegerValue(s)
+	}
+}
+
 func (s *IntegerValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 	switch t := visitor.(type) {
 	case DorisSQLVisitor:
@@ -141379,6 +149034,18 @@ func (s *DoubleValueContext) GetRuleContext() antlr.RuleContext {
 
 func (s *DoubleValueContext) DOUBLE_VALUE() antlr.TerminalNode {
 	return s.GetToken(DorisSQLParserDOUBLE_VALUE, 0)
+}
+
+func (s *DoubleValueContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterDoubleValue(s)
+	}
+}
+
+func (s *DoubleValueContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitDoubleValue(s)
+	}
 }
 
 func (s *DoubleValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
@@ -143221,6 +150888,18 @@ func (s *NonReservedContext) GetRuleContext() antlr.RuleContext {
 
 func (s *NonReservedContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *NonReservedContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.EnterNonReserved(s)
+	}
+}
+
+func (s *NonReservedContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(DorisSQLListener); ok {
+		listenerT.ExitNonReserved(s)
+	}
 }
 
 func (s *NonReservedContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
